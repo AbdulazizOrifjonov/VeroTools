@@ -1,0 +1,189 @@
+{
+  "header": {
+    "allInCategory": "All products ({{count}})",
+    "noSubcategories": "This section has no subcategories",
+    "unread_one": "{{count}} unread notification",
+    "unread_other": "{{count}} unread notifications",
+    "infoNavigation": "Customer information",
+    "userNavigation": "Customer menu",
+    "tabBar": "Quick navigation"
+  },
+  "countdown": {
+    "readable": "{{days}} d {{hours}} h {{minutes}} min left",
+    "d": "days",
+    "h": "hrs",
+    "m": "min",
+    "s": "sec",
+    "daysShort_one": "{{count}} day",
+    "daysShort_other": "{{count}} days"
+  },
+  "search": {
+    "allResultsFor": "All results for “{{query}}”"
+  },
+  "realtime": {
+    "orderStatus": "Order #{{number}} is now {{status}}"
+  },
+  "errorPage": {
+    "title": "This page could not be displayed",
+    "text": "An unexpected error occurred. Reload the page — if it happens again, please contact us.",
+    "updatedTitle": "The site has been updated",
+    "updatedText": "A new version of the site is available. Reload the page to continue.",
+    "reload": "Reload page"
+  },
+  "notFound": {
+    "popularCategories": "Popular categories"
+  },
+  "productCard": {
+    "chooseOption": "Choose option"
+  },
+  "cartActions": {
+    "onlyAvailable_one": "Only {{count}} item left in stock",
+    "onlyAvailable_other": "Only {{count}} items left in stock"
+  },
+  "home": {
+    "heroLabel": "Offers and promotions",
+    "slideOf": "Slide {{index}} of {{total}}",
+    "playSlides": "Play slideshow",
+    "pauseSlides": "Pause slideshow",
+    "featured": "Top picks"
+  },
+  "promotions": {
+    "startsOn": "Starts {{date}}",
+    "description": "Current discounts and special offers. Promotional prices are applied automatically on the product page and in the cart."
+  },
+  "catalogPage": {
+    "description": "Catalogue of power and hand tools, generators, compressors, pumps and other equipment."
+  },
+  "listing": {
+    "view": "View",
+    "results": "Products",
+    "filtersHint": "Choose filters and see the results",
+    "showProducts_one": "Show {{count}} product",
+    "showProducts_other": "Show {{count}} products"
+  },
+  "product": {
+    "sections": "Product sections",
+    "questionsCount_one": "{{count}} question",
+    "questionsCount_other": "{{count}} questions",
+    "inCart_one": "In cart: {{count}} pc",
+    "inCart_other": "In cart: {{count}} pcs",
+    "allInCart": "The whole available quantity is already in your cart.",
+    "saveOrCompare": "Save or compare",
+    "galleryHint": "Use the arrow keys to switch photos, click a photo to zoom.",
+    "zoomOut": "Zoom out",
+    "deliveryTo": "Delivery region",
+    "deliveryWindow": "Estimated {{from}} – {{to}}",
+    "freeFrom": "Free for orders over {{amount}}",
+    "pickupPoints_one": "{{count}} pickup point",
+    "pickupPoints_other": "{{count}} pickup points",
+    "filterByStars": "Show {{count}}-star reviews ({{reviews}})"
+  },
+  "specGroup": {
+    "main": "Key specifications",
+    "power": "Power",
+    "performance": "Performance",
+    "dimensions": "Dimensions and weight",
+    "equipment": "Features and equipment",
+    "general": "General",
+    "overview": "Overview"
+  },
+  "cart": {
+    "moveToWishlist": "Move to wishlist",
+    "movedToWishlist": "Moved to your wishlist",
+    "freeDeliveryProgress": "Progress to free delivery",
+    "freeDeliveryNote": "For courier delivery within Tashkent. For other regions the cost is calculated at checkout."
+  },
+  "checkout": {
+    "moreItems_one": "and {{count}} more item",
+    "moreItems_other": "and {{count}} more items",
+    "installmentFor_one": "Installments, {{count}} month",
+    "installmentFor_other": "Installments, {{count}} months",
+    "courierHint": "To your door at the address you enter",
+    "choosePayment": "Choose a payment method",
+    "stockAvailable": "{{available}} in stock, {{requested}} in your order",
+    "stepDone": "Done",
+    "stepCompleted": "completed"
+  },
+  "legal": {
+    "acceptTerms": "I accept the <terms>public offer</terms> and the <privacy>privacy policy</privacy>"
+  },
+  "success": {
+    "orderNotFound": "Order not found",
+    "orderNotFoundText": "Check the link or open the list of your orders."
+  },
+  "payment": {
+    "onReceiptCourier": "You'll pay the courier when you receive the order.",
+    "onReceiptPickup": "You'll pay at the pickup point when you collect the order.",
+    "checking": "Checking the payment status…",
+    "notConfirmedYet": "We haven't received the payment confirmation yet. If you've already paid, the status will update automatically within a few minutes.",
+    "unavailableNow": "Online payment is temporarily unavailable. Contact us to choose another way to pay.",
+    "failedHint": "The payment didn't go through. Contact us and we'll help:",
+    "paidAt": "paid on {{date}}",
+    "refreshStatus": "Refresh status"
+  },
+  "order": {
+    "reason": "Reason: {{reason}}",
+    "keepOrder": "Keep order"
+  },
+  "auth": {
+    "benefitOrders": "Follow your order status in real time",
+    "benefitLists": "Wishlist and compare list on all your devices",
+    "benefitCheckout": "Faster checkout with saved addresses",
+    "checkSpam": "No e-mail? Check your spam folder or try again in a few minutes.",
+    "tryAnother": "Use a different address",
+    "requestNewLink": "Request a new link",
+    "changeNumber": "Change number",
+    "verifying": "Verifying your email…",
+    "sendNewLink": "Send a new link",
+    "signInToResend": "Sign in to get a new verification link."
+  },
+  "profile": {
+    "avatarHint": "JPG, PNG, WebP or GIF, up to 3 MB",
+    "phoneHint": "Your phone number is used to sign in. To change it, please contact us."
+  },
+  "notifications": {
+    "markRead": "Mark as read"
+  },
+  "myReviews": {
+    "emptyHint": "Review the products from your delivered orders — it helps other customers choose."
+  },
+  "settings": {
+    "notificationsHint": "Notifications are always available in your account — choose where else to receive them.",
+    "channels": "Channels",
+    "topics": "Topics",
+    "pushHint": "In the VERO TOOLS mobile app",
+    "noEmail": "Add an email address in your profile",
+    "passwordSignOutNote": "After the change you'll be signed out on all devices — sign in again with the new password.",
+    "passwordChangedRelogin": "Password changed. Please sign in with your new password."
+  },
+  "wishlist": {
+    "guestNote": "Your wishlist is saved in this browser. Sign in to see it on all your devices."
+  },
+  "brands": {
+    "description": "Makers of professional and household tools — with an official warranty.",
+    "searchPlaceholder": "Brand name",
+    "alphabet": "Filter by letter"
+  },
+  "content": {
+    "updated": "Updated: {{date}}",
+    "pagesNav": "Information pages"
+  },
+  "contacts": {
+    "description": "VERO TOOLS contacts: phone, e-mail, store address and pickup points.",
+    "sendAnother": "Send another message",
+    "privacyNote": "We use your details only to reply to your request.",
+    "showOnMap": "On the map",
+    "openMap": "Open larger map",
+    "showStore": "Show the store address",
+    "legalName": "Legal name"
+  },
+  "faq": {
+    "description": "Answers to common questions about orders, delivery, payment and warranty.",
+    "searchPlaceholder": "Search the questions",
+    "contactHint": "Our specialists will help with choosing a tool, ordering and delivery."
+  },
+  "address": {
+    "apartmentShort": "apt. {{value}}",
+    "regionFirst": "Select a region first"
+  }
+}

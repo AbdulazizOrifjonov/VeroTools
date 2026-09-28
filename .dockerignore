@@ -1,0 +1,56 @@
+# Build context of apps/api/Dockerfile, apps/web/Dockerfile and apps/admin/Dockerfile (context = repository root).
+#
+# The images need: package.json files of every workspace + package-lock.json + .npmrc (npm ci),
+# tsconfig.base.json, packages/**, and the sources of apps/api, apps/web, apps/admin.
+# Everything else is excluded to keep the context small, the layer cache stable and secrets out of images.
+
+# --- VCS, CI, editors ---------------------------------------------------------------------------------
+.git
+.github
+.vscode
+.idea
+**/.DS_Store
+**/Thumbs.db
+
+# --- secrets: never send them to the builder -------------------------------------------------------
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+
+# --- dependencies and build output (reinstalled / rebuilt inside the image) --------------------------
+**/node_modules
+**/dist
+**/coverage
+**/.turbo
+**/.cache
+**/*.tsbuildinfo
+
+# --- runtime data, backups -----------------------------------------------------------------------------
+apps/api/storage
+apps/api/uploads
+backups
+
+# --- screenshots, logs, test output, generator caches ------------------------------------------------
+**/.screenshots
+**/*.log
+**/playwright-report
+**/test-results
+**/__pycache__
+**/web-build
+**/.expo
+
+# --- mobile app: built with EAS, not Docker. Only its package.json is needed (npm ci validates every
+#     workspace against package-lock.json).
+apps/mobile/*
+!apps/mobile/package.json
+# end-to-end checks: same — only the manifest
+e2e/*
+!e2e/package.json
+
+# --- ops files not needed inside the images --------------------------------------------------------
+docs
+scripts
+**/Dockerfile
+.dockerignore
+docker-compose*.yml

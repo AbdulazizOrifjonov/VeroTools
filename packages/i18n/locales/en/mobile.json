@@ -1,0 +1,186 @@
+{
+  "home": {
+    "featured": "Top picks",
+    "heroLabel": "Offers and promotions",
+    "flash": "Flash"
+  },
+  "productCard": {
+    "chooseOption": "Choose option"
+  },
+  "cart": {
+    "moveToWishlist": "Move to wishlist",
+    "movedToWishlist": "Moved to your wishlist",
+    "freeDeliveryProgress": "Progress to free delivery",
+    "freeDeliveryNote": "For courier delivery within Tashkent. For other regions the cost is calculated at checkout.",
+    "signInToCheckout": "Sign in to check out",
+    "onlyAvailable_one": "Only {{count}} item left in stock",
+    "onlyAvailable_other": "Only {{count}} items left in stock"
+  },
+  "countdown": {
+    "readable": "{{days}} d {{hours}} h {{minutes}} min left",
+    "d": "days",
+    "h": "hrs",
+    "m": "min",
+    "s": "sec",
+    "daysShort_one": "{{count}} day",
+    "daysShort_other": "{{count}} days"
+  },
+  "push": {
+    "channelName": "Orders and updates",
+    "enable": "Enable push notifications",
+    "enabled": "Push notifications are on",
+    "active": "This device receives order updates and promotions.",
+    "denied": "Notifications are not allowed",
+    "deniedHint": "Notifications are turned off in the system settings. Allow them for the VERO TOOLS app.",
+    "openSettings": "Open settings",
+    "signInFirst": "Sign in to enable push notifications.",
+    "unavailable": {
+      "web": "Push notifications aren't available in the web preview — they work in the phone app.",
+      "simulator": "Push notifications need a physical device (they don't work in an emulator).",
+      "no-project": "Push notifications aren't configured for this build (no EAS project id). Order updates are still shown in the app and on the website."
+    }
+  },
+  "settings": {
+    "channels": "Channels",
+    "topics": "Topics",
+    "notificationsHint": "Notifications are always available in your account — choose where else to receive them.",
+    "pushHint": "In the VERO TOOLS mobile app",
+    "noEmail": "Add an e-mail address in your profile",
+    "passwordSignOutNote": "After the change you'll be signed out on all devices — sign in again with the new password.",
+    "passwordChangedRelogin": "Password changed. Please sign in with your new password.",
+    "version": "version {{version}}"
+  },
+  "help": {
+    "title": "Help",
+    "contactHint": "Call, Telegram, e-mail or send a message"
+  },
+  "catalog": {
+    "subcategories_one": "{{count}} subcategory",
+    "subcategories_other": "{{count}} subcategories",
+    "allIn": "All products in {{name}}",
+    "noSubcategories": "This section has no subcategories"
+  },
+  "listing": {
+    "showProducts_one": "Show {{count}} product",
+    "showProducts_other": "Show {{count}} products"
+  },
+  "search": {
+    "allResultsFor": "All results for “{{query}}”"
+  },
+  "product": {
+    "deliveryTo": "Delivery region",
+    "deliveryWindow": "Estimated {{from}} – {{to}}",
+    "freeFrom": "Free for orders over {{amount}}",
+    "pickupPoints_one": "{{count}} pickup point",
+    "pickupPoints_other": "{{count}} pickup points",
+    "filterByStars": "{{count}}-star reviews ({{reviews}})",
+    "questionsCount_one": "{{count}} question",
+    "questionsCount_other": "{{count}} questions",
+    "calculate": "Calculate",
+    "inCart_one": "In cart: {{count}} pc",
+    "inCart_other": "In cart: {{count}} pcs",
+    "inWishlist": "In wishlist"
+  },
+  "specGroup": {
+    "main": "Key specifications",
+    "power": "Power",
+    "performance": "Performance",
+    "dimensions": "Dimensions and weight",
+    "equipment": "Features and equipment",
+    "general": "General",
+    "overview": "Overview"
+  },
+  "gallery": {
+    "hint": "Double-tap or pinch to zoom"
+  },
+  "address": {
+    "apartmentShort": "apt. {{value}}",
+    "regionFirst": "Select a region first"
+  },
+  "auth": {
+    "benefitOrders": "Follow your order status in real time",
+    "benefitLists": "Wishlist and compare list on all your devices",
+    "benefitCheckout": "Faster checkout with saved addresses",
+    "acceptPrefix": "I accept the",
+    "termsLink": "public offer",
+    "and": "and the",
+    "privacyLink": "privacy policy",
+    "acceptSuffix": "",
+    "checkSpam": "No e-mail? Check your spam folder or try again in a few minutes.",
+    "tryAnother": "Use a different address or number",
+    "changeNumber": "Change number",
+    "requestNewLink": "Request a new link",
+    "verifying": "Verifying your e-mail…",
+    "sendNewLink": "Send a new link",
+    "signInToResend": "Sign in to get a new verification link."
+  },
+  "brands": {
+    "description": "Makers of professional and household tools — with an official warranty.",
+    "searchPlaceholder": "Brand name"
+  },
+  "checkout": {
+    "choosePayment": "Choose a payment method",
+    "courierHint": "To your door at the address you enter",
+    "installmentFor_one": "Installments, {{count}} month",
+    "installmentFor_other": "Installments, {{count}} months",
+    "stockAvailable": "{{available}} in stock, {{requested}} in your order"
+  },
+  "compare": {
+    "clearConfirm": "All products will be removed from the compare list."
+  },
+  "contacts": {
+    "call": "Call",
+    "privacyNote": "We use your details only to reply to your request.",
+    "sendAnother": "Send another message",
+    "showOnMap": "Show on map"
+  },
+  "content": {
+    "updated": "Updated: {{date}}"
+  },
+  "faq": {
+    "contactHint": "Our specialists will help with choosing a tool, ordering and delivery.",
+    "searchPlaceholder": "Search the questions"
+  },
+  "myReviews": {
+    "emptyHint": "Review the products from your delivered orders — it helps other customers choose."
+  },
+  "order": {
+    "keepOrder": "Keep order",
+    "reason": "Reason: {{reason}}"
+  },
+  "payment": {
+    "checking": "Checking the payment status…",
+    "failedHint": "The payment didn't go through. Contact us and we'll help:",
+    "notConfirmedYet": "We haven't received the payment confirmation yet. If you've already paid, the status will update automatically within a few minutes.",
+    "onReceiptCourier": "You'll pay the courier when you receive the order.",
+    "onReceiptPickup": "You'll pay at the pickup point when you collect the order.",
+    "paidAt": "paid on {{date}}",
+    "refreshStatus": "Refresh status"
+  },
+  "profile": {
+    "avatarHint": "JPG, PNG, WebP or GIF, up to 3 MB",
+    "chooseFromLibrary": "Choose from library",
+    "takePhoto": "Take a photo",
+    "guestTitle": "Sign in to your account",
+    "logoutConfirm": "Sign out? Your cart and wishlist stay saved in your account.",
+    "phoneHint": "Your phone number is used to sign in. To change it, please contact us.",
+    "photoPermission": "No access to photos. Allow it in the device settings.",
+    "sendCode": "Send code",
+    "verifyEmailHint": "Verify your e-mail — order updates are sent there",
+    "verifyPhoneHint": "Verify your phone number with an SMS code",
+    "verifyPhoneText": "We'll send a 6-digit verification code to {{phone}}."
+  },
+  "promotions": {
+    "description": "Current discounts and special offers. Promotional prices are applied automatically on the product page and in the cart."
+  },
+  "reviews": {
+    "moderationNote": "Your review will be published after moderation."
+  },
+  "success": {
+    "orderNotFound": "Order not found",
+    "orderNotFoundText": "Check the link or open the list of your orders."
+  },
+  "wishlist": {
+    "guestNote": "Your wishlist is saved on this device. Sign in to see it on all your devices."
+  }
+}

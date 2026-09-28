@@ -1,0 +1,199 @@
+name: CI
+
+# Every push and pull request: i18n keys, typecheck of every workspace, API integration tests against
+# MongoDB 7, production builds of api / web / admin, a separate Android JS bundle export of the app, and the
+# cross-device end-to-end checks (Playwright) against the whole stack with the demo seed.
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: '22'
+  NPM_CONFIG_FUND: 'false'
+  NPM_CONFIG_AUDIT: 'false'
+
+jobs:
+  verify:
+    name: i18n · typecheck · lint · API tests · builds
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    services:
+      mongo:
+        image: mongo:7
+        ports:
+          - 27017:27017
+        options: >-
+          --health-cmd "mongosh --quiet --eval 'db.runCommand({ ping: 1 }).ok'"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 24
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install dependencies (package-lock.json)
+        run: npm ci
+
+      - name: i18n keys are identical in uz / ru / en
+        run: node packages/i18n/scripts/check-keys.mjs
+
+      - name: Typecheck every workspace
+        run: npm run typecheck --workspaces --if-present
+
+      - name: Lint (ESLint, errors fail the build)
+        run: npm run lint
+
+      - name: API integration tests (MongoDB 7, standalone)
+        run: npm run test -w @vero/api
+        env:
+          MONGO_URI_TEST: mongodb://localhost:27017/?directConnection=true
+
+      - name: Build API (tsup)
+        run: npm run build -w @vero/api
+
+      - name: Build storefront (tsc + vite)
+        run: npm run build -w @vero/web
+
+      - name: Build admin panel (tsc + vite)
+        run: npm run build -w @vero/admin
+
+  mobile:
+    name: Mobile bundle (expo export, Android)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      CI: 'true'
+      EXPO_NO_TELEMETRY: '1'
+      # embedded into the bundle; the export only proves that the app bundles
+      EXPO_PUBLIC_API_URL: https://verotools.uz/api
+      EXPO_PUBLIC_WEB_URL: https://verotools.uz
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install dependencies (package-lock.json)
+        run: npm ci
+
+      # Metro's transform cache and file map (os.tmpdir()) make repeated exports much faster
+      - name: Restore Metro cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            /tmp/metro-cache
+            /tmp/metro-file-map-*
+            apps/mobile/.expo
+          key: metro-${{ runner.os }}-${{ hashFiles('package-lock.json') }}-${{ github.sha }}
+          restore-keys: |
+            metro-${{ runner.os }}-${{ hashFiles('package-lock.json') }}-
+            metro-${{ runner.os }}-
+
+      - name: Export the Android bundle
+        working-directory: apps/mobile
+        run: npx expo export --platform android --output-dir dist
+
+      - name: Bundle size
+        working-directory: apps/mobile
+        run: |
+          du -sh dist
+          find dist \( -name '*.hbc' -o -name '*.js' \) -exec ls -la {} +
+
+  e2e:
+    name: End-to-end (storefront · admin · mobile web)
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    services:
+      mongo:
+        image: mongo:7
+        ports:
+          - 27017:27017
+        options: >-
+          --health-cmd "mongosh --quiet --eval 'db.runCommand({ ping: 1 }).ok'"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 24
+    env:
+      # a throw-away development stack: demo seed, console SMS, no e-mail / push / payment providers
+      NODE_ENV: development
+      MONGO_URI: mongodb://localhost:27017/vero_tools_e2e?directConnection=true
+      JWT_SECRET: ci-e2e-access-secret-0123456789abcdef
+      JWT_REFRESH_SECRET: ci-e2e-refresh-secret-0123456789abcdef
+      CORS_ORIGINS: http://localhost:8081
+      PUSH_ENABLED: 'false'
+      LOG_LEVEL: warn
+      CI: 'true'
+      EXPO_NO_TELEMETRY: '1'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install dependencies (package-lock.json)
+        run: npm ci
+
+      - name: Install Chromium for Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: Seed the demo database
+        run: npm run seed -- --reset
+
+      - name: Build API, storefront and admin panel
+        run: npm run build
+
+      - name: Export the mobile app for the web
+        working-directory: apps/mobile
+        env:
+          EXPO_PUBLIC_API_URL: http://localhost:4000/api
+          EXPO_PUBLIC_WEB_URL: http://localhost:3000
+        run: npx expo export --platform web --output-dir web-build
+
+      - name: Start API, storefront, admin panel and mobile web
+        run: |
+          node apps/api/dist/index.js > api.log 2>&1 &
+          PORT=3000 API_INTERNAL_URL=http://localhost:4000 node apps/web/server/index.mjs > web.log 2>&1 &
+          PORT=3001 API_INTERNAL_URL=http://localhost:4000 node apps/admin/server/index.mjs > admin.log 2>&1 &
+          npx --yes serve@14 -s apps/mobile/web-build -l 8081 > mobile.log 2>&1 &
+          for i in $(seq 1 60); do
+            if curl -sf localhost:4000/ready >/dev/null && curl -sf localhost:3000/healthz >/dev/null \
+              && curl -sf localhost:3001/healthz >/dev/null && curl -sf localhost:8081/ >/dev/null; then exit 0; fi
+            sleep 2
+          done
+          tail -50 api.log web.log admin.log mobile.log
+          exit 1
+
+      - name: Playwright
+        run: npm run test:e2e
+        env:
+          E2E_MOBILE_URL: http://localhost:8081
+
+      - name: Upload the report and traces
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: |
+            e2e/playwright-report
+            e2e/test-results
+            *.log
+          retention-days: 7

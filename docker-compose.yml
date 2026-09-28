@@ -1,0 +1,192 @@
+# VERO TOOLS — production stack for a single host (docs/DEPLOYMENT.md).
+#
+#   cp .env.example .env                              # secrets + public URLs
+#   docker compose up -d --build                      # mongo, redis, api, web, admin
+#   docker compose --profile tools run --rm seed      # first deployment: base data + owner account
+#
+# Ports are published on 127.0.0.1 only. A TLS reverse proxy on the host (nginx, see the docs) serves
+#   verotools.uz → 127.0.0.1:3000 (web) · admin.verotools.uz → 127.0.0.1:3001 (admin) · optional api.verotools.uz → 127.0.0.1:4000 (api)
+# MongoDB and Redis are only reachable on the internal "backend" network (no internet access, no host ports).
+#
+# Settings for the API come from .env (env_file). The values under `environment:` describe this container
+# topology and take precedence over .env: MONGO_URI / REDIS_URL fall back to the bundled services, while
+# NODE_ENV, HOST, PORT, UPLOAD_DIR, I18N_LOCALES_DIR and VERO_SEED_ASSETS_DIR are fixed to the image layout.
+
+name: vero-tools
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: '20m'
+    max-file: '5'
+
+x-api-build: &api-build
+  context: .
+  dockerfile: apps/api/Dockerfile
+
+x-api-environment: &api-environment
+  NODE_ENV: production
+  HOST: 0.0.0.0
+  PORT: '4000'
+  # single-node replica set "rs0" (transactions); directConnection: the member is addressed by its service name
+  MONGO_URI: ${MONGO_URI:-mongodb://mongo:27017/vero_tools?directConnection=true}
+  # REDIS_URL= (empty) in .env disables Redis — only valid for a single API instance
+  REDIS_URL: ${REDIS_URL-redis://redis:6379}
+  UPLOAD_DIR: /data/uploads
+  I18N_LOCALES_DIR: /app/packages/i18n/locales
+  VERO_SEED_ASSETS_DIR: /app/apps/api/src/seed/assets
+
+services:
+  mongo:
+    image: mongo:7
+    command: ['--replSet', 'rs0', '--bind_ip_all']
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+      - mongo-config:/data/configdb
+    networks: [backend]
+    healthcheck:
+      # Initiates the single-node replica set on first start (idempotent: only when there is no config yet)
+      # and reports healthy once this member is PRIMARY.
+      test:
+        - CMD
+        - mongosh
+        - --quiet
+        - --norc
+        - --eval
+        - >-
+          let primary = false;
+          try { primary = rs.status().members.some((m) => m.self && m.stateStr === 'PRIMARY'); }
+          catch (e) {
+            if (e.codeName !== 'NotYetInitialized') throw e;
+            rs.initiate({ _id: 'rs0', members: [{ _id: 0, host: 'mongo:27017' }] });
+          }
+          quit(primary ? 0 : 1);
+      interval: 10s
+      timeout: 10s
+      start_period: 30s
+      retries: 12
+    logging: *logging
+
+  redis:
+    image: redis:7-alpine
+    command: ['redis-server', '--appendonly', 'yes']
+    restart: unless-stopped
+    volumes:
+      - redis-data:/data
+    networks: [backend]
+    healthcheck:
+      test: ['CMD-SHELL', 'redis-cli ping | grep -q PONG']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    logging: *logging
+
+  api:
+    build: *api-build
+    image: ${VERO_API_IMAGE:-vero-tools-api:local}
+    restart: unless-stopped
+    init: true
+    env_file: .env
+    environment: *api-environment
+    volumes:
+      - uploads:/data/uploads
+    ports:
+      - '127.0.0.1:${API_HOST_PORT:-4000}:4000'
+    networks: [backend, edge]
+    depends_on:
+      mongo:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    # the API closes Socket.IO, HTTP and database connections on SIGTERM (forced exit after 15 s)
+    stop_grace_period: 20s
+    security_opt: ['no-new-privileges:true']
+    cap_drop: [ALL]
+    logging: *logging
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    image: ${VERO_WEB_IMAGE:-vero-tools-web:local}
+    restart: unless-stopped
+    init: true
+    environment:
+      PORT: '3000'
+      API_INTERNAL_URL: http://api:4000
+      # mobile app links (/.well-known/apple-app-site-association, /.well-known/assetlinks.json); empty = not served
+      IOS_APP_IDS: ${IOS_APP_IDS:-}
+      ANDROID_APP_PACKAGE: ${ANDROID_APP_PACKAGE:-uz.verotools.app}
+      ANDROID_SHA256_FINGERPRINTS: ${ANDROID_SHA256_FINGERPRINTS:-}
+    ports:
+      - '127.0.0.1:${WEB_HOST_PORT:-3000}:3000'
+    networks: [edge]
+    depends_on:
+      api:
+        condition: service_healthy
+    security_opt: ['no-new-privileges:true']
+    cap_drop: [ALL]
+    logging: *logging
+
+  admin:
+    build:
+      context: .
+      dockerfile: apps/admin/Dockerfile
+    image: ${VERO_ADMIN_IMAGE:-vero-tools-admin:local}
+    restart: unless-stopped
+    init: true
+    environment:
+      PORT: '3001'
+      API_INTERNAL_URL: http://api:4000
+      # Express "trust proxy" of the admin server itself (HSTS behind the TLS proxy) — not the API's TRUST_PROXY
+      TRUST_PROXY: 'loopback, uniquelocal'
+      # extra CSP image origins when media is served by S3 / Cloudinary (space separated origins)
+      ASSET_ORIGINS: ${ADMIN_ASSET_ORIGINS:-}
+    ports:
+      - '127.0.0.1:${ADMIN_HOST_PORT:-3001}:3001'
+    networks: [edge]
+    depends_on:
+      api:
+        condition: service_healthy
+    security_opt: ['no-new-privileges:true']
+    cap_drop: [ALL]
+    logging: *logging
+
+  # One-off tasks with the API image:  docker compose --profile tools run --rm seed
+  # Base data only (roles, owner account from SEED_ADMIN_*, settings, delivery, pages, categories).
+  # Idempotent: existing data and settings changed in the admin panel are never overwritten.
+  seed:
+    build: *api-build
+    image: ${VERO_API_IMAGE:-vero-tools-api:local}
+    profiles: [tools]
+    command: ['node', 'dist/seed.js', '--base']
+    restart: 'no'
+    init: true
+    env_file: .env
+    environment: *api-environment
+    volumes:
+      - uploads:/data/uploads
+    # edge: category images go to S3 / Cloudinary when STORAGE_DRIVER is not "local"
+    networks: [backend, edge]
+    depends_on:
+      mongo:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      disable: true
+    security_opt: ['no-new-privileges:true']
+    cap_drop: [ALL]
+    logging: *logging
+
+networks:
+  edge: {}
+  backend:
+    internal: true
+
+volumes:
+  mongo-data:
+  mongo-config:
+  redis-data:
+  uploads:

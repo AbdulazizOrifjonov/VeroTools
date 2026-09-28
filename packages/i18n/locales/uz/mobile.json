@@ -1,0 +1,186 @@
+{
+  "home": {
+    "featured": "Tanlangan mahsulotlar",
+    "heroLabel": "Takliflar va aksiyalar",
+    "flash": "Tezkor"
+  },
+  "productCard": {
+    "chooseOption": "Variantni tanlang"
+  },
+  "cart": {
+    "moveToWishlist": "Sevimlilarga",
+    "movedToWishlist": "Sevimlilarga o'tkazildi",
+    "freeDeliveryProgress": "Bepul yetkazib berishgacha",
+    "freeDeliveryNote": "Toshkent bo'ylab kuryer orqali yetkazib berish uchun. Boshqa hududlar uchun narx rasmiylashtirishda hisoblanadi.",
+    "signInToCheckout": "Kirish va rasmiylashtirish",
+    "onlyAvailable_one": "Omborda faqat {{count}} dona qoldi",
+    "onlyAvailable_other": "Omborda faqat {{count}} dona qoldi"
+  },
+  "countdown": {
+    "readable": "{{days}} kun {{hours}} soat {{minutes}} daqiqa qoldi",
+    "d": "kun",
+    "h": "soat",
+    "m": "daq",
+    "s": "son",
+    "daysShort_one": "{{count}} kun",
+    "daysShort_other": "{{count}} kun"
+  },
+  "push": {
+    "channelName": "Buyurtmalar va xabarlar",
+    "enable": "Push-bildirishnomalarni yoqish",
+    "enabled": "Push-bildirishnomalar yoqildi",
+    "active": "Bu qurilmaga buyurtma holati va aksiyalar haqida xabarlar keladi.",
+    "denied": "Bildirishnomalarga ruxsat berilmadi",
+    "deniedHint": "Bildirishnomalar tizim sozlamalarida o'chirilgan. Ularni VERO TOOLS ilovasi uchun yoqing.",
+    "openSettings": "Sozlamalarni ochish",
+    "signInFirst": "Push-bildirishnomalarni yoqish uchun hisobingizga kiring.",
+    "unavailable": {
+      "web": "Push-bildirishnomalar veb-ko'rinishda mavjud emas — ular telefondagi ilovada ishlaydi.",
+      "simulator": "Push-bildirishnomalar uchun haqiqiy qurilma kerak (emulyatorda ishlamaydi).",
+      "no-project": "Ushbu yig'ma uchun push-bildirishnomalar sozlanmagan (EAS loyiha identifikatori ko'rsatilmagan). Buyurtma xabarlari ilova ichida va saytda ko'rinadi."
+    }
+  },
+  "settings": {
+    "channels": "Kanallar",
+    "topics": "Mavzular",
+    "notificationsHint": "Bildirishnomalar har doim kabinetingizda mavjud — ularni yana qayerga olishni tanlang.",
+    "pushHint": "VERO TOOLS mobil ilovasida",
+    "noEmail": "Profilingizga e-pochta manzilini qo'shing",
+    "passwordSignOutNote": "Paroldan so'ng barcha qurilmalarda hisobdan chiqasiz — yangi parol bilan qayta kiring.",
+    "passwordChangedRelogin": "Parol o'zgartirildi. Yangi parol bilan qayta kiring.",
+    "version": "versiya {{version}}"
+  },
+  "help": {
+    "title": "Yordam",
+    "contactHint": "Qo'ng'iroq, Telegram, e-pochta yoki xabar yuborish"
+  },
+  "catalog": {
+    "subcategories_one": "{{count}} bo'lim",
+    "subcategories_other": "{{count}} bo'lim",
+    "allIn": "{{name}}: barcha mahsulotlar",
+    "noSubcategories": "Bu bo'limda kichik bo'limlar yo'q"
+  },
+  "listing": {
+    "showProducts_one": "{{count}} ta mahsulotni ko'rsatish",
+    "showProducts_other": "{{count}} ta mahsulotni ko'rsatish"
+  },
+  "search": {
+    "allResultsFor": "«{{query}}» bo'yicha barcha natijalar"
+  },
+  "product": {
+    "deliveryTo": "Yetkazib berish hududi",
+    "deliveryWindow": "Taxminan {{from}} – {{to}}",
+    "freeFrom": "{{amount}} dan ortiq buyurtmalarga bepul",
+    "pickupPoints_one": "{{count}} ta olib ketish punkti",
+    "pickupPoints_other": "{{count}} ta olib ketish punkti",
+    "filterByStars": "{{count}} yulduzli sharhlar ({{reviews}})",
+    "questionsCount_one": "{{count}} ta savol",
+    "questionsCount_other": "{{count}} ta savol",
+    "calculate": "Hisoblash",
+    "inCart_one": "Savatda: {{count}} dona",
+    "inCart_other": "Savatda: {{count}} dona",
+    "inWishlist": "Sevimlilarda"
+  },
+  "specGroup": {
+    "main": "Asosiy xususiyatlar",
+    "power": "Quvvat",
+    "performance": "Unumdorlik",
+    "dimensions": "O'lcham va og'irlik",
+    "equipment": "Imkoniyatlar va to'plam",
+    "general": "Umumiy",
+    "overview": "Umumiy ko'rinish"
+  },
+  "gallery": {
+    "hint": "Kattalashtirish uchun ikki marta bosing yoki barmoqlar bilan cho'zing"
+  },
+  "address": {
+    "apartmentShort": "{{value}}-xonadon",
+    "regionFirst": "Avval hududni tanlang"
+  },
+  "auth": {
+    "benefitOrders": "Buyurtma holatini real vaqtda kuzating",
+    "benefitLists": "Sevimlilar va taqqoslash barcha qurilmalaringizda",
+    "benefitCheckout": "Saqlangan manzillar bilan tez rasmiylashtirish",
+    "acceptPrefix": "Men",
+    "termsLink": "ommaviy oferta",
+    "and": "va",
+    "privacyLink": "maxfiylik siyosati",
+    "acceptSuffix": " shartlarini qabul qilaman",
+    "checkSpam": "Xat kelmadimi? «Spam» jildini tekshiring yoki bir necha daqiqadan so'ng qayta urinib ko'ring.",
+    "tryAnother": "Boshqa manzil yoki raqamni kiritish",
+    "changeNumber": "Raqamni o'zgartirish",
+    "requestNewLink": "Yangi havola so'rash",
+    "verifying": "E-pochta tasdiqlanmoqda…",
+    "sendNewLink": "Yangi havolani yuborish",
+    "signInToResend": "Yangi tasdiqlash havolasini olish uchun hisobingizga kiring."
+  },
+  "brands": {
+    "description": "Professional va maishiy asbob ishlab chiqaruvchilari — rasmiy kafolat bilan.",
+    "searchPlaceholder": "Brend nomi"
+  },
+  "checkout": {
+    "choosePayment": "To'lov usulini tanlang",
+    "courierHint": "Siz ko'rsatgan manzilgacha eshikkacha",
+    "installmentFor_one": "Muddatli to'lov, {{count}} oy",
+    "installmentFor_other": "Muddatli to'lov, {{count}} oy",
+    "stockAvailable": "omborda {{available}} dona, buyurtmada {{requested}} dona"
+  },
+  "compare": {
+    "clearConfirm": "Taqqoslash ro'yxatidagi barcha mahsulotlar olib tashlanadi."
+  },
+  "contacts": {
+    "call": "Qo'ng'iroq qilish",
+    "privacyNote": "Ma'lumotlaringizdan faqat murojaatingizga javob berish uchun foydalanamiz.",
+    "sendAnother": "Yana xabar yuborish",
+    "showOnMap": "Xaritada ko'rsatish"
+  },
+  "content": {
+    "updated": "Yangilangan: {{date}}"
+  },
+  "faq": {
+    "contactHint": "Mutaxassislarimiz asbob tanlash, buyurtma va yetkazib berish bo'yicha yordam beradi.",
+    "searchPlaceholder": "Savollar bo'yicha qidiruv"
+  },
+  "myReviews": {
+    "emptyHint": "Yetkazilgan buyurtmalaringizdagi mahsulotlarga baho bering — bu boshqa xaridorlarga tanlashda yordam beradi."
+  },
+  "order": {
+    "keepOrder": "Buyurtmani qoldirish",
+    "reason": "Sabab: {{reason}}"
+  },
+  "payment": {
+    "checking": "To'lov holati tekshirilmoqda…",
+    "failedHint": "To'lov amalga oshmadi. Biz bilan bog'laning, yordam beramiz:",
+    "notConfirmedYet": "To'lov tasdig'i hali kelmadi. Agar to'lagan bo'lsangiz, holat bir necha daqiqada avtomatik yangilanadi.",
+    "onReceiptCourier": "To'lovni buyurtmani qabul qilganingizda kuryerga qilasiz.",
+    "onReceiptPickup": "To'lovni buyurtmani olib ketish punktida olganingizda qilasiz.",
+    "paidAt": "{{date}} da to'langan",
+    "refreshStatus": "Holatni yangilash"
+  },
+  "profile": {
+    "avatarHint": "JPG, PNG, WebP yoki GIF, 3 MB gacha",
+    "chooseFromLibrary": "Galereyadan tanlash",
+    "takePhoto": "Suratga olish",
+    "guestTitle": "Hisobingizga kiring",
+    "logoutConfirm": "Hisobingizdan chiqmoqchimisiz? Savat va sevimlilar hisobingizda saqlanib qoladi.",
+    "phoneHint": "Telefon raqami hisobga kirish uchun ishlatiladi. Uni o'zgartirish uchun biz bilan bog'laning.",
+    "photoPermission": "Rasmlarga ruxsat berilmagan. Uni qurilma sozlamalarida yoqing.",
+    "sendCode": "Kodni yuborish",
+    "verifyEmailHint": "E-pochtangizni tasdiqlang — buyurtma xabarlari unga keladi",
+    "verifyPhoneHint": "Telefon raqamingizni SMS-kod orqali tasdiqlang",
+    "verifyPhoneText": "{{phone}} raqamiga 6 xonali tasdiqlash kodini yuboramiz."
+  },
+  "promotions": {
+    "description": "Joriy chegirmalar va maxsus takliflar. Aksiya narxi mahsulot sahifasida va savatda avtomatik qo'llanadi."
+  },
+  "reviews": {
+    "moderationNote": "Sharh moderatsiyadan so'ng e'lon qilinadi."
+  },
+  "success": {
+    "orderNotFound": "Buyurtma topilmadi",
+    "orderNotFoundText": "Havolani tekshiring yoki buyurtmalaringiz ro'yxatini oching."
+  },
+  "wishlist": {
+    "guestNote": "Sevimlilar shu qurilmada saqlanadi. Ularni barcha qurilmalarda ko'rish uchun hisobingizga kiring."
+  }
+}

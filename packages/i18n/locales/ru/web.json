@@ -1,0 +1,207 @@
+{
+  "header": {
+    "allInCategory": "Все товары ({{count}})",
+    "noSubcategories": "В этом разделе нет подкатегорий",
+    "unread_one": "{{count}} непрочитанное уведомление",
+    "unread_few": "{{count}} непрочитанных уведомления",
+    "unread_many": "{{count}} непрочитанных уведомлений",
+    "unread_other": "{{count}} непрочитанного уведомления",
+    "infoNavigation": "Информация для покупателей",
+    "userNavigation": "Меню покупателя",
+    "tabBar": "Быстрая навигация"
+  },
+  "countdown": {
+    "readable": "Осталось {{days}} дн. {{hours}} ч {{minutes}} мин",
+    "d": "дн",
+    "h": "ч",
+    "m": "мин",
+    "s": "сек",
+    "daysShort_one": "{{count}} дн.",
+    "daysShort_few": "{{count}} дн.",
+    "daysShort_many": "{{count}} дн.",
+    "daysShort_other": "{{count}} дн."
+  },
+  "search": {
+    "allResultsFor": "Все результаты по запросу «{{query}}»"
+  },
+  "realtime": {
+    "orderStatus": "Статус заказа № {{number}}: {{status}}"
+  },
+  "errorPage": {
+    "title": "Не удалось открыть страницу",
+    "text": "Произошла непредвиденная ошибка. Обновите страницу — если проблема повторится, свяжитесь с нами.",
+    "updatedTitle": "Сайт обновился",
+    "updatedText": "Вышла новая версия сайта. Обновите страницу, чтобы продолжить.",
+    "reload": "Обновить страницу"
+  },
+  "notFound": {
+    "popularCategories": "Популярные категории"
+  },
+  "productCard": {
+    "chooseOption": "Выбрать вариант"
+  },
+  "cartActions": {
+    "onlyAvailable_one": "На складе только {{count}} шт.",
+    "onlyAvailable_few": "На складе только {{count}} шт.",
+    "onlyAvailable_many": "На складе только {{count}} шт.",
+    "onlyAvailable_other": "На складе только {{count}} шт."
+  },
+  "home": {
+    "heroLabel": "Акции и предложения",
+    "slideOf": "Слайд {{index}} из {{total}}",
+    "playSlides": "Запустить показ слайдов",
+    "pauseSlides": "Остановить показ слайдов",
+    "featured": "Выбор VERO TOOLS"
+  },
+  "promotions": {
+    "startsOn": "Начнётся {{date}}",
+    "description": "Текущие скидки и специальные предложения. Акционные цены применяются автоматически — на странице товара и в корзине."
+  },
+  "catalogPage": {
+    "description": "Каталог электро- и ручного инструмента, генераторов, компрессоров, насосов и другого оборудования."
+  },
+  "listing": {
+    "view": "Вид",
+    "results": "Товары",
+    "filtersHint": "Выберите фильтры и посмотрите результаты",
+    "showProducts_one": "Показать {{count}} товар",
+    "showProducts_few": "Показать {{count}} товара",
+    "showProducts_many": "Показать {{count}} товаров",
+    "showProducts_other": "Показать {{count}} товара"
+  },
+  "product": {
+    "sections": "Разделы товара",
+    "questionsCount_one": "{{count}} вопрос",
+    "questionsCount_few": "{{count}} вопроса",
+    "questionsCount_many": "{{count}} вопросов",
+    "questionsCount_other": "{{count}} вопроса",
+    "inCart_one": "В корзине: {{count}} шт.",
+    "inCart_few": "В корзине: {{count}} шт.",
+    "inCart_many": "В корзине: {{count}} шт.",
+    "inCart_other": "В корзине: {{count}} шт.",
+    "allInCart": "Всё доступное количество уже в вашей корзине.",
+    "saveOrCompare": "Сохранить или сравнить",
+    "galleryHint": "Листайте фото стрелками, нажмите на фото, чтобы увеличить.",
+    "zoomOut": "Уменьшить",
+    "deliveryTo": "Регион доставки",
+    "deliveryWindow": "Ориентировочно {{from}} – {{to}}",
+    "freeFrom": "Бесплатно при заказе от {{amount}}",
+    "pickupPoints_one": "{{count}} пункт самовывоза",
+    "pickupPoints_few": "{{count}} пункта самовывоза",
+    "pickupPoints_many": "{{count}} пунктов самовывоза",
+    "pickupPoints_other": "{{count}} пункта самовывоза",
+    "filterByStars": "Показать отзывы с оценкой {{count}} ({{reviews}})"
+  },
+  "specGroup": {
+    "main": "Основные характеристики",
+    "power": "Питание и мощность",
+    "performance": "Производительность",
+    "dimensions": "Размеры и вес",
+    "equipment": "Комплектация и функции",
+    "general": "Общие сведения",
+    "overview": "Обзор"
+  },
+  "cart": {
+    "moveToWishlist": "Перенести в избранное",
+    "movedToWishlist": "Товар перенесён в избранное",
+    "freeDeliveryProgress": "До бесплатной доставки",
+    "freeDeliveryNote": "Для курьерской доставки по Ташкенту. Для других регионов стоимость рассчитывается при оформлении."
+  },
+  "checkout": {
+    "moreItems_one": "и ещё {{count}} товар",
+    "moreItems_few": "и ещё {{count}} товара",
+    "moreItems_many": "и ещё {{count}} товаров",
+    "moreItems_other": "и ещё {{count}} товара",
+    "installmentFor_one": "Рассрочка на {{count}} мес.",
+    "installmentFor_few": "Рассрочка на {{count}} мес.",
+    "installmentFor_many": "Рассрочка на {{count}} мес.",
+    "installmentFor_other": "Рассрочка на {{count}} мес.",
+    "courierHint": "До двери по указанному адресу",
+    "choosePayment": "Выберите способ оплаты",
+    "stockAvailable": "в наличии {{available}} шт., в заказе {{requested}} шт.",
+    "stepDone": "Готово",
+    "stepCompleted": "выполнено"
+  },
+  "legal": {
+    "acceptTerms": "Я принимаю условия <terms>публичной оферты</terms> и <privacy>политики конфиденциальности</privacy>"
+  },
+  "success": {
+    "orderNotFound": "Заказ не найден",
+    "orderNotFoundText": "Проверьте ссылку или откройте список ваших заказов."
+  },
+  "payment": {
+    "onReceiptCourier": "Оплата курьеру при получении заказа.",
+    "onReceiptPickup": "Оплата в пункте самовывоза при получении заказа.",
+    "checking": "Проверяем статус оплаты…",
+    "notConfirmedYet": "Подтверждение оплаты ещё не поступило. Если вы уже оплатили заказ, статус обновится автоматически в течение нескольких минут.",
+    "unavailableNow": "Онлайн-оплата временно недоступна. Свяжитесь с нами, чтобы выбрать другой способ оплаты.",
+    "failedHint": "Оплата не прошла. Свяжитесь с нами — мы поможем:",
+    "paidAt": "оплачено {{date}}",
+    "refreshStatus": "Обновить статус"
+  },
+  "order": {
+    "reason": "Причина: {{reason}}",
+    "keepOrder": "Не отменять"
+  },
+  "auth": {
+    "benefitOrders": "Следите за статусом заказов в реальном времени",
+    "benefitLists": "Избранное и сравнение — на всех устройствах",
+    "benefitCheckout": "Быстрое оформление с сохранёнными адресами",
+    "checkSpam": "Письмо не пришло? Проверьте папку «Спам» или повторите попытку через несколько минут.",
+    "tryAnother": "Указать другой адрес",
+    "requestNewLink": "Запросить новую ссылку",
+    "changeNumber": "Изменить номер",
+    "verifying": "Подтверждаем email…",
+    "sendNewLink": "Отправить новую ссылку",
+    "signInToResend": "Войдите в аккаунт, чтобы получить новую ссылку для подтверждения."
+  },
+  "profile": {
+    "avatarHint": "JPG, PNG, WebP или GIF, до 3 МБ",
+    "phoneHint": "Номер телефона используется для входа. Чтобы изменить его, свяжитесь с нами."
+  },
+  "notifications": {
+    "markRead": "Отметить как прочитанное"
+  },
+  "myReviews": {
+    "emptyHint": "Оставляйте отзывы о товарах из доставленных заказов — это помогает другим покупателям с выбором."
+  },
+  "settings": {
+    "notificationsHint": "Уведомления всегда доступны в личном кабинете — выберите, куда ещё их получать.",
+    "channels": "Каналы",
+    "topics": "Темы",
+    "pushHint": "В мобильном приложении VERO TOOLS",
+    "noEmail": "Добавьте email в профиле",
+    "passwordSignOutNote": "После смены пароля сеансы на всех устройствах будут завершены — войдите снова с новым паролем.",
+    "passwordChangedRelogin": "Пароль изменён. Войдите снова с новым паролем."
+  },
+  "wishlist": {
+    "guestNote": "Избранное сохранено в этом браузере. Войдите, чтобы видеть его на всех устройствах."
+  },
+  "brands": {
+    "description": "Производители профессионального и бытового инструмента — с официальной гарантией.",
+    "searchPlaceholder": "Название бренда",
+    "alphabet": "Фильтр по букве"
+  },
+  "content": {
+    "updated": "Обновлено: {{date}}",
+    "pagesNav": "Информационные страницы"
+  },
+  "contacts": {
+    "description": "Контакты VERO TOOLS: телефон, email, адрес магазина и пункты самовывоза.",
+    "sendAnother": "Отправить ещё одно сообщение",
+    "privacyNote": "Мы используем ваши данные только для ответа на обращение.",
+    "showOnMap": "На карте",
+    "openMap": "Открыть большую карту",
+    "showStore": "Показать адрес магазина",
+    "legalName": "Юридическое название"
+  },
+  "faq": {
+    "description": "Ответы на частые вопросы о заказе, доставке, оплате и гарантии.",
+    "searchPlaceholder": "Поиск по вопросам",
+    "contactHint": "Наши специалисты проконсультируют по выбору инструмента, заказу и доставке."
+  },
+  "address": {
+    "apartmentShort": "кв. {{value}}",
+    "regionFirst": "Сначала выберите регион"
+  }
+}

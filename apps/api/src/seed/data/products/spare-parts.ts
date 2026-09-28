@@ -1,0 +1,271 @@
+import type { SeedProduct } from '../types';
+import { CHUCK, COUNTRY, md, same, t } from './_shared';
+
+/** spare-parts → carbon-brushes, drill-chucks */
+export const SPARE_PARTS: SeedProduct[] = [
+  // ─── carbon-brushes ────────────────────────────────────────────────────
+  {
+    sku: 'VT-CBR-1001',
+    slug: 'kesgich-carbon-brushes-6-x-10-x-15-mm-pair',
+    brand: 'kesgich',
+    category: 'carbon-brushes',
+    illustration: 'carbon_brushes',
+    name: {
+      uz: "Kesgich ko'mir cho'tkalar, 6 × 10 × 15 mm, 2 dona",
+      ru: 'Угольные щётки Kesgich 6 × 10 × 15 мм, 2 шт.',
+      en: 'Kesgich Carbon Brushes, 6 × 10 × 15 mm, Pair',
+    },
+    shortDescription: {
+      uz: "125 mm li bolgarkalar va drellar uchun prujina va simli kontaktga ega grafit-mis cho'tkalar juftligi.",
+      ru: 'Пара графито-медных щёток с пружиной и выводом для болгарок 125 мм и дрелей.',
+      en: 'A pair of copper-graphite brushes with spring and lead for 125 mm grinders and drills.',
+    },
+    description: {
+      uz: md(
+        "Ko'mir cho'tkalar yeyilganda dvigatel uchqun chiqaradi va quvvatini yo'qotadi — ularni o'z vaqtida almashtirish yakorni saqlab qoladi. 6 × 10 mm kesimli cho'tkalar VERO PRO AG-125/1100 va shu o'lchamdagi cho'tkali ko'plab bolgarka va drellarga mos keladi.",
+        [
+          "O'lcham 6 × 10 × 15 mm, qadoqda 2 dona",
+          "Grafit-mis tarkib kollektorni kam yeydi",
+          "Prujina va klemmali sim o'rnatilgan",
+          "Almashtirishdan oldin eski cho'tka o'lchami bilan solishtiring",
+        ],
+        "Bolgarka, drel va boshqa kollektorli dvigatelli asboblarni ta'mirlash uchun.",
+      ),
+      ru: md(
+        'Когда угольные щётки изнашиваются, двигатель искрит и теряет мощность — своевременная замена сохраняет якорь. Щётки сечением 6 × 10 мм подходят к VERO PRO AG-125/1100 и многим болгаркам и дрелям с таким же размером щёток.',
+        [
+          'Размер 6 × 10 × 15 мм, в упаковке 2 шт.',
+          'Графито-медный состав бережно работает с коллектором',
+          'С пружиной и выводом с клеммой',
+          'Перед заменой сверьте размер со старой щёткой',
+        ],
+        'Для ремонта болгарок, дрелей и другого инструмента с коллекторным двигателем.',
+      ),
+      en: md(
+        'When carbon brushes wear out, the motor sparks and loses power — replacing them in time saves the armature. These 6 × 10 mm brushes fit the VERO PRO AG-125/1100 and many grinders and drills that use the same size.',
+        [
+          '6 × 10 × 15 mm, pack of 2',
+          'Copper-graphite mix that is gentle on the commutator',
+          'Spring and terminal lead fitted',
+          'Compare with your old brush before replacing',
+        ],
+        'For repairing grinders, drills and other tools with brushed motors.',
+      ),
+    },
+    price: 29_000,
+    costPrice: 18_000,
+    stock: 140,
+    minStock: 10,
+    warrantyMonths: 1,
+    deliveryDays: { min: 1, max: 2 },
+    specs: [
+      { key: 'dimensions_mm', value: same('6 × 10 × 15') },
+      { key: 'length_mm', value: 15 },
+      { key: 'pieces_count', value: 2 },
+      { key: 'material', value: t('Grafit-mis', 'Графит-медь', 'Copper-graphite') },
+      { key: 'weight_kg', value: 0.02 },
+      { key: 'country_of_origin', value: COUNTRY.uz },
+    ],
+    tags: ["ko'mir cho'tka", 'угольные щетки', 'щетки для болгарки', 'carbon brushes', 'ehtiyot qism', 'kesgich'],
+    weightKg: 0.05,
+  },
+  {
+    sku: 'VT-CBR-1002',
+    slug: 'kesgich-auto-stop-carbon-brushes-7-x-17-x-17-mm-pair',
+    brand: 'kesgich',
+    category: 'carbon-brushes',
+    illustration: 'carbon_brushes',
+    name: {
+      uz: "Kesgich avto-stop ko'mir cho'tkalar, 7 × 17 × 17 mm, 2 dona",
+      ru: 'Угольные щётки с автостопом Kesgich 7 × 17 × 17 мм, 2 шт.',
+      en: 'Kesgich Auto-Stop Carbon Brushes, 7 × 17 × 17 mm, Pair',
+    },
+    shortDescription: {
+      uz: "Perforator va katta bolgarkalar uchun, yeyilganda dvigatelni o'zi to'xtatadigan avto-stop cho'tkalar.",
+      ru: 'Щётки с автостопом для перфораторов и больших болгарок: при износе сами останавливают двигатель.',
+      en: 'Auto-stop brushes for rotary hammers and large grinders that shut the motor off when worn.',
+    },
+    description: {
+      uz: md(
+        "Avto-stop cho'tka ichida izolyatsion tayoqcha bor: grafit belgilangan chegaragacha yeyilganda kontakt uziladi va dvigatel to'xtaydi. Bu kollektorni tirnalishdan saqlaydi va qimmat yakor ta'mirining oldini oladi.",
+        [
+          "O'lcham 7 × 17 × 17 mm, qadoqda 2 dona",
+          "Avto-stop funksiyasi — cho'tka yeyilganda dvigatel o'chadi",
+          'Grafit-mis tarkib, prujina va klemma',
+          "VERO PRO RH-2680 va shu o'lchamdagi cho'tkali perforatorlarga mos",
+        ],
+        "Perforatorlar, buzish bolg'alari va 230 mm li bolgarkalarni ta'mirlash uchun.",
+      ),
+      ru: md(
+        'Внутри щётки с автостопом есть изолирующий стержень: когда графит стирается до предела, контакт размыкается и двигатель останавливается. Это спасает коллектор от задиров и избавляет от дорогого ремонта якоря.',
+        [
+          'Размер 7 × 17 × 17 мм, в упаковке 2 шт.',
+          'Функция автостопа — при износе щётки двигатель отключается',
+          'Графито-медный состав, пружина и клемма',
+          'Подходят к VERO PRO RH-2680 и перфораторам с таким же размером щёток',
+        ],
+        'Для ремонта перфораторов, отбойных молотков и болгарок 230 мм.',
+      ),
+      en: md(
+        'An auto-stop brush contains an insulating pin: when the graphite wears down to the limit, contact breaks and the motor stops. That protects the commutator from scoring and saves an expensive armature repair.',
+        [
+          '7 × 17 × 17 mm, pack of 2',
+          'Auto-stop — the motor switches off when the brush is worn',
+          'Copper-graphite mix, spring and terminal',
+          'Fits the VERO PRO RH-2680 and rotary hammers with the same brush size',
+        ],
+        'For repairing rotary hammers, demolition hammers and 230 mm grinders.',
+      ),
+    },
+    price: 49_000,
+    costPrice: 31_000,
+    stock: 57,
+    minStock: 8,
+    warrantyMonths: 1,
+    deliveryDays: { min: 1, max: 2 },
+    specs: [
+      { key: 'dimensions_mm', value: same('7 × 17 × 17') },
+      { key: 'length_mm', value: 17 },
+      { key: 'pieces_count', value: 2 },
+      { key: 'material', value: t('Grafit-mis, avto-stop', 'Графит-медь, автостоп', 'Copper-graphite, auto-stop') },
+      { key: 'weight_kg', value: 0.03 },
+      { key: 'country_of_origin', value: COUNTRY.uz },
+    ],
+    tags: ["ko'mir cho'tka", 'угольные щетки', 'автостоп', 'carbon brushes', 'perforator', 'kesgich'],
+    weightKg: 0.05,
+  },
+
+  // ─── drill-chucks ──────────────────────────────────────────────────────
+  {
+    sku: 'VT-CHK-1001',
+    slug: 'kesgich-13-mm-keyless-metal-chuck-1-2-20-unf',
+    brand: 'kesgich',
+    category: 'drill-chucks',
+    illustration: 'drill_chuck',
+    name: {
+      uz: 'Kesgich tez qisiladigan metall patron, 13 mm, 1/2"-20 UNF',
+      ru: 'Быстрозажимной металлический патрон Kesgich 13 мм, 1/2"-20 UNF',
+      en: 'Kesgich 13 mm Keyless Metal Chuck, 1/2"-20 UNF',
+    },
+    shortDescription: {
+      uz: "Drel va shurupovertlar uchun qisish oralig'i 1,5–13 mm bo'lgan, qulfli metall tez qisiladigan patron.",
+      ru: 'Металлический быстрозажимной патрон с фиксацией, диапазон зажима 1,5–13 мм, для дрелей и шуруповёртов.',
+      en: 'A metal keyless chuck with locking, 1.5–13 mm capacity, for drills and drill drivers.',
+    },
+    description: {
+      uz: md(
+        "Plastik patron yeyilganda yoki parma aylanib qola boshlaganda uni metall patronga almashtirish drelga yangi umr beradi. Qulf mexanizmi zarbli rejimda ham patronning bo'shab ketishiga yo'l qo'ymaydi.",
+        [
+          "Qisish oralig'i 1,5–13 mm",
+          "O'rnatish rezbasi 1/2\"-20 UNF",
+          "Toblangan po'lat jag'lar va qulf mexanizmi",
+          'Mahkamlash uchun chap rezbali vint komplektda',
+        ],
+        'Drel, zarbli drel va shurupovertlarning eskirgan patronini almashtirish uchun.',
+      ),
+      ru: md(
+        'Замена изношенного пластикового патрона на металлический даёт дрели вторую жизнь, особенно если сверло начало проскальзывать. Механизм фиксации не даёт патрону раскрутиться даже в ударном режиме.',
+        [
+          'Диапазон зажима 1,5–13 мм',
+          'Посадочная резьба 1/2"-20 UNF',
+          'Закалённые стальные кулачки и механизм фиксации',
+          'Крепёжный винт с левой резьбой в комплекте',
+        ],
+        'Для замены изношенного патрона на дрелях, ударных дрелях и шуруповёртах.',
+      ),
+      en: md(
+        'Swapping a worn plastic chuck for a metal one gives a drill a second life, especially once bits start to slip. The locking mechanism stops the chuck loosening even in hammer mode.',
+        [
+          '1.5–13 mm capacity',
+          '1/2"-20 UNF mounting thread',
+          'Hardened steel jaws and locking mechanism',
+          'Left-hand retaining screw included',
+        ],
+        'For replacing a worn chuck on drills, hammer drills and drill drivers.',
+      ),
+    },
+    price: 159_000,
+    costPrice: 108_000,
+    stock: 34,
+    minStock: 5,
+    warrantyMonths: 3,
+    deliveryDays: { min: 1, max: 2 },
+    specs: [
+      { key: 'chuck_size_mm', value: 13 },
+      { key: 'chuck_type', value: CHUCK.keyless },
+      { key: 'spindle_thread', value: same('1/2"-20 UNF') },
+      { key: 'size_range', value: t('1,5–13 mm', '1,5–13 мм', '1.5–13 mm') },
+      { key: 'material', value: t("Toblangan po'lat", 'Закалённая сталь', 'Hardened steel') },
+      { key: 'weight_kg', value: 0.42 },
+      { key: 'country_of_origin', value: COUNTRY.uz },
+    ],
+    tags: ['patron', 'патрон для дрели', 'быстрозажимной патрон', 'drill chuck', '13 mm', 'kesgich'],
+    weightKg: 0.5,
+  },
+  {
+    sku: 'VT-CHK-1002',
+    slug: 'kesgich-13-mm-keyed-chuck-b16-taper-with-key',
+    brand: 'kesgich',
+    category: 'drill-chucks',
+    illustration: 'drill_chuck',
+    name: {
+      uz: 'Kesgich kalitli patron, 13 mm, B16 konus, kalit bilan',
+      ru: 'Ключевой патрон Kesgich 13 мм, конус B16, с ключом',
+      en: 'Kesgich 13 mm Keyed Chuck, B16 Taper, with Key',
+    },
+    shortDescription: {
+      uz: "Parmalash dastgohlari uchun B16 konusli o'rnatishga ega, kalit bilan qisiladigan 13 mm patron.",
+      ru: 'Ключевой патрон 13 мм с посадкой на конус B16 для сверлильных станков.',
+      en: 'A 13 mm keyed chuck with a B16 taper mount for drill presses.',
+    },
+    description: {
+      uz: md(
+        "Kalitli patron parmani tez qisiladigan patronga qaraganda kuchliroq qisadi, shuning uchun katta diametrli parmalar og'ir yuklamada ham aylanib qolmaydi. B16 konusli o'rnatish parmalash dastgohlarining shpindeliga mos keladi.",
+        [
+          "Qisish oralig'i 1–13 mm",
+          "B16 konusli o'rnatish",
+          'Uchta toblangan jag\', kalit komplektda',
+          "Zarb bilan yasalgan po'lat korpus",
+        ],
+        "Parmalash dastgohlari va konusli o'rnatishga ega drellarda patronni almashtirish uchun.",
+      ),
+      ru: md(
+        'Ключевой патрон зажимает сверло сильнее быстрозажимного, поэтому оно не проворачивается на больших диаметрах и под тяжёлой нагрузкой. Посадка на конус B16 подходит к шпинделям сверлильных станков.',
+        [
+          'Диапазон зажима 1–13 мм',
+          'Посадка на конус B16',
+          'Три закалённых кулачка, ключ в комплекте',
+          'Корпус из кованой стали',
+        ],
+        'Для замены патрона на сверлильных станках и дрелях с конусной посадкой.',
+      ),
+      en: md(
+        'A keyed chuck grips harder than a keyless one, so bits do not spin in large diameters or under heavy load. The B16 taper mount fits drill-press spindles.',
+        [
+          '1–13 mm capacity',
+          'B16 taper mount',
+          'Three hardened jaws, key included',
+          'Forged steel body',
+        ],
+        'For replacing the chuck on drill presses and taper-mount drills.',
+      ),
+    },
+    price: 89_000,
+    costPrice: 58_000,
+    stock: 21,
+    minStock: 4,
+    warrantyMonths: 3,
+    deliveryDays: { min: 1, max: 2 },
+    specs: [
+      { key: 'chuck_size_mm', value: 13 },
+      { key: 'chuck_type', value: CHUCK.keyed },
+      { key: 'size_range', value: t('1–13 mm', '1–13 мм', '1–13 mm') },
+      { key: 'material', value: t("Zarb bilan yasalgan po'lat", 'Кованая сталь', 'Forged steel') },
+      { key: 'dimensions_mm', value: same('Ø50 × 72') },
+      { key: 'weight_kg', value: 0.58 },
+      { key: 'country_of_origin', value: COUNTRY.uz },
+    ],
+    tags: ['kalitli patron', 'ключевой патрон', 'патрон b16', 'keyed chuck', 'dastgoh', 'kesgich'],
+    weightKg: 0.6,
+  },
+];

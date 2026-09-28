@@ -1,0 +1,113 @@
+name: Docker images
+
+# Builds the api, web and admin images with Buildx (layer cache in GitHub Actions cache).
+# Images are pushed only when registry credentials are configured:
+#   Settings → Secrets and variables → Actions
+#     secrets:   REGISTRY_USERNAME, REGISTRY_PASSWORD   (e.g. a GitHub token with write:packages for ghcr.io)
+#     variables: REGISTRY          (default ghcr.io)
+#                IMAGE_NAMESPACE   (default: the repository owner) → ghcr.io/<namespace>/vero-tools-api
+# Without them the workflow only builds (verifies the Dockerfiles).
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      push:
+        description: Push the images (only if registry secrets are configured)
+        type: boolean
+        default: true
+      platforms:
+        description: Target platforms, e.g. linux/amd64 or linux/amd64,linux/arm64 (arm64 is emulated and slow)
+        type: string
+        default: linux/amd64
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docker-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  image:
+    name: ${{ matrix.image }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - image: vero-tools-api
+            dockerfile: apps/api/Dockerfile
+          - image: vero-tools-web
+            dockerfile: apps/web/Dockerfile
+          - image: vero-tools-admin
+            dockerfile: apps/admin/Dockerfile
+    env:
+      REGISTRY: ${{ vars.REGISTRY || 'ghcr.io' }}
+      IMAGE_NAMESPACE: ${{ vars.IMAGE_NAMESPACE || github.repository_owner }}
+      PLATFORMS: ${{ inputs.platforms || 'linux/amd64' }}
+      # secrets cannot be used in `if:` directly — expose "are credentials configured?" as an env value
+      HAS_CREDENTIALS: ${{ secrets.REGISTRY_USERNAME != '' && secrets.REGISTRY_PASSWORD != '' }}
+      WANT_PUSH: ${{ github.event_name == 'push' || inputs.push }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Image name
+        id: image
+        run: |
+          push=false
+          if [ "$HAS_CREDENTIALS" = true ] && [ "$WANT_PUSH" = true ]; then push=true; fi
+          echo "name=${REGISTRY}/${IMAGE_NAMESPACE,,}/${{ matrix.image }}" >> "$GITHUB_OUTPUT"
+          echo "push=$push" >> "$GITHUB_OUTPUT"
+
+      - name: Set up QEMU (non-amd64 platforms)
+        if: contains(env.PLATFORMS, 'arm')
+        uses: docker/setup-qemu-action@v3
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Tags and labels
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ steps.image.outputs.name }}
+          tags: |
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=ref,event=branch
+            type=sha,prefix=sha-
+
+      - name: Log in to ${{ env.REGISTRY }}
+        if: steps.image.outputs.push == 'true'
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - name: Build${{ steps.image.outputs.push == 'true' && ' and push' || '' }}
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ${{ matrix.dockerfile }}
+          platforms: ${{ env.PLATFORMS }}
+          push: ${{ steps.image.outputs.push == 'true' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha,scope=${{ matrix.image }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.image }}
+
+      - name: Summary
+        env:
+          TAGS: ${{ steps.meta.outputs.tags }}
+          PUSHED: ${{ steps.image.outputs.push }}
+        run: |
+          {
+            echo "### ${{ matrix.image }}"
+            if [ "$PUSHED" = true ]; then echo "Pushed:"; else echo "Built only (no registry credentials configured, or push disabled). Tags:"; fi
+            echo '```'
+            echo "$TAGS"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

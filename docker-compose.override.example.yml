@@ -1,0 +1,67 @@
+# Local / staging overrides for docker-compose.yml — NEVER use this on the production server.
+#
+#   cp docker-compose.override.example.yml docker-compose.override.yml   # merged automatically by Compose
+#   docker compose up -d --build
+#
+# What it changes:
+#   - MongoDB on 127.0.0.1:27017 for MongoDB Compass / mongosh / mongodump on the host:
+#       mongodb://127.0.0.1:27017/vero_tools?directConnection=true
+#     (directConnection=true is required: the replica-set member is registered as "mongo:27017", a name
+#     only the containers can resolve)
+#   - Redis on 127.0.0.1:6379
+#   - plain-http localhost URLs: the browser talks to the web/admin servers directly (one proxy hop, no nginx)
+#   - "seed-demo" (profile "dev"): loads the FICTIONAL demo data set — 125 products of invented brands,
+#     customers, orders, reviews and expenses, plus demo staff accounts whose passwords are published in
+#     docs/FRONTEND_GUIDE.md. Demo data must never reach a real store (production refuses it without --force):
+#
+#       docker compose --profile tools run --rm seed          # base data first (owner account)
+#       docker compose --profile dev run --rm seed-demo       # demo data (skipped if orders already exist)
+#       docker compose --profile dev run --rm seed-demo node dist/seed.js --reset --demo --force
+#                                                             # drops the database, then base + demo
+
+services:
+  mongo:
+    ports:
+      - '127.0.0.1:27017:27017'
+    # published ports need a non-internal network
+    networks: [backend, edge]
+
+  redis:
+    ports:
+      - '127.0.0.1:6379:6379'
+    networks: [backend, edge]
+
+  api:
+    environment:
+      CLIENT_URL: http://localhost:3000
+      ADMIN_URL: http://localhost:3001
+      PUBLIC_API_URL: http://localhost:3000
+      COOKIE_SECURE: 'false'
+      SEO_INDEXING: 'false'
+      # browser → web/admin server → API: one trusted hop without nginx in front
+      TRUST_PROXY: '1'
+
+  seed-demo:
+    image: ${VERO_API_IMAGE:-vero-tools-api:local}
+    profiles: [dev]
+    command: ['node', 'dist/seed.js', '--demo', '--force']
+    restart: 'no'
+    init: true
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      MONGO_URI: ${MONGO_URI:-mongodb://mongo:27017/vero_tools?directConnection=true}
+      REDIS_URL: ${REDIS_URL-redis://redis:6379}
+      UPLOAD_DIR: /data/uploads
+      I18N_LOCALES_DIR: /app/packages/i18n/locales
+      VERO_SEED_ASSETS_DIR: /app/apps/api/src/seed/assets
+    volumes:
+      - uploads:/data/uploads
+    networks: [backend, edge]
+    depends_on:
+      mongo:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      disable: true

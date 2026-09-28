@@ -1,0 +1,148 @@
+@import '@vero/ui/styles.css';
+
+/* Scan the storefront sources for class names (the UI package registers its own). */
+@source './';
+
+:root {
+  /* Product photos are shot on a light grey sweep — wells match it in both themes. */
+  --image-well: #efefef;
+  --header-offset: 76px;
+  --bottom-bar-h: 0px;
+}
+
+@media (width < 64rem) {
+  :root {
+    --header-offset: 64px;
+    --bottom-bar-h: calc(3.75rem + env(safe-area-inset-bottom));
+  }
+}
+
+@theme inline {
+  --color-well: var(--image-well);
+}
+
+@layer base {
+  html {
+    scroll-padding-top: calc(var(--header-offset) + 16px);
+  }
+
+  /* Softer product photos on dark surfaces (keeps the light well, avoids glare). */
+  .dark .img-well img {
+    filter: brightness(0.94);
+  }
+}
+
+@utility pb-bottom-bar {
+  padding-bottom: var(--bottom-bar-h);
+}
+
+/* Long-form content from the admin panel (markdown). */
+@utility prose-vt {
+  color: var(--foreground);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+
+  & > :first-child {
+    margin-top: 0;
+  }
+  & > :last-child {
+    margin-bottom: 0;
+  }
+  & h2 {
+    margin: 2em 0 0.6em;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+  }
+  & h3 {
+    margin: 1.6em 0 0.5em;
+    font-size: 1.075rem;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+  & h4 {
+    margin: 1.4em 0 0.4em;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  & p {
+    margin: 0.85em 0;
+  }
+  & ul,
+  & ol {
+    margin: 0.85em 0;
+    padding-inline-start: 1.35em;
+  }
+  & ul {
+    list-style: disc;
+  }
+  & ol {
+    list-style: decimal;
+  }
+  & li {
+    margin: 0.3em 0;
+    padding-inline-start: 0.15em;
+  }
+  & li::marker {
+    color: var(--muted-foreground);
+  }
+  & strong {
+    font-weight: 700;
+  }
+  & a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .dark & a {
+    color: var(--brand);
+  }
+  & blockquote {
+    margin: 1.2em 0;
+    padding: 0.6em 1em;
+    border-inline-start: 3px solid var(--brand);
+    background: var(--surface);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    color: var(--muted-foreground);
+  }
+  & hr {
+    margin: 2em 0;
+    border-color: var(--border);
+  }
+  & code {
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+    background: var(--muted);
+    font-size: 0.875em;
+  }
+  & table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 1.2em 0;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    font-variant-numeric: tabular-nums;
+  }
+  & th,
+  & td {
+    padding: 0.55em 0.8em;
+    border: 1px solid var(--border);
+    text-align: start;
+    vertical-align: top;
+  }
+  & th {
+    background: var(--surface);
+    font-weight: 600;
+  }
+  & img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+  }
+}

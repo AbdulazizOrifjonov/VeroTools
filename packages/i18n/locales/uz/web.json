@@ -1,0 +1,189 @@
+{
+  "header": {
+    "allInCategory": "Barcha mahsulotlar ({{count}})",
+    "noSubcategories": "Bu bo'limda ichki kategoriyalar yo'q",
+    "unread_one": "{{count}} ta o'qilmagan bildirishnoma",
+    "unread_other": "{{count}} ta o'qilmagan bildirishnoma",
+    "infoNavigation": "Xaridorlar uchun ma'lumot",
+    "userNavigation": "Xaridor menyusi",
+    "tabBar": "Tezkor navigatsiya"
+  },
+  "countdown": {
+    "readable": "{{days}} kun {{hours}} soat {{minutes}} daqiqa qoldi",
+    "d": "kun",
+    "h": "soat",
+    "m": "daq",
+    "s": "sek",
+    "daysShort_one": "{{count}} kun",
+    "daysShort_other": "{{count}} kun"
+  },
+  "search": {
+    "allResultsFor": "«{{query}}» bo'yicha barcha natijalar"
+  },
+  "realtime": {
+    "orderStatus": "Buyurtma № {{number}} holati: {{status}}"
+  },
+  "errorPage": {
+    "title": "Sahifani ochib bo'lmadi",
+    "text": "Kutilmagan xatolik yuz berdi. Sahifani yangilab ko'ring — muammo takrorlansa, biz bilan bog'laning.",
+    "updatedTitle": "Sayt yangilandi",
+    "updatedText": "Saytning yangi versiyasi chiqdi. Davom etish uchun sahifani yangilang.",
+    "reload": "Sahifani yangilash"
+  },
+  "notFound": {
+    "popularCategories": "Ommabop kategoriyalar"
+  },
+  "productCard": {
+    "chooseOption": "Variantni tanlash"
+  },
+  "cartActions": {
+    "onlyAvailable_one": "Omborda faqat {{count}} dona bor",
+    "onlyAvailable_other": "Omborda faqat {{count}} dona bor"
+  },
+  "home": {
+    "heroLabel": "Aksiyalar va takliflar",
+    "slideOf": "{{total}} tadan {{index}}-slayd",
+    "playSlides": "Slaydlarni ijro etish",
+    "pauseSlides": "Slaydlarni to'xtatish",
+    "featured": "Tanlangan mahsulotlar"
+  },
+  "promotions": {
+    "startsOn": "{{date}} dan boshlanadi",
+    "description": "Joriy chegirmalar va maxsus takliflar. Aksiya narxlari mahsulot sahifasida va savatda avtomatik qo'llanadi."
+  },
+  "catalogPage": {
+    "description": "Elektr va qo'l asboblari, generatorlar, kompressorlar, nasoslar va boshqa uskunalar katalogi."
+  },
+  "listing": {
+    "view": "Ko'rinish",
+    "results": "Mahsulotlar",
+    "filtersHint": "Filtrlarni tanlang va natijalarni ko'ring",
+    "showProducts_one": "{{count}} ta mahsulotni ko'rsatish",
+    "showProducts_other": "{{count}} ta mahsulotni ko'rsatish"
+  },
+  "product": {
+    "sections": "Mahsulot bo'limlari",
+    "questionsCount_one": "{{count}} ta savol",
+    "questionsCount_other": "{{count}} ta savol",
+    "inCart_one": "Savatda: {{count}} dona",
+    "inCart_other": "Savatda: {{count}} dona",
+    "allInCart": "Mavjud miqdorning barchasi allaqachon savatingizda.",
+    "saveOrCompare": "Saqlash yoki taqqoslash",
+    "galleryHint": "Rasmlarni almashtirish uchun strelkalardan foydalaning, kattalashtirish uchun rasmni bosing.",
+    "zoomOut": "Kichiklashtirish",
+    "deliveryTo": "Yetkazib berish hududi",
+    "deliveryWindow": "Taxminan {{from}} – {{to}}",
+    "freeFrom": "{{amount}} dan ortiq buyurtmalarga bepul",
+    "pickupPoints_one": "{{count}} ta olib ketish punkti",
+    "pickupPoints_other": "{{count}} ta olib ketish punkti",
+    "filterByStars": "{{count}} yulduzli sharhlarni ko'rsatish ({{reviews}})"
+  },
+  "specGroup": {
+    "main": "Asosiy xususiyatlar",
+    "power": "Quvvat va energiya",
+    "performance": "Unumdorlik",
+    "dimensions": "O'lchamlar va vazn",
+    "equipment": "Jihozlanishi",
+    "general": "Umumiy ma'lumotlar",
+    "overview": "Asosiy ko'rsatkichlar"
+  },
+  "cart": {
+    "moveToWishlist": "Sevimlilarga o'tkazish",
+    "movedToWishlist": "Mahsulot sevimlilarga o'tkazildi",
+    "freeDeliveryProgress": "Bepul yetkazib berishgacha",
+    "freeDeliveryNote": "Toshkent bo'ylab kuryerlik yetkazib berish uchun. Boshqa hududlar uchun narx rasmiylashtirishda hisoblanadi."
+  },
+  "checkout": {
+    "moreItems_one": "va yana {{count}} ta mahsulot",
+    "moreItems_other": "va yana {{count}} ta mahsulot",
+    "installmentFor_one": "Muddatli to'lov, {{count}} oy",
+    "installmentFor_other": "Muddatli to'lov, {{count}} oy",
+    "courierHint": "Ko'rsatilgan manzilgacha, eshikkacha",
+    "choosePayment": "To'lov usulini tanlang",
+    "stockAvailable": "omborda {{available}} dona, buyurtmada {{requested}} dona",
+    "stepDone": "Tayyor",
+    "stepCompleted": "bajarildi"
+  },
+  "legal": {
+    "acceptTerms": "<terms>Ommaviy oferta</terms> va <privacy>maxfiylik siyosati</privacy> shartlariga roziman"
+  },
+  "success": {
+    "orderNotFound": "Buyurtma topilmadi",
+    "orderNotFoundText": "Havolani tekshiring yoki buyurtmalaringiz ro'yxatini oching."
+  },
+  "payment": {
+    "onReceiptCourier": "To'lov buyurtmani qabul qilganingizda kuryerga amalga oshiriladi.",
+    "onReceiptPickup": "To'lov olib ketish punktida buyurtmani olganingizda amalga oshiriladi.",
+    "checking": "To'lov holati tekshirilmoqda…",
+    "notConfirmedYet": "To'lov tasdig'i hali kelmadi. Agar to'lagan bo'lsangiz, holat bir necha daqiqada avtomatik yangilanadi.",
+    "unavailableNow": "Onlayn to'lov vaqtincha mavjud emas. Boshqa to'lov usulini tanlash uchun biz bilan bog'laning.",
+    "failedHint": "To'lov amalga oshmadi. Biz bilan bog'laning — yordam beramiz:",
+    "paidAt": "to'langan: {{date}}",
+    "refreshStatus": "Holatni yangilash"
+  },
+  "order": {
+    "reason": "Sabab: {{reason}}",
+    "keepOrder": "Bekor qilmaslik"
+  },
+  "auth": {
+    "benefitOrders": "Buyurtmalar holatini real vaqtda kuzating",
+    "benefitLists": "Sevimlilar va taqqoslash ro'yxati barcha qurilmalarda",
+    "benefitCheckout": "Saqlangan manzillar bilan tez rasmiylashtirish",
+    "checkSpam": "Xat kelmadimi? «Spam» papkasini tekshiring yoki bir necha daqiqadan so'ng qayta urinib ko'ring.",
+    "tryAnother": "Boshqa manzilni kiritish",
+    "requestNewLink": "Yangi havola so'rash",
+    "changeNumber": "Raqamni o'zgartirish",
+    "verifying": "Email manzili tasdiqlanmoqda…",
+    "sendNewLink": "Yangi havolani yuborish",
+    "signInToResend": "Yangi tasdiqlash havolasini olish uchun hisobingizga kiring."
+  },
+  "profile": {
+    "avatarHint": "JPG, PNG, WebP yoki GIF, 3 MB gacha",
+    "phoneHint": "Telefon raqami hisobga kirish uchun ishlatiladi. Uni o'zgartirish uchun biz bilan bog'laning."
+  },
+  "notifications": {
+    "markRead": "O'qilgan deb belgilash"
+  },
+  "myReviews": {
+    "emptyHint": "Yetkazib berilgan buyurtmalardagi mahsulotlarga sharh qoldiring — bu boshqa xaridorlarga tanlashda yordam beradi."
+  },
+  "settings": {
+    "notificationsHint": "Bildirishnomalar hisobingizda doim ko'rinadi — ularni yana qayerda olishni tanlang.",
+    "channels": "Kanallar",
+    "topics": "Mavzular",
+    "pushHint": "VERO TOOLS mobil ilovasida",
+    "noEmail": "Profilda email manzilini qo'shing",
+    "passwordSignOutNote": "Parol o'zgartirilgach, barcha qurilmalardagi seanslar yakunlanadi — yangi parol bilan qayta kirasiz.",
+    "passwordChangedRelogin": "Parol o'zgartirildi. Yangi parol bilan qayta kiring."
+  },
+  "wishlist": {
+    "guestNote": "Sevimlilar shu brauzerda saqlanadi. Ularni barcha qurilmalarda ko'rish uchun hisobingizga kiring."
+  },
+  "brands": {
+    "description": "Professional va maishiy asbob-uskunalar ishlab chiqaruvchilari — rasmiy kafolat bilan.",
+    "searchPlaceholder": "Brend nomi",
+    "alphabet": "Harf bo'yicha saralash"
+  },
+  "content": {
+    "updated": "Yangilangan: {{date}}",
+    "pagesNav": "Ma'lumot sahifalari"
+  },
+  "contacts": {
+    "description": "VERO TOOLS kontaktlari: telefon, email, do'kon manzili va olib ketish punktlari.",
+    "sendAnother": "Yana xabar yuborish",
+    "privacyNote": "Ma'lumotlaringizni faqat so'rovingizga javob berish uchun ishlatamiz.",
+    "showOnMap": "Xaritada",
+    "openMap": "Kattaroq xaritada ochish",
+    "showStore": "Do'kon manzilini ko'rsatish",
+    "legalName": "Yuridik nomi"
+  },
+  "faq": {
+    "description": "Buyurtma, yetkazib berish, to'lov va kafolat haqidagi ko'p beriladigan savollarga javoblar.",
+    "searchPlaceholder": "Savol bo'yicha qidirish",
+    "contactHint": "Mutaxassislarimiz asbob tanlash, buyurtma va yetkazib berish bo'yicha maslahat beradi."
+  },
+  "address": {
+    "apartmentShort": "{{value}}-xonadon",
+    "regionFirst": "Avval viloyatni tanlang"
+  }
+}

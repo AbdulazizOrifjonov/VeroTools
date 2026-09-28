@@ -1,0 +1,8 @@
+node_modules
+dist
+build
+coverage
+.expo
+package-lock.json
+*.svg
+packages/i18n/locales

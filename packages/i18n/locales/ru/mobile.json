@@ -1,0 +1,202 @@
+{
+  "home": {
+    "featured": "Выбор VERO TOOLS",
+    "heroLabel": "Предложения и акции",
+    "flash": "Флеш"
+  },
+  "productCard": {
+    "chooseOption": "Выбрать вариант"
+  },
+  "cart": {
+    "moveToWishlist": "В избранное",
+    "movedToWishlist": "Перемещено в избранное",
+    "freeDeliveryProgress": "До бесплатной доставки",
+    "freeDeliveryNote": "Для курьерской доставки по Ташкенту. Для других регионов стоимость рассчитывается при оформлении.",
+    "signInToCheckout": "Войти и оформить",
+    "onlyAvailable_one": "На складе осталось только {{count}} шт.",
+    "onlyAvailable_few": "На складе осталось только {{count}} шт.",
+    "onlyAvailable_many": "На складе осталось только {{count}} шт.",
+    "onlyAvailable_other": "На складе осталось только {{count}} шт."
+  },
+  "countdown": {
+    "readable": "Осталось {{days}} д {{hours}} ч {{minutes}} мин",
+    "d": "дн",
+    "h": "ч",
+    "m": "мин",
+    "s": "сек",
+    "daysShort_one": "{{count}} день",
+    "daysShort_few": "{{count}} дня",
+    "daysShort_many": "{{count}} дней",
+    "daysShort_other": "{{count}} дня"
+  },
+  "push": {
+    "channelName": "Заказы и уведомления",
+    "enable": "Включить push-уведомления",
+    "enabled": "Push-уведомления включены",
+    "active": "На это устройство приходят уведомления о статусе заказов и акциях.",
+    "denied": "Уведомления не разрешены",
+    "deniedHint": "Уведомления отключены в системных настройках. Разрешите их для приложения VERO TOOLS.",
+    "openSettings": "Открыть настройки",
+    "signInFirst": "Войдите в аккаунт, чтобы включить push-уведомления.",
+    "unavailable": {
+      "web": "Push-уведомления недоступны в веб-версии — они работают в приложении на телефоне.",
+      "simulator": "Для push-уведомлений нужно реальное устройство (в эмуляторе не работают).",
+      "no-project": "Push-уведомления не настроены для этой сборки (не указан идентификатор проекта EAS). Уведомления о заказах видны в приложении и на сайте."
+    }
+  },
+  "settings": {
+    "channels": "Каналы",
+    "topics": "Темы",
+    "notificationsHint": "Уведомления всегда доступны в кабинете — выберите, куда ещё их получать.",
+    "pushHint": "В мобильном приложении VERO TOOLS",
+    "noEmail": "Добавьте e-mail в профиле",
+    "passwordSignOutNote": "После смены пароля вы выйдете на всех устройствах — войдите снова с новым паролем.",
+    "passwordChangedRelogin": "Пароль изменён. Войдите с новым паролем.",
+    "version": "версия {{version}}"
+  },
+  "help": {
+    "title": "Помощь",
+    "contactHint": "Звонок, Telegram, e-mail или сообщение"
+  },
+  "catalog": {
+    "subcategories_one": "{{count}} раздел",
+    "subcategories_few": "{{count}} раздела",
+    "subcategories_many": "{{count}} разделов",
+    "subcategories_other": "{{count}} раздела",
+    "allIn": "Все товары раздела «{{name}}»",
+    "noSubcategories": "В этом разделе нет подразделов"
+  },
+  "listing": {
+    "showProducts_one": "Показать {{count}} товар",
+    "showProducts_few": "Показать {{count}} товара",
+    "showProducts_many": "Показать {{count}} товаров",
+    "showProducts_other": "Показать {{count}} товара"
+  },
+  "search": {
+    "allResultsFor": "Все результаты по запросу «{{query}}»"
+  },
+  "product": {
+    "deliveryTo": "Регион доставки",
+    "deliveryWindow": "Ориентировочно {{from}} – {{to}}",
+    "freeFrom": "Бесплатно при заказе от {{amount}}",
+    "pickupPoints_one": "{{count}} пункт самовывоза",
+    "pickupPoints_few": "{{count}} пункта самовывоза",
+    "pickupPoints_many": "{{count}} пунктов самовывоза",
+    "pickupPoints_other": "{{count}} пункта самовывоза",
+    "filterByStars": "Отзывы с оценкой {{count}} ({{reviews}})",
+    "questionsCount_one": "{{count}} вопрос",
+    "questionsCount_few": "{{count}} вопроса",
+    "questionsCount_many": "{{count}} вопросов",
+    "questionsCount_other": "{{count}} вопроса",
+    "calculate": "Рассчитать",
+    "inCart_one": "В корзине: {{count}} шт.",
+    "inCart_few": "В корзине: {{count}} шт.",
+    "inCart_many": "В корзине: {{count}} шт.",
+    "inCart_other": "В корзине: {{count}} шт.",
+    "inWishlist": "В избранном"
+  },
+  "specGroup": {
+    "main": "Основные характеристики",
+    "power": "Питание и мощность",
+    "performance": "Производительность",
+    "dimensions": "Размеры и вес",
+    "equipment": "Функции и комплектация",
+    "general": "Общие",
+    "overview": "Обзор"
+  },
+  "gallery": {
+    "hint": "Дважды коснитесь или разведите пальцы, чтобы увеличить"
+  },
+  "address": {
+    "apartmentShort": "кв. {{value}}",
+    "regionFirst": "Сначала выберите регион"
+  },
+  "auth": {
+    "benefitOrders": "Следите за статусом заказа в реальном времени",
+    "benefitLists": "Избранное и сравнение на всех ваших устройствах",
+    "benefitCheckout": "Быстрое оформление с сохранёнными адресами",
+    "acceptPrefix": "Я принимаю условия",
+    "termsLink": "публичной оферты",
+    "and": "и",
+    "privacyLink": "политику конфиденциальности",
+    "acceptSuffix": "",
+    "checkSpam": "Нет письма? Проверьте папку «Спам» или попробуйте ещё раз через несколько минут.",
+    "tryAnother": "Указать другой адрес или номер",
+    "changeNumber": "Изменить номер",
+    "requestNewLink": "Запросить новую ссылку",
+    "verifying": "Подтверждаем e-mail…",
+    "sendNewLink": "Отправить новую ссылку",
+    "signInToResend": "Войдите, чтобы получить новую ссылку для подтверждения."
+  },
+  "brands": {
+    "description": "Производители профессионального и бытового инструмента — с официальной гарантией.",
+    "searchPlaceholder": "Название бренда"
+  },
+  "checkout": {
+    "choosePayment": "Выберите способ оплаты",
+    "courierHint": "До двери по указанному адресу",
+    "installmentFor_one": "Рассрочка на {{count}} месяц",
+    "installmentFor_few": "Рассрочка на {{count}} месяца",
+    "installmentFor_many": "Рассрочка на {{count}} месяцев",
+    "installmentFor_other": "Рассрочка на {{count}} месяца",
+    "stockAvailable": "в наличии {{available}} шт., в заказе {{requested}} шт."
+  },
+  "compare": {
+    "clearConfirm": "Все товары будут удалены из списка сравнения."
+  },
+  "contacts": {
+    "call": "Позвонить",
+    "privacyNote": "Мы используем ваши данные только для ответа на обращение.",
+    "sendAnother": "Отправить ещё сообщение",
+    "showOnMap": "Показать на карте"
+  },
+  "content": {
+    "updated": "Обновлено: {{date}}"
+  },
+  "faq": {
+    "contactHint": "Наши специалисты помогут с выбором инструмента, заказом и доставкой.",
+    "searchPlaceholder": "Поиск по вопросам"
+  },
+  "myReviews": {
+    "emptyHint": "Оцените товары из доставленных заказов — это помогает другим покупателям с выбором."
+  },
+  "order": {
+    "keepOrder": "Оставить заказ",
+    "reason": "Причина: {{reason}}"
+  },
+  "payment": {
+    "checking": "Проверяем статус оплаты…",
+    "failedHint": "Оплата не прошла. Свяжитесь с нами — мы поможем:",
+    "notConfirmedYet": "Подтверждение оплаты ещё не получено. Если вы уже оплатили, статус обновится автоматически в течение нескольких минут.",
+    "onReceiptCourier": "Вы оплатите заказ курьеру при получении.",
+    "onReceiptPickup": "Вы оплатите заказ в пункте самовывоза при получении.",
+    "paidAt": "оплачено {{date}}",
+    "refreshStatus": "Обновить статус"
+  },
+  "profile": {
+    "avatarHint": "JPG, PNG, WebP или GIF, до 3 МБ",
+    "chooseFromLibrary": "Выбрать из галереи",
+    "takePhoto": "Сделать фото",
+    "guestTitle": "Войдите в аккаунт",
+    "logoutConfirm": "Выйти из аккаунта? Корзина и избранное сохранятся в вашем аккаунте.",
+    "phoneHint": "Номер телефона используется для входа. Чтобы изменить его, свяжитесь с нами.",
+    "photoPermission": "Нет доступа к фото. Разрешите его в настройках устройства.",
+    "sendCode": "Отправить код",
+    "verifyEmailHint": "Подтвердите e-mail — на него приходят уведомления о заказах",
+    "verifyPhoneHint": "Подтвердите номер телефона кодом из SMS",
+    "verifyPhoneText": "Мы отправим 6-значный код подтверждения на {{phone}}."
+  },
+  "promotions": {
+    "description": "Действующие скидки и специальные предложения. Акционная цена применяется автоматически на странице товара и в корзине."
+  },
+  "reviews": {
+    "moderationNote": "Отзыв будет опубликован после модерации."
+  },
+  "success": {
+    "orderNotFound": "Заказ не найден",
+    "orderNotFoundText": "Проверьте ссылку или откройте список ваших заказов."
+  },
+  "wishlist": {
+    "guestNote": "Избранное сохранено на этом устройстве. Войдите, чтобы видеть его на всех устройствах."
+  }
+}

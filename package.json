@@ -1,0 +1,44 @@
+{
+  "name": "vero-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VERO TOOLS — e-commerce ecosystem (web, mobile, admin, API) for professional tools and equipment in Uzbekistan",
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "e2e"
+  ],
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,web,admin -c yellow,cyan,magenta \"npm:dev:api\" \"npm:dev:web\" \"npm:dev:admin\"",
+    "dev:api": "npm run dev -w @vero/api",
+    "dev:web": "npm run dev -w @vero/web",
+    "dev:admin": "npm run dev -w @vero/admin",
+    "dev:mobile": "npm run start -w @vero/mobile",
+    "seed": "npm run seed -w @vero/api --",
+    "build": "npm run build -w @vero/api && npm run build -w @vero/web && npm run build -w @vero/admin",
+    "build:api": "npm run build -w @vero/api",
+    "build:web": "npm run build -w @vero/web",
+    "build:admin": "npm run build -w @vero/admin",
+    "test": "npm run test -w @vero/api --",
+    "test:e2e": "npm run test -w @vero/e2e",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4"
+  }
+}

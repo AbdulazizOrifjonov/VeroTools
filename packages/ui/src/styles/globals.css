@@ -1,0 +1,486 @@
+/*
+ * VERO TOOLS — design system theme (Tailwind CSS v4).
+ *
+ * Apps import this file ONCE from their root stylesheet instead of `@import "tailwindcss"`:
+ *   @import "@vero/ui/styles.css";
+ * It brings Tailwind, tw-animate-css, the Manrope variable font, the colour tokens
+ * (light + .dark) and registers this package's sources for class scanning.
+ *
+ * Colour values mirror @vero/config tokens.ts (lightColors / darkColors) exactly.
+ */
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@fontsource-variable/manrope';
+
+/* Scan @vero/ui sources for class names (path is relative to this file, works from any app). */
+@source "../**/*.{ts,tsx}";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ------------------------------------------------------------------------------------------ */
+/* Tokens                                                                                     */
+/* ------------------------------------------------------------------------------------------ */
+
+:root {
+  color-scheme: light;
+  --radius: 0.75rem;
+
+  --background: #ffffff;
+  --foreground: #141416;
+  --surface: #f6f6f7;
+  --surface-elevated: #ffffff;
+  --muted: #f2f2f4;
+  --muted-foreground: #65656f;
+  --border: #e6e6ea;
+  --input: #dadae0;
+  --primary: #fd470e;
+  --primary-hover: #db3b00;
+  --primary-foreground: #ffffff;
+  --brand: #fd470e;
+  --brand-soft: #fff4ef;
+  --brand-soft-foreground: #b83100;
+  --secondary: #f0f0f2;
+  --secondary-foreground: #18181b;
+  --success: #15803d;
+  --success-soft: #dcfce7;
+  --warning: #b45309;
+  --warning-soft: #fef3c7;
+  --danger: #b91c1c;
+  --danger-soft: #fee2e2;
+  --info: #1d4ed8;
+  --info-soft: #dbeafe;
+  --overlay: rgba(14, 14, 16, 0.55);
+  --rating: #f59e0b;
+  --graphite: #141417;
+  --graphite-foreground: #f4f4f5;
+  --ring: var(--brand);
+
+  /* shadcn/ui-compatible aliases */
+  --card: var(--surface-elevated);
+  --card-foreground: var(--foreground);
+  --popover: var(--surface-elevated);
+  --popover-foreground: var(--foreground);
+  --accent: color-mix(in oklab, var(--surface-elevated) 93%, var(--foreground));
+  --accent-foreground: var(--foreground);
+  --destructive: var(--danger);
+  --destructive-foreground: #ffffff;
+
+  /* Solid status fills for white text (tokens.status, AA in both themes): destructive / success buttons */
+  --danger-solid: #dc2626;
+  --success-solid: #15803d;
+
+  /* Derived helpers (surface-relative so they read on any background) */
+  --secondary-hover: color-mix(in oklab, var(--secondary) 94%, var(--foreground));
+  --skeleton: color-mix(in oklab, var(--foreground) 7%, transparent);
+  --shimmer-highlight: rgb(255 255 255 / 0.7);
+  --scrollbar-thumb: color-mix(in oklab, var(--foreground) 20%, transparent);
+  --scrollbar-thumb-hover: color-mix(in oklab, var(--foreground) 34%, transparent);
+  --shadow-tint: 240deg 8% 10%;
+  --shadow-strength: 1;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --background: #0e0e10;
+  --foreground: #f4f4f5;
+  --surface: #151518;
+  --surface-elevated: #1b1b1f;
+  --muted: #1e1e22;
+  --muted-foreground: #a1a1ab;
+  --border: #2a2a30;
+  --input: #34343b;
+  --primary: #fd470e;
+  --primary-hover: #ff5a1f;
+  --primary-foreground: #ffffff;
+  --brand: #fd470e;
+  --brand-soft: #2a140c;
+  --brand-soft-foreground: #ff9a6b;
+  --secondary: #232328;
+  --secondary-foreground: #f4f4f5;
+  --success: #22c55e;
+  --success-soft: #0f2a1a;
+  --warning: #f59e0b;
+  --warning-soft: #2b200a;
+  --danger: #f87171;
+  --danger-soft: #2d1414;
+  --info: #60a5fa;
+  --info-soft: #0f1d33;
+  --overlay: rgba(0, 0, 0, 0.65);
+  --rating: #fbbf24;
+  --graphite: #0a0a0c;
+  --graphite-foreground: #f4f4f5;
+  --ring: var(--brand);
+
+  --shimmer-highlight: rgb(255 255 255 / 0.06);
+  --shadow-tint: 0deg 0% 0%;
+  --shadow-strength: 3.2;
+}
+
+/* Semantic colour utilities: bg-background, text-foreground, bg-primary, hover:bg-primary-hover, … */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-brand: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-soft-foreground: var(--brand-soft-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-danger-solid: var(--danger-solid);
+  --color-success-solid: var(--success-solid);
+  --color-overlay: var(--overlay);
+  --color-rating: var(--rating);
+  --color-graphite: var(--graphite);
+  --color-graphite-foreground: var(--graphite-foreground);
+  --color-ring: var(--ring);
+  --color-skeleton: var(--skeleton);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  /* Radius scale derived from --radius (12px): 6 / 8 / 10 / 12 / 16 / 20 */
+  --radius-xs: calc(var(--radius) - 6px);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  /* Soft, neutral-tinted elevation; automatically deeper in dark mode */
+  --shadow-2xs: 0 1px 0 0 hsl(var(--shadow-tint) / calc(0.03 * var(--shadow-strength)));
+  --shadow-xs: 0 1px 2px 0 hsl(var(--shadow-tint) / calc(0.05 * var(--shadow-strength)));
+  --shadow-sm:
+    0 1px 2px 0 hsl(var(--shadow-tint) / calc(0.04 * var(--shadow-strength))),
+    0 1px 3px 0 hsl(var(--shadow-tint) / calc(0.05 * var(--shadow-strength)));
+  --shadow-md:
+    0 2px 4px -1px hsl(var(--shadow-tint) / calc(0.05 * var(--shadow-strength))),
+    0 6px 14px -2px hsl(var(--shadow-tint) / calc(0.08 * var(--shadow-strength)));
+  --shadow-lg:
+    0 4px 8px -2px hsl(var(--shadow-tint) / calc(0.05 * var(--shadow-strength))),
+    0 16px 32px -6px hsl(var(--shadow-tint) / calc(0.12 * var(--shadow-strength)));
+  --shadow-xl:
+    0 8px 16px -4px hsl(var(--shadow-tint) / calc(0.06 * var(--shadow-strength))),
+    0 24px 48px -8px hsl(var(--shadow-tint) / calc(0.16 * var(--shadow-strength)));
+  --shadow-2xl: 0 32px 64px -12px hsl(var(--shadow-tint) / calc(0.22 * var(--shadow-strength)));
+}
+
+/* Static scales: brand-50…brand-950 (tokens.brand) and the neutral scale (tokens.neutral) */
+@theme {
+  --font-sans: 'Manrope Variable', 'Manrope', ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50: #fff4ef;
+  --color-brand-100: #ffe4d6;
+  --color-brand-200: #ffc4a8;
+  --color-brand-300: #ff9a6b;
+  --color-brand-400: #ff6a33;
+  --color-brand-500: #fd470e;
+  --color-brand-600: #fd470e;
+  --color-brand-700: #b83100;
+  --color-brand-800: #942905;
+  --color-brand-900: #78240a;
+  --color-brand-950: #411003;
+
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f7f7f8;
+  --color-neutral-100: #efeff1;
+  --color-neutral-200: #e3e3e7;
+  --color-neutral-300: #cbcbd2;
+  --color-neutral-400: #a0a0aa;
+  --color-neutral-500: #75757f;
+  --color-neutral-600: #585862;
+  --color-neutral-700: #3f3f47;
+  --color-neutral-800: #27272c;
+  --color-neutral-900: #18181b;
+  --color-neutral-950: #0e0e10;
+
+  /* Motion (tokens.motion) */
+  --ease-brand: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --animate-accordion-down: accordion-down 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-accordion-up: accordion-up 180ms cubic-bezier(0.4, 0, 1, 1);
+  --animate-collapsible-down: collapsible-down 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-collapsible-up: collapsible-up 180ms cubic-bezier(0.4, 0, 1, 1);
+  --animate-shimmer: shimmer 1.6s ease-in-out infinite;
+  --animate-cart-bounce: cart-bounce 480ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-check-draw: check-draw 320ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-slide-up: slide-up 200ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-slide-down: slide-down 200ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-fade-in: fade-in 150ms ease-out both;
+  --animate-fade-out: fade-out 150ms ease-in both;
+  --animate-scale-in: scale-in 160ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes collapsible-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-collapsible-content-height);
+    }
+  }
+  @keyframes collapsible-up {
+    from {
+      height: var(--radix-collapsible-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes shimmer {
+    from {
+      background-position: 150% 0;
+    }
+    to {
+      background-position: -50% 0;
+    }
+  }
+  @keyframes cart-bounce {
+    0% {
+      transform: scale(1);
+    }
+    35% {
+      transform: scale(1.28);
+    }
+    60% {
+      transform: scale(0.92);
+    }
+    80% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes check-draw {
+    from {
+      stroke-dashoffset: 1;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Base                                                                                       */
+/* ------------------------------------------------------------------------------------------ */
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--border);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    background-color: var(--background);
+  }
+
+  body {
+    min-height: 100dvh;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: normal;
+    /* Manrope: contextual alternates + ligatures on, lining proportional figures in running text.
+       (Numeric spacing is left to font-variant-numeric so `.tabular` / `tabular-nums` can override it.) */
+    font-feature-settings:
+      'calt' 1,
+      'liga' 1;
+    font-variant-numeric: lining-nums proportional-nums;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  /* Visible focus for keyboard users only */
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--brand) 24%, transparent);
+    color: inherit;
+  }
+
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']) {
+    cursor: pointer;
+  }
+
+  /* Subtle scrollbars */
+  @supports (scrollbar-color: auto) {
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: var(--scrollbar-thumb) transparent;
+    }
+  }
+  @supports not (scrollbar-color: auto) {
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      border: 3px solid transparent;
+      border-radius: 999px;
+      background-clip: padding-box;
+      background-color: var(--scrollbar-thumb);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: var(--scrollbar-thumb-hover);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Utilities                                                                                  */
+/* ------------------------------------------------------------------------------------------ */
+
+/* Tabular figures for prices in tables, counters, totals */
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Page container: max 1440px, horizontal padding 16 → 24 (≥640px) → 32 (≥1024px) */
+@utility container-page {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  @media (width >= 40rem) {
+    padding-inline: 1.5rem;
+  }
+  @media (width >= 64rem) {
+    padding-inline: 2rem;
+  }
+}
+
+/* Skeleton shimmer (background sweep over a surface-relative tint) */
+@utility shimmer {
+  background-color: var(--skeleton);
+  background-image: linear-gradient(90deg, transparent 30%, var(--shimmer-highlight) 50%, transparent 70%);
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  animation: var(--animate-shimmer);
+}
+
+/* Hide scrollbars on horizontally scrolling chip rows / tab lists */
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
