@@ -54,3 +54,5 @@ scripts
 **/Dockerfile
 .dockerignore
 docker-compose*.yml
+mongodb/
+*.zip

@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://vero-api-orifjonov.fly.dev/api/$1" },
+    { "source": "/uploads/(.*)", "destination": "https://vero-api-orifjonov.fly.dev/uploads/$1" },
+    { "source": "/socket.io/(.*)", "destination": "https://vero-api-orifjonov.fly.dev/socket.io/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
