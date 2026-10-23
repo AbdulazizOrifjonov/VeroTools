@@ -15,16 +15,15 @@ import { MobileMenu } from './MobileMenu';
 import { SearchBox } from './SearchBox';
 import { ThemeToggle } from './ThemeToggle';
 
-/** Compact state with hysteresis, so the height change never feeds back into the scroll position. */
-function useCompactHeader(enter = 96, leave = 8) {
-  const [compact, setCompact] = useState(false);
+/** Detects when the page is scrolled down to add a subtle shadow without altering navbar dimensions. */
+function useScrolledHeader(threshold = 10) {
+  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     let frame = 0;
     const onScroll = () => {
       cancelAnimationFrame(frame);
       frame = requestAnimationFrame(() => {
-        const y = window.scrollY;
-        setCompact((c) => (c ? y > leave : y > enter));
+        setScrolled(window.scrollY > threshold);
       });
     };
     onScroll();
@@ -33,8 +32,8 @@ function useCompactHeader(enter = 96, leave = 8) {
       cancelAnimationFrame(frame);
       window.removeEventListener('scroll', onScroll);
     };
-  }, [enter, leave]);
-  return compact;
+  }, [threshold]);
+  return scrolled;
 }
 
 /** Slim desktop bar above the sticky header: phone, working hours, quick links, language and theme. */
@@ -86,7 +85,7 @@ export function TopBar() {
   );
 }
 
-function BrandLink({ compact }: { compact: boolean }) {
+function BrandLink() {
   const { t } = useTranslation();
   return (
     <LocaleLink
@@ -94,7 +93,7 @@ function BrandLink({ compact }: { compact: boolean }) {
       aria-label={`${t('common:brand.name')} — ${t('common:nav.home')}`}
       className="flex shrink-0 items-center gap-2.5 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
     >
-      <Logo size={compact ? 40 : 44} title={t('common:brand.name')} className="transition-[width,height] duration-200" />
+      <Logo size={44} title={t('common:brand.name')} />
     </LocaleLink>
   );
 }
@@ -120,7 +119,7 @@ export function Header() {
   const { t } = useTranslation();
   const engagement = useEngagement();
   const location = useLocation();
-  const compact = useCompactHeader();
+  const scrolled = useScrolledHeader();
   const desktop = useMediaQuery('(min-width: 1024px)', true);
   const [megaOpen, setMegaOpen] = useState(false);
   const [megaFocus, setMegaFocus] = useState(false);
@@ -169,24 +168,18 @@ export function Header() {
   }, [megaOpen]);
 
   return (
-    <header ref={headerRef} data-compact={compact || undefined} className="sticky top-0 z-40">
+    <header ref={headerRef} className="sticky top-0 z-40">
       {megaOpen ? <div className="fixed inset-0 z-0 bg-overlay/50 animate-fade-in" aria-hidden="true" /> : null}
-      <div data-header-bar className={cn('relative z-10 border-b border-border bg-background transition-shadow duration-200', compact && 'shadow-xs')}>
-        <div
-          className={cn(
-            'container-page flex items-center gap-1 transition-[height] duration-200 sm:gap-2 lg:gap-4',
-            compact ? 'h-14 lg:h-16' : 'h-16 lg:h-[72px]',
-          )}
-        >
+      <div data-header-bar className={cn('relative z-10 border-b border-border bg-background transition-shadow duration-200', scrolled && 'shadow-xs')}>
+        <div className="container-page flex h-16 items-center gap-1 sm:gap-2 lg:h-[72px] lg:gap-4">
           <Button variant="ghost" size="icon" className="-ms-2 lg:hidden" aria-label={t('common:a11y.openMenu')} onClick={() => setMenuOpen(true)}>
             <MenuIcon className="size-[22px]" aria-hidden="true" />
           </Button>
-          <BrandLink compact={compact} />
+          <BrandLink />
           <div className="hidden lg:block">
             <CatalogButton
               ref={catalogRef}
               open={megaOpen}
-              compact={compact}
               onToggle={(viaKeyboard) => {
                 setMegaFocus(viaKeyboard);
                 setMegaOpen((o) => !o);
@@ -207,7 +200,7 @@ export function Header() {
               label={t('common:nav.compare')}
               count={compareCount}
               countLabel={compareCount ? t('common:a11y.compareCount', { count: compareCount }) : undefined}
-              showLabel={!compact}
+              showLabel
               className="hidden lg:flex"
             />
             <HeaderIconLink
@@ -216,7 +209,7 @@ export function Header() {
               label={t('common:nav.wishlist')}
               count={wishlistCount}
               countLabel={wishlistCount ? t('common:a11y.wishlistCount', { count: wishlistCount }) : undefined}
-              showLabel={!compact}
+              showLabel
               className="hidden lg:flex"
             />
             <HeaderIconLink
@@ -225,10 +218,10 @@ export function Header() {
               label={t('common:nav.cart')}
               count={cartCount}
               countLabel={cartCount ? t('common:a11y.cartCount', { count: cartCount }) : undefined}
-              showLabel={!compact && desktop}
+              showLabel={desktop}
             />
             <div className="hidden lg:block">
-              <AccountMenu showLabel={!compact} />
+              <AccountMenu showLabel />
             </div>
           </nav>
         </div>
