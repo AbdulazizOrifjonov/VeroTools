@@ -20,7 +20,6 @@ import { OfflineBanner } from './core/OfflineBanner';
 import { api } from './lib/api';
 import { i18n } from './lib/i18n';
 import { usePrefs } from './lib/prefs';
-import { configureNotificationHandler } from './lib/push';
 import { queryClient, wireQueryEnvironment } from './lib/query';
 import { useRecentlyViewed, useRecentSearches } from './lib/recent';
 import { secure } from './lib/storage';

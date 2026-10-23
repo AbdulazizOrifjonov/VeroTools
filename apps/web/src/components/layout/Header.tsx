@@ -1,6 +1,6 @@
 import { useEngagement, useSettings } from '@vero/api-client';
 import { STORE_ROUTES } from '@vero/config';
-import { Button, cn, Dialog, DialogContent, DialogDescription, DialogTitle, Logo, LogoWordmark, useMediaQuery } from '@vero/ui';
+import { Button, cn, Dialog, DialogContent, DialogDescription, DialogTitle, Logo, useMediaQuery } from '@vero/ui';
 import { formatUzPhone } from '@vero/utils';
 import { ClockIcon, GitCompareArrowsIcon, HeartIcon, MenuIcon, PhoneIcon, SearchIcon, ShoppingCartIcon } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
