@@ -13,10 +13,18 @@ function trimSlash(url: string): string {
   return url.replace(/\/+$/, '');
 }
 
+function resolveApiUrl(): string {
+  if (Platform.OS === 'web' && typeof window !== 'undefined') {
+    const host = window.location.hostname;
+    if (host === 'localhost' || host === '127.0.0.1') {
+      return 'http://localhost:4000/api';
+    }
+  }
+  return extra.apiUrl ?? process.env.EXPO_PUBLIC_API_URL ?? 'http://localhost:4000/api';
+}
+
 /** Absolute API base, e.g. "http://192.168.1.20:4000/api" (see app.config.ts / EXPO_PUBLIC_API_URL). */
-export const API_URL = trimSlash(
-  extra.apiUrl ?? process.env.EXPO_PUBLIC_API_URL ?? 'http://localhost:4000/api',
-);
+export const API_URL = trimSlash(resolveApiUrl());
 
 /** API origin without "/api" — Socket.IO endpoint and host of uploaded images. */
 export const API_ORIGIN = API_URL.replace(/\/api$/, '');

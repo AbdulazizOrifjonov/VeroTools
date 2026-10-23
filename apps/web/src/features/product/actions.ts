@@ -75,13 +75,15 @@ export function useSetLineQuantity() {
   return { setQuantity: run, isPending: update.isPending };
 }
 
+const EMPTY_IDS: string[] = [];
+
 /** Heart toggle (optimistic) with feedback. Works for guests (X-Guest-Id) and customers. */
 export function useWishlistToggle() {
   const { t } = useTranslation();
   const navigate = useLocaleNavigate();
   const engagement = useEngagement();
   const toggle = useToggleWishlist();
-  const ids = engagement.data?.wishlistIds ?? [];
+  const ids = engagement.data?.wishlistIds ?? EMPTY_IDS;
   const run = useCallback(
     (productId: string) => {
       const active = ids.includes(productId);
@@ -108,7 +110,7 @@ export function useCompareToggle() {
   const navigate = useLocaleNavigate();
   const engagement = useEngagement();
   const toggle = useToggleCompare();
-  const ids = engagement.data?.compareIds ?? [];
+  const ids = engagement.data?.compareIds ?? EMPTY_IDS;
   const run = useCallback(
     (productId: string) => {
       const active = ids.includes(productId);
