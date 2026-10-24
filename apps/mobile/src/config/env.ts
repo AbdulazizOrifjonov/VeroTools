@@ -30,7 +30,7 @@ export const API_URL = trimSlash(resolveApiUrl());
 export const API_ORIGIN = API_URL.replace(/\/api$/, '');
 
 /** Storefront origin (share links, universal links). */
-export const WEB_URL = trimSlash(extra.webUrl ?? process.env.EXPO_PUBLIC_WEB_URL ?? 'https://verotools.uz');
+export const WEB_URL = trimSlash(extra.webUrl ?? process.env.EXPO_PUBLIC_WEB_URL ?? 'https://ockean.uz');
 
 /** EAS project id; Expo push tokens cannot be issued without it. */
 export const EAS_PROJECT_ID: string | undefined =

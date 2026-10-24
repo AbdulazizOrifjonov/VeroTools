@@ -2,7 +2,7 @@
   "name": "@vero/e2e",
   "version": "1.0.0",
   "private": true,
-  "description": "Cross-device end-to-end checks (storefront, admin panel, mobile web) against a running VERO TOOLS stack",
+  "description": "Cross-device end-to-end checks (storefront, admin panel, mobile web) against a running OCKEAN TOOLS stack",
   "type": "module",
   "scripts": {
     "test": "playwright test",

@@ -1,22 +1,22 @@
 /**
- * VERO TOOLS design tokens — single source of truth for web, admin and mobile.
- * Colours are derived from the uploaded VERO TOOLS logo (circle ≈ #FD470E, radial #FF5A14 → #F5340A).
+ * OCKEAN TOOLS design tokens — single source of truth for web, admin and mobile.
+ * Colours are derived from the official OCKEAN brand artwork (brand orange #FD8902).
  *
- * brand.500 (#FF4500) — brand accents, icons, focus rings, large surfaces.
- * brand.600 (#DB3B00) — primary actions with white text (WCAG AA 4.5:1).
+ * brand.500 (#FD8902) — brand accents, icons, focus rings, large surfaces.
+ * brand.600 (#E67700) — primary actions with white text (WCAG AA 4.5:1).
  */
 export const brand = {
-  50: '#FFF4EF',
-  100: '#FFE4D6',
-  200: '#FFC4A8',
-  300: '#FF9A6B',
-  400: '#FF6A33',
-  500: '#FD470E',
-  600: '#FD470E',
-  700: '#B83100',
-  800: '#942905',
-  900: '#78240A',
-  950: '#411003',
+  50: '#FFF9F0',
+  100: '#FFEED4',
+  200: '#FFDC9E',
+  300: '#FFC466',
+  400: '#FFA72E',
+  500: '#FD8902',
+  600: '#E67700',
+  700: '#B85B00',
+  800: '#8F4400',
+  900: '#703500',
+  950: '#3D1B00',
 } as const;
 
 export const neutral = {
@@ -118,11 +118,11 @@ export const darkColors: ThemeColors = {
   border: '#2A2A30',
   input: '#34343B',
   primary: brand[600],
-  primaryHover: '#EF4100',
-  primaryForeground: '#FFFFFF',
-  brand: '#FF5A1F',
-  brandSoft: '#2A140C',
-  brandSoftForeground: '#FF9A6B',
+  primaryHover: '#FFA72E',
+  primaryForeground: '#000000',
+  brand: '#FD8902',
+  brandSoft: '#2D1A04',
+  brandSoftForeground: '#FFC466',
   secondary: '#232328',
   secondaryForeground: '#F4F4F5',
   success: '#22C55E',

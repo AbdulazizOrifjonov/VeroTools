@@ -24,7 +24,7 @@ export const COUPONS: SeedCoupon[] = [
     active: true,
   },
   {
-    code: 'VERO10',
+    code: 'OCKEAN10',
     description: {
       uz: "Barcha mahsulotlarga 10% chegirma, ko'pi bilan 300 000 so'm (buyurtma summasi 1 500 000 so'mdan)",
       ru: 'Скидка 10% на весь ассортимент, не более 300 000 сум (заказ от 1 500 000 сум)',
@@ -42,7 +42,7 @@ export const COUPONS: SeedCoupon[] = [
     active: true,
   },
   {
-    code: 'VERO5',
+    code: 'OCKEAN5',
     description: {
       uz: "Istalgan buyurtmaga 5% chegirma, ko'pi bilan 150 000 so'm (buyurtma summasi 300 000 so'mdan)",
       ru: 'Скидка 5% на любой заказ, не более 150 000 сум (заказ от 300 000 сум)',
@@ -279,16 +279,16 @@ export const COUPONS: SeedCoupon[] = [
 
   // --- brands ---------------------------------------------------------------
   {
-    code: 'VEROPRO100',
+    code: 'OCKEANPRO100',
     description: {
-      uz: "VERO PRO mahsulotlariga 100 000 so'm chegirma (buyurtma summasi 1 000 000 so'mdan)",
-      ru: 'Скидка 100 000 сум на товары VERO PRO при заказе от 1 000 000 сум',
-      en: '100,000 UZS off VERO PRO products on orders of 1,000,000 UZS or more',
+      uz: "OCKEAN PRO mahsulotlariga 100 000 so'm chegirma (buyurtma summasi 1 000 000 so'mdan)",
+      ru: 'Скидка 100 000 сум на товары OCKEAN PRO при заказе от 1 000 000 сум',
+      en: '100,000 UZS off OCKEAN PRO products on orders of 1,000,000 UZS or more',
     },
     type: 'fixed',
     value: 100000,
     scope: 'brands',
-    targets: ['vero-pro'],
+    targets: ['ockean-pro'],
     minOrderAmount: 1000000,
     startsInDays: -7,
     expiresInDays: 21,

@@ -39,7 +39,7 @@ const about: SeedPage = {
   slug: 'about',
   title: { uz: 'Biz haqimizda', ru: 'О компании', en: 'About us' },
   content: {
-    uz: `VERO TOOLS — Toshkentda joylashgan professional asboblar va sanoat uskunalari internet-do'koni. Buyurtmalarni butun O'zbekiston bo'ylab — Toshkent shahri va viloyatidan Qoraqalpog'istongacha yetkazib beramiz.
+    uz: `OCKEAN TOOLS — Toshkentda joylashgan professional asboblar va sanoat uskunalari internet-do'koni. Buyurtmalarni butun O'zbekiston bo'ylab — Toshkent shahri va viloyatidan Qoraqalpog'istongacha yetkazib beramiz.
 
 ## Bizning vazifamiz
 
@@ -73,14 +73,14 @@ Barcha bo'limlar [katalogda](/catalog), brendlar esa [Brendlar](/brands) sahifas
 3. **Halol maslahat.** Konsultantlarimiz eng qimmat modelni emas, aynan vazifangizga mos keladiganini tavsiya qiladi.
 4. **Qulay xizmat.** Toshkent bo'ylab kuryer orqali yetkazib berish, viloyatlarda hamkor kuryerlik xizmatlari, olib ketish punktlari, turli to'lov usullari va muddatli to'lov.
 
-## VERO PRO — do'konimiz brendi
+## OCKEAN PRO — do'konimiz brendi
 
-VERO PRO — VERO TOOLS do'konining xususiy brendi. Bu liniyaga kundalik professional ish uchun tanlangan asboblar kiradi. Ular rasmiy kafolat bilan sotiladi, mos sarf materiallari va ehtiyot qismlarni esa katalogimizdan topishingiz mumkin. Barcha modellar — [VERO PRO sahifasida](/brand/vero-pro).
+OCKEAN PRO — OCKEAN TOOLS do'konining xususiy brendi. Bu liniyaga kundalik professional ish uchun tanlangan asboblar kiradi. Ular rasmiy kafolat bilan sotiladi, mos sarf materiallari va ehtiyot qismlarni esa katalogimizdan topishingiz mumkin. Barcha modellar — [OCKEAN PRO sahifasida](/brand/ockean-pro).
 
 ## Biz bilan bog'laning
 
 Savolingiz bo'lsa yoki asbob tanlashda yordam kerak bo'lsa, [Kontaktlar](/contacts) sahifasidagi istalgan usul orqali murojaat qiling. Ko'p beriladigan savollarga javoblarni [FAQ](/faq) bo'limida topasiz.`,
-    ru: `VERO TOOLS — интернет-магазин профессионального инструмента и промышленного оборудования из Ташкента. Мы доставляем заказы по всему Узбекистану — от Ташкента и Ташкентской области до Каракалпакстана.
+    ru: `OCKEAN TOOLS — интернет-магазин профессионального инструмента и промышленного оборудования из Ташкента. Мы доставляем заказы по всему Узбекистану — от Ташкента и Ташкентской области до Каракалпакстана.
 
 ## Наша миссия
 
@@ -114,14 +114,14 @@ Savolingiz bo'lsa yoki asbob tanlashda yordam kerak bo'lsa, [Kontaktlar](/contac
 3. **Честная консультация.** Наши консультанты рекомендуют не самую дорогую модель, а ту, которая подходит именно под вашу задачу.
 4. **Удобный сервис.** Курьерская доставка по Ташкенту, партнёрские курьерские службы в регионах, пункты выдачи, разные способы оплаты и рассрочка.
 
-## VERO PRO — бренд нашего магазина
+## OCKEAN PRO — бренд нашего магазина
 
-VERO PRO — собственная торговая марка VERO TOOLS. В линейку входит инструмент, отобранный для ежедневной профессиональной работы. Он продаётся с официальной гарантией, а подходящие расходники и запчасти можно найти в нашем каталоге. Все модели — на [странице VERO PRO](/brand/vero-pro).
+OCKEAN PRO — собственная торговая марка OCKEAN TOOLS. В линейку входит инструмент, отобранный для ежедневной профессиональной работы. Он продаётся с официальной гарантией, а подходящие расходники и запчасти можно найти в нашем каталоге. Все модели — на [странице OCKEAN PRO](/brand/ockean-pro).
 
 ## Свяжитесь с нами
 
 Если у вас есть вопросы или нужна помощь с выбором инструмента, свяжитесь с нами любым способом со страницы [Контакты](/contacts). Ответы на частые вопросы собраны в разделе [FAQ](/faq).`,
-    en: `VERO TOOLS is a Tashkent-based online store for professional tools and industrial equipment. We deliver orders across Uzbekistan — from Tashkent city and region all the way to Karakalpakstan.
+    en: `OCKEAN TOOLS is a Tashkent-based online store for professional tools and industrial equipment. We deliver orders across Uzbekistan — from Tashkent city and region all the way to Karakalpakstan.
 
 ## Our mission
 
@@ -155,23 +155,23 @@ Browse every section in the [catalogue](/catalog) and all brands on the [Brands]
 3. **Honest advice.** Our consultants recommend the model that fits your task, not simply the most expensive one.
 4. **Convenient service.** Courier delivery in Tashkent, partner courier services in the regions, pickup points, a choice of payment methods and installment plans.
 
-## VERO PRO — our own brand
+## OCKEAN PRO — our own brand
 
-VERO PRO is the house brand of VERO TOOLS: a line of tools selected for everyday professional work. It is sold with an official warranty, and you can find matching consumables and spare parts in our catalogue. See all models on the [VERO PRO page](/brand/vero-pro).
+OCKEAN PRO is the house brand of OCKEAN TOOLS: a line of tools selected for everyday professional work. It is sold with an official warranty, and you can find matching consumables and spare parts in our catalogue. See all models on the [OCKEAN PRO page](/brand/ockean-pro).
 
 ## Get in touch
 
 If you have a question or need help choosing a tool, contact us in any of the ways listed on the [Contacts](/contacts) page. Answers to common questions are collected in our [FAQ](/faq).`,
   },
   seoTitle: {
-    uz: 'Biz haqimizda — VERO TOOLS',
-    ru: 'О компании — VERO TOOLS',
-    en: 'About us — VERO TOOLS',
+    uz: 'Biz haqimizda — OCKEAN TOOLS',
+    ru: 'О компании — OCKEAN TOOLS',
+    en: 'About us — OCKEAN TOOLS',
   },
   seoDescription: {
-    uz: "VERO TOOLS — Toshkentdagi professional asboblar va sanoat uskunalari internet-do'koni. Rasmiy kafolat, O'zbekiston bo'ylab yetkazib berish va mutaxassis maslahati.",
+    uz: "OCKEAN TOOLS — Toshkentdagi professional asboblar va sanoat uskunalari internet-do'koni. Rasmiy kafolat, O'zbekiston bo'ylab yetkazib berish va mutaxassis maslahati.",
     ru: 'Интернет-магазин профессионального инструмента и оборудования в Ташкенте: официальная гарантия, доставка по всему Узбекистану и консультации специалистов.',
-    en: 'VERO TOOLS is a Tashkent online store for professional tools and industrial equipment, offering official warranties, delivery across Uzbekistan and expert advice.',
+    en: 'OCKEAN TOOLS is a Tashkent online store for professional tools and industrial equipment, offering official warranties, delivery across Uzbekistan and expert advice.',
   },
 };
 
@@ -335,9 +335,9 @@ If you find a defect or something is missing, you have the right to refuse the i
 To check your order status or reschedule delivery, call us on the numbers listed on the [Contacts](/contacts) page or message our Telegram bot.`,
   },
   seoTitle: {
-    uz: "Yetkazib berish — Toshkent va O'zbekiston bo'ylab | VERO TOOLS",
-    ru: 'Доставка по Ташкенту и Узбекистану | VERO TOOLS',
-    en: 'Delivery in Tashkent and across Uzbekistan | VERO TOOLS',
+    uz: "Yetkazib berish — Toshkent va O'zbekiston bo'ylab | OCKEAN TOOLS",
+    ru: 'Доставка по Ташкенту и Узбекистану | OCKEAN TOOLS',
+    en: 'Delivery in Tashkent and across Uzbekistan | OCKEAN TOOLS',
   },
   seoDescription: {
     uz: "Toshkent bo'ylab kuryer orqali odatda shu kuni yoki ertasi kuni, viloyatlarga 2–5 ish kunida yetkazib berish. Olib ketish punktlari va bepul yetkazib berish shartlari.",
@@ -354,7 +354,7 @@ const warranty: SeedPage = {
   slug: 'warranty',
   title: { uz: 'Kafolat', ru: 'Гарантия', en: 'Warranty' },
   content: {
-    uz: `VERO TOOLS do'konida sotiladigan barcha asbob va uskunalarga ishlab chiqaruvchining rasmiy kafolati beriladi. Kafolat davrida ishlab chiqarish nuqsoni aniqlansa, tovar bepul ta'mirlanadi yoki qonunchilikda belgilangan tartibda almashtiriladi.
+    uz: `OCKEAN TOOLS do'konida sotiladigan barcha asbob va uskunalarga ishlab chiqaruvchining rasmiy kafolati beriladi. Kafolat davrida ishlab chiqarish nuqsoni aniqlansa, tovar bepul ta'mirlanadi yoki qonunchilikda belgilangan tartibda almashtiriladi.
 
 ## Kafolat muddati
 
@@ -389,7 +389,7 @@ const warranty: SeedPage = {
 ## Kafolat muddati tugaganidan keyin
 
 Kafolat tugagach ham tovarni pullik ta'mirlash uchun servis markaziga yo'naltirishda yordam beramiz. Ko'plab ehtiyot qismlar va sarf materiallarini [Ehtiyot qismlar](/catalog/spare-parts) va [Sarf materiallari](/catalog/consumables) bo'limlaridan topishingiz mumkin.`,
-    ru: `На все инструменты и оборудование, которые продаются в VERO TOOLS, действует официальная гарантия производителя. Если в гарантийный период обнаружится производственный дефект, товар бесплатно отремонтируют или заменят в порядке, установленном законодательством.
+    ru: `На все инструменты и оборудование, которые продаются в OCKEAN TOOLS, действует официальная гарантия производителя. Если в гарантийный период обнаружится производственный дефект, товар бесплатно отремонтируют или заменят в порядке, установленном законодательством.
 
 ## Срок гарантии
 
@@ -424,7 +424,7 @@ Kafolat tugagach ham tovarni pullik ta'mirlash uchun servis markaziga yo'naltiri
 ## После окончания гарантии
 
 Когда гарантийный срок истёк, мы поможем направить товар на платный ремонт в сервисный центр. Многие запчасти и расходные материалы можно найти в разделах [Запчасти](/catalog/spare-parts) и [Расходные материалы](/catalog/consumables).`,
-    en: `All tools and equipment sold by VERO TOOLS come with the manufacturer's official warranty. If a manufacturing defect appears during the warranty period, the item is repaired free of charge or replaced in the manner prescribed by law.
+    en: `All tools and equipment sold by OCKEAN TOOLS come with the manufacturer's official warranty. If a manufacturing defect appears during the warranty period, the item is repaired free of charge or replaced in the manner prescribed by law.
 
 ## Warranty period
 
@@ -461,9 +461,9 @@ Kafolat tugagach ham tovarni pullik ta'mirlash uchun servis markaziga yo'naltiri
 Once the warranty has ended, we can still help you arrange a paid repair at a service centre. Many spare parts and consumables are available in the [Spare parts](/catalog/spare-parts) and [Consumables](/catalog/consumables) sections.`,
   },
   seoTitle: {
-    uz: 'Kafolat shartlari | VERO TOOLS',
-    ru: 'Условия гарантии | VERO TOOLS',
-    en: 'Warranty terms | VERO TOOLS',
+    uz: 'Kafolat shartlari | OCKEAN TOOLS',
+    ru: 'Условия гарантии | OCKEAN TOOLS',
+    en: 'Warranty terms | OCKEAN TOOLS',
   },
   seoDescription: {
     uz: "Asbob va uskunalarga ishlab chiqaruvchining rasmiy kafolati: muddatlar, kafolat bo'yicha murojaat qilish tartibi va kafolat qamrab olmaydigan holatlar.",
@@ -590,9 +590,9 @@ Refunds are made **to the original payment method**:
 - **installment plan** — the installment agreement is cancelled under its terms, and the amount you have paid is refunded.`,
   },
   seoTitle: {
-    uz: 'Tovarni qaytarish va almashtirish | VERO TOOLS',
-    ru: 'Возврат и обмен товара | VERO TOOLS',
-    en: 'Returns and exchanges | VERO TOOLS',
+    uz: 'Tovarni qaytarish va almashtirish | OCKEAN TOOLS',
+    ru: 'Возврат и обмен товара | OCKEAN TOOLS',
+    en: 'Returns and exchanges | OCKEAN TOOLS',
   },
   seoDescription: {
     uz: "Foydalanilmagan tovarni 14 kun ichida original qadog'ida qaytarish yoki almashtirish shartlari, nuqsonli tovarlar va pulni qaytarish tartibi.",
@@ -609,7 +609,7 @@ const privacy: SeedPage = {
   slug: 'privacy',
   title: { uz: 'Maxfiylik siyosati', ru: 'Политика конфиденциальности', en: 'Privacy policy' },
   content: {
-    uz: `Ushbu siyosat VERO TOOLS internet-do'koni (sayt va mobil ilova) foydalanuvchilarining shaxsga doir ma'lumotlari qanday to'planishi, foydalanilishi va himoya qilinishini tushuntiradi. Shaxsga doir ma'lumotlar O'zbekiston Respublikasining «Shaxsga doir ma'lumotlar to'g'risida»gi Qonuni va boshqa qonunchilik hujjatlariga muvofiq qayta ishlanadi.
+    uz: `Ushbu siyosat OCKEAN TOOLS internet-do'koni (sayt va mobil ilova) foydalanuvchilarining shaxsga doir ma'lumotlari qanday to'planishi, foydalanilishi va himoya qilinishini tushuntiradi. Shaxsga doir ma'lumotlar O'zbekiston Respublikasining «Shaxsga doir ma'lumotlar to'g'risida»gi Qonuni va boshqa qonunchilik hujjatlariga muvofiq qayta ishlanadi.
 
 ## Qanday ma'lumotlarni to'playmiz
 
@@ -665,7 +665,7 @@ Shaxsga doir ma'lumotlar bo'yicha savol va so'rovlaringizni ${mail(S.supportEmai
 ## Siyosatga o'zgartirishlar
 
 Ushbu siyosatni vaqti-vaqti bilan yangilashimiz mumkin. Yangi tahrir shu sahifada e'lon qilingan paytdan boshlab kuchga kiradi.`,
-    ru: `Настоящая политика объясняет, как интернет-магазин VERO TOOLS (сайт и мобильное приложение) собирает, использует и защищает персональные данные пользователей. Персональные данные обрабатываются в соответствии с Законом Республики Узбекистан «О персональных данных» и иными актами законодательства.
+    ru: `Настоящая политика объясняет, как интернет-магазин OCKEAN TOOLS (сайт и мобильное приложение) собирает, использует и защищает персональные данные пользователей. Персональные данные обрабатываются в соответствии с Законом Республики Узбекистан «О персональных данных» и иными актами законодательства.
 
 ## Какие данные мы собираем
 
@@ -721,7 +721,7 @@ Ushbu siyosatni vaqti-vaqti bilan yangilashimiz mumkin. Yangi tahrir shu sahifad
 ## Изменения политики
 
 Мы можем время от времени обновлять эту политику. Новая редакция вступает в силу с момента её публикации на этой странице.`,
-    en: `This policy explains how the VERO TOOLS online store (website and mobile app) collects, uses and protects users' personal data. We process personal data in accordance with the Law of the Republic of Uzbekistan "On Personal Data" and other applicable legislation.
+    en: `This policy explains how the OCKEAN TOOLS online store (website and mobile app) collects, uses and protects users' personal data. We process personal data in accordance with the Law of the Republic of Uzbekistan "On Personal Data" and other applicable legislation.
 
 ## What data we collect
 
@@ -779,14 +779,14 @@ Send questions and requests about personal data to ${mail(S.supportEmail)} or ca
 We may update this policy from time to time. The new version takes effect as soon as it is published on this page.`,
   },
   seoTitle: {
-    uz: 'Maxfiylik siyosati | VERO TOOLS',
-    ru: 'Политика конфиденциальности | VERO TOOLS',
-    en: 'Privacy policy | VERO TOOLS',
+    uz: 'Maxfiylik siyosati | OCKEAN TOOLS',
+    ru: 'Политика конфиденциальности | OCKEAN TOOLS',
+    en: 'Privacy policy | OCKEAN TOOLS',
   },
   seoDescription: {
-    uz: "VERO TOOLS mijozlarning shaxsga doir ma'lumotlarini qanday to'playdi, ishlatadi va himoya qiladi, sizning huquqlaringiz va biz bilan bog'lanish usullari.",
-    ru: 'Как VERO TOOLS собирает, использует и защищает персональные данные клиентов, какие у вас есть права и как с нами связаться.',
-    en: "How VERO TOOLS collects, uses and protects customers' personal data, what rights you have and how to contact us.",
+    uz: "OCKEAN TOOLS mijozlarning shaxsga doir ma'lumotlarini qanday to'playdi, ishlatadi va himoya qiladi, sizning huquqlaringiz va biz bilan bog'lanish usullari.",
+    ru: 'Как OCKEAN TOOLS собирает, использует и защищает персональные данные клиентов, какие у вас есть права и как с нами связаться.',
+    en: "How OCKEAN TOOLS collects, uses and protects customers' personal data, what rights you have and how to contact us.",
   },
 };
 
@@ -798,7 +798,7 @@ const terms: SeedPage = {
   slug: 'terms',
   title: { uz: 'Ommaviy oferta', ru: 'Публичная оферта', en: 'Public offer (terms of sale)' },
   content: {
-    uz: `Ushbu ommaviy oferta (keyingi o'rinlarda — «Oferta») VERO TOOLS internet-do'koni — verotools.uz sayti va mobil ilova (keyingi o'rinlarda — «Do'kon») orqali tovarlarni masofadan sotish shartlarini belgilaydi. ${S.legalName.uz} (keyingi o'rinlarda — «Sotuvchi») har qanday jismoniy yoki yuridik shaxsga (keyingi o'rinlarda — «Xaridor») quyidagi shartlarda oldi-sotdi shartnomasini tuzishni taklif qiladi.
+    uz: `Ushbu ommaviy oferta (keyingi o'rinlarda — «Oferta») OCKEAN TOOLS internet-do'koni — ockean.uz sayti va mobil ilova (keyingi o'rinlarda — «Do'kon») orqali tovarlarni masofadan sotish shartlarini belgilaydi. ${S.legalName.uz} (keyingi o'rinlarda — «Sotuvchi») har qanday jismoniy yoki yuridik shaxsga (keyingi o'rinlarda — «Xaridor») quyidagi shartlarda oldi-sotdi shartnomasini tuzishni taklif qiladi.
 
 ## 1. Ofertani qabul qilish
 
@@ -879,7 +879,7 @@ Tovarlarga kafolat xizmati ko'rsatish, ularni qaytarish va almashtirish [Kafolat
 - **Telefon:** ${tel(S.phones.primary)}
 - **Elektron pochta:** ${mail(S.email)}
 - **Sayt:** [${bare(S.website)}](${S.website})`,
-    ru: `Настоящая публичная оферта (далее — «Оферта») определяет условия дистанционной продажи товаров через интернет-магазин VERO TOOLS — сайт verotools.uz и мобильное приложение (далее — «Магазин»). ${S.legalName.ru} (далее — «Продавец») предлагает любому физическому или юридическому лицу (далее — «Покупатель») заключить договор купли-продажи на изложенных ниже условиях.
+    ru: `Настоящая публичная оферта (далее — «Оферта») определяет условия дистанционной продажи товаров через интернет-магазин OCKEAN TOOLS — сайт ockean.uz и мобильное приложение (далее — «Магазин»). ${S.legalName.ru} (далее — «Продавец») предлагает любому физическому или юридическому лицу (далее — «Покупатель») заключить договор купли-продажи на изложенных ниже условиях.
 
 ## 1. Акцепт оферты
 
@@ -960,7 +960,7 @@ Tovarlarga kafolat xizmati ko'rsatish, ularni qaytarish va almashtirish [Kafolat
 - **Телефон:** ${tel(S.phones.primary)}
 - **Электронная почта:** ${mail(S.email)}
 - **Сайт:** [${bare(S.website)}](${S.website})`,
-    en: `This public offer (the "Offer") sets out the terms for the remote sale of goods through the VERO TOOLS online store — the verotools.uz website and mobile app (the "Store"). ${S.legalName.en} (the "Seller") offers to conclude a sale contract on the terms below with any individual or legal entity (the "Buyer").
+    en: `This public offer (the "Offer") sets out the terms for the remote sale of goods through the OCKEAN TOOLS online store — the ockean.uz website and mobile app (the "Store"). ${S.legalName.en} (the "Seller") offers to conclude a sale contract on the terms below with any individual or legal entity (the "Buyer").
 
 ## 1. Acceptance of the Offer
 
@@ -1043,14 +1043,14 @@ Warranty service, returns and exchanges are carried out under the terms of the [
 - **Website:** [${bare(S.website)}](${S.website})`,
   },
   seoTitle: {
-    uz: 'Ommaviy oferta — onlayn xarid shartlari | VERO TOOLS',
-    ru: 'Публичная оферта — условия покупки | VERO TOOLS',
-    en: 'Public offer — terms of sale | VERO TOOLS',
+    uz: 'Ommaviy oferta — onlayn xarid shartlari | OCKEAN TOOLS',
+    ru: 'Публичная оферта — условия покупки | OCKEAN TOOLS',
+    en: 'Public offer — terms of sale | OCKEAN TOOLS',
   },
   seoDescription: {
-    uz: "VERO TOOLS internet-do'konida buyurtma berish shartlari: narxlar, buyurtmani tasdiqlash, to'lov, yetkazib berish, bekor qilish, javobgarlik va nizolarni hal qilish.",
-    ru: 'Условия заказа в интернет-магазине VERO TOOLS: цены, подтверждение заказа, оплата, доставка, отмена, ответственность и разрешение споров.',
-    en: 'Terms for ordering from the VERO TOOLS online store: prices, order confirmation, payment, delivery, cancellation, liability and dispute resolution.',
+    uz: "OCKEAN TOOLS internet-do'konida buyurtma berish shartlari: narxlar, buyurtmani tasdiqlash, to'lov, yetkazib berish, bekor qilish, javobgarlik va nizolarni hal qilish.",
+    ru: 'Условия заказа в интернет-магазине OCKEAN TOOLS: цены, подтверждение заказа, оплата, доставка, отмена, ответственность и разрешение споров.',
+    en: 'Terms for ordering from the OCKEAN TOOLS online store: prices, order confirmation, payment, delivery, cancellation, liability and dispute resolution.',
   },
 };
 
@@ -1232,9 +1232,9 @@ Companies and sole proprietors can request an invoice for payment and an electro
 Our operators will never ask for your card PIN or an SMS confirmation code. If someone asks you for them, do not share the details and let us know.`,
   },
   seoTitle: {
-    uz: "To'lov usullari va muddatli to'lov | VERO TOOLS",
-    ru: 'Способы оплаты и рассрочка | VERO TOOLS',
-    en: 'Payment methods and installments | VERO TOOLS',
+    uz: "To'lov usullari va muddatli to'lov | OCKEAN TOOLS",
+    ru: 'Способы оплаты и рассрочка | OCKEAN TOOLS',
+    en: 'Payment methods and installments | OCKEAN TOOLS',
   },
   seoDescription: {
     uz: "Naqd pul, Uzcard va Humo kartalari, Click va Payme orqali to'lov hamda 3, 6 yoki 12 oyga muddatli to'lov shartlari.",
@@ -1361,14 +1361,14 @@ ${pickupPoints('en')}
 For corporate orders, invoices and tax invoices, email ${mail(S.email)} and our manager will get back to you. ${S.legalName.en} company details are available on request.`,
   },
   seoTitle: {
-    uz: 'Kontaktlar — telefon, manzil va ish vaqti | VERO TOOLS',
-    ru: 'Контакты — телефон, адрес и время работы | VERO TOOLS',
-    en: 'Contacts — phone, address and opening hours | VERO TOOLS',
+    uz: 'Kontaktlar — telefon, manzil va ish vaqti | OCKEAN TOOLS',
+    ru: 'Контакты — телефон, адрес и время работы | OCKEAN TOOLS',
+    en: 'Contacts — phone, address and opening hours | OCKEAN TOOLS',
   },
   seoDescription: {
-    uz: "VERO TOOLS bilan bog'lanish: telefon raqamlari, elektron pochta, Toshkentdagi shourum manzili, ish vaqti, olib ketish punktlari va ijtimoiy tarmoqlar.",
-    ru: 'Как связаться с VERO TOOLS: телефоны, электронная почта, адрес шоурума в Ташкенте, время работы, пункты выдачи и социальные сети.',
-    en: 'How to reach VERO TOOLS: phone numbers, email, our Tashkent showroom address, opening hours, pickup points and social media.',
+    uz: "OCKEAN TOOLS bilan bog'lanish: telefon raqamlari, elektron pochta, Toshkentdagi shourum manzili, ish vaqti, olib ketish punktlari va ijtimoiy tarmoqlar.",
+    ru: 'Как связаться с OCKEAN TOOLS: телефоны, электронная почта, адрес шоурума в Ташкенте, время работы, пункты выдачи и социальные сети.',
+    en: 'How to reach OCKEAN TOOLS: phone numbers, email, our Tashkent showroom address, opening hours, pickup points and social media.',
   },
 };
 

@@ -18,12 +18,12 @@ export const usePageMetaStore = create<PageMetaState>((set) => ({
   setDetail: (detail) => set({ detail }),
 }));
 
-/** Sets document.title ("Orders · VERO TOOLS Admin") and the breadcrumb label of the current record. */
+/** Sets document.title ("Orders · OCKEAN TOOLS Admin") and the breadcrumb label of the current record. */
 export function usePageMeta(title: string | undefined, detail?: string | null) {
   const { t } = useTranslation();
   const setDetail = usePageMetaStore((s) => s.setDetail);
   useEffect(() => {
-    const parts = [detail, title, 'VERO TOOLS Admin'].filter(Boolean);
+    const parts = [detail, title, 'OCKEAN TOOLS Admin'].filter(Boolean);
     document.title = parts.join(' · ');
   }, [title, detail, t]);
   useEffect(() => {

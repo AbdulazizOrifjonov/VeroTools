@@ -1,16 +1,16 @@
 import type { ConfigContext, ExpoConfig } from 'expo/config';
 
 /**
- * VERO TOOLS customer app (Expo). Environment:
+ * OCKEAN TOOLS customer app (Expo). Environment:
  *   EXPO_PUBLIC_API_URL   absolute API base, e.g. http://192.168.1.20:4000/api (LAN IP for a phone)
- *   EXPO_PUBLIC_WEB_URL   storefront origin used for share links / universal links (default https://verotools.uz)
+ *   EXPO_PUBLIC_WEB_URL   storefront origin used for share links / universal links (default https://ockean.uz)
  *   EAS_PROJECT_ID        EAS project id — required for Expo push tokens (push is skipped without it)
  */
 const API_URL = process.env.EXPO_PUBLIC_API_URL ?? 'http://localhost:4000/api';
-const WEB_URL = (process.env.EXPO_PUBLIC_WEB_URL ?? 'https://verotools.uz').replace(/\/+$/, '');
+const WEB_URL = (process.env.EXPO_PUBLIC_WEB_URL ?? 'https://ockean.uz').replace(/\/+$/, '');
 const PROJECT_ID = process.env.EAS_PROJECT_ID ?? process.env.EXPO_PUBLIC_EAS_PROJECT_ID;
 
-const BRAND = '#FD470E';
+const BRAND = '#FD8902';
 const LIGHT_BG = '#FFFFFF';
 const DARK_BG = '#0E0E10';
 
@@ -26,9 +26,9 @@ export default ({ config }: ConfigContext): ExpoConfig => {
   const webHost = hostOf(WEB_URL);
   return {
     ...config,
-    name: 'VERO TOOLS',
-    slug: 'vero-tools',
-    scheme: 'verotools',
+    name: 'OCKEAN TOOLS',
+    slug: 'ockean-tools',
+    scheme: 'ockeantools',
     version: '1.0.0',
     orientation: 'portrait',
     icon: './assets/icon.png',
@@ -36,7 +36,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     backgroundColor: LIGHT_BG,
     primaryColor: BRAND,
     ios: {
-      bundleIdentifier: 'uz.verotools.app',
+      bundleIdentifier: 'uz.ockean.app',
       buildNumber: '1',
       supportsTablet: true,
       config: { usesNonExemptEncryption: false },
@@ -46,7 +46,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       },
     },
     android: {
-      package: 'uz.verotools.app',
+      package: 'uz.ockean.app',
       versionCode: 1,
       adaptiveIcon: {
         foregroundImage: './assets/adaptive-icon.png',
@@ -77,8 +77,8 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       bundler: 'metro',
       output: 'single',
       favicon: './assets/favicon.png',
-      name: 'VERO TOOLS',
-      shortName: 'VERO TOOLS',
+      name: 'OCKEAN TOOLS',
+      shortName: 'OCKEAN',
       themeColor: BRAND,
       backgroundColor: LIGHT_BG,
     },
@@ -109,9 +109,9 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         'expo-image-picker',
         {
           photosPermission:
-            'VERO TOOLS uses your photo library so you can add photos to product reviews and set a profile picture.',
+            'OCKEAN TOOLS uses your photo library so you can add photos to product reviews and set a profile picture.',
           cameraPermission:
-            'VERO TOOLS uses the camera so you can take photos for product reviews and your profile picture.',
+            'OCKEAN TOOLS uses the camera so you can take photos for product reviews and your profile picture.',
           microphonePermission: false,
         },
       ],

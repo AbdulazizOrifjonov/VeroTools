@@ -286,7 +286,7 @@ export default function ProductPage() {
   const { slug = '' } = useParams();
   const product = useProduct(slug);
   const p = product.data;
-  useDocumentMeta({ title: p ? (p.seoTitle?.replace(/\s*\|\s*VERO TOOLS\s*$/i, '') || p.name) : undefined, description: p?.seoDescription || p?.shortDescription });
+  useDocumentMeta({ title: p ? (p.seoTitle?.replace(/\s*\|\s*OCKEAN TOOLS\s*$/i, '') || p.name) : undefined, description: p?.seoDescription || p?.shortDescription });
 
   if (product.isPending) return <ProductSkeleton />;
   if (product.isError) {

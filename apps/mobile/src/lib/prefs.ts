@@ -17,7 +17,7 @@ interface PrefsState {
   hydrate: () => Promise<void>;
 }
 
-const THEME_CHOSEN = 'vt.themeChosen';
+const THEME_CHOSEN = 'ot.themeChosen';
 
 /** Per-device preferences (theme, language). Signed-in customers also keep them in the profile. */
 export const usePrefs = create<PrefsState>((set, get) => ({

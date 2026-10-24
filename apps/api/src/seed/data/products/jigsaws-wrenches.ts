@@ -6,14 +6,14 @@ export const JIGSAWS_WRENCHES: SeedProduct[] = [
   // ─── jigsaws ───────────────────────────────────────────────────────────
   {
     sku: 'VT-JSW-1001',
-    slug: 'vero-pro-js-750-pendulum-jigsaw-750-w',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-js-750-pendulum-jigsaw-750-w',
+    brand: 'ockean-pro',
     category: 'jigsaws',
     illustration: 'jigsaw',
     name: {
-      uz: 'VERO PRO JS-750 mayatnikli elektr lobzik, 750 Vt',
-      ru: 'Электролобзик маятниковый VERO PRO JS-750, 750 Вт',
-      en: 'VERO PRO JS-750 Pendulum Jigsaw, 750 W',
+      uz: 'OCKEAN PRO JS-750 mayatnikli elektr lobzik, 750 Vt',
+      ru: 'Электролобзик маятниковый OCKEAN PRO JS-750, 750 Вт',
+      en: 'OCKEAN PRO JS-750 Pendulum Jigsaw, 750 W',
     },
     shortDescription: {
       uz: "Yog'ochda 85 mm gacha kesadigan, 4 pog'onali mayatnik yurishli 750 Vt lobzik.",
@@ -255,9 +255,9 @@ export const JIGSAWS_WRENCHES: SeedProduct[] = [
       },
     ],
     seoTitle: {
-      uz: 'Forgeline FX-1850 zarbli gaykovyort 850 Nm — narxi | VERO TOOLS',
-      ru: 'Ударный гайковёрт Forgeline FX-1850 850 Нм — цена | VERO TOOLS',
-      en: 'Forgeline FX-1850 Impact Wrench 850 Nm — Price | VERO TOOLS',
+      uz: 'Forgeline FX-1850 zarbli gaykovyort 850 Nm — narxi | OCKEAN TOOLS',
+      ru: 'Ударный гайковёрт Forgeline FX-1850 850 Нм — цена | OCKEAN TOOLS',
+      en: 'Forgeline FX-1850 Impact Wrench 850 Nm — Price | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "Cho'tkasiz 18 V gaykovyort, 850 Nm, 1/2\" kvadrat. Faqat asbob yoki 2×5,0 Ah to'plam. Shinomontaj va avtoservislar uchun, 36 oylik kafolat.",
@@ -267,14 +267,14 @@ export const JIGSAWS_WRENCHES: SeedProduct[] = [
   },
   {
     sku: 'VT-IWR-1002',
-    slug: 'vero-pro-iw-18-300-cordless-impact-wrench',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-iw-18-300-cordless-impact-wrench',
+    brand: 'ockean-pro',
     category: 'impact-wrenches',
     illustration: 'impact_wrench',
     name: {
-      uz: 'VERO PRO IW-18 300 akkumulyatorli zarbli gaykovyort',
-      ru: 'Аккумуляторный ударный гайковёрт VERO PRO IW-18 300',
-      en: 'VERO PRO IW-18 300 Cordless Impact Wrench',
+      uz: 'OCKEAN PRO IW-18 300 akkumulyatorli zarbli gaykovyort',
+      ru: 'Аккумуляторный ударный гайковёрт OCKEAN PRO IW-18 300',
+      en: 'OCKEAN PRO IW-18 300 Cordless Impact Wrench',
     },
     shortDescription: {
       uz: '300 Nm momentli ixcham 18 V gaykovyort, 2×2,0 Ah akkumulyator va keys bilan.',

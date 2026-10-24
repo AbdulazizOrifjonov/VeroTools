@@ -7,14 +7,14 @@ import type { SeedBrand } from './types';
  */
 export const BRANDS: SeedBrand[] = [
   {
-    key: 'vero-pro',
-    slug: 'vero-pro',
-    name: 'VERO PRO',
+    key: 'ockean-pro',
+    slug: 'ockean-pro',
+    name: 'OCKEAN PRO',
     country: { uz: "O'zbekiston", ru: 'Узбекистан', en: 'Uzbekistan' },
     description: {
-      uz: "VERO PRO — VERO TOOLS katalogidagi asboblar liniyasi: uy ta'miri va kundalik ustaxona ishlari uchun elektr va qo'l asboblari.",
-      ru: 'VERO PRO — линейка инструмента в каталоге VERO TOOLS: электро- и ручной инструмент для домашнего ремонта и повседневной работы в мастерской.',
-      en: 'VERO PRO is a tool line in the VERO TOOLS catalogue: power and hand tools for home repairs and everyday workshop jobs.',
+      uz: "OCKEAN PRO — OCKEAN TOOLS katalogidagi asboblar liniyasi: uy ta'miri va kundalik ustaxona ishlari uchun elektr va qo'l asboblari.",
+      ru: 'OCKEAN PRO — линейка инструмента в каталоге OCKEAN TOOLS: электро- и ручной инструмент для домашнего ремонта и повседневной работы в мастерской.',
+      en: 'OCKEAN PRO is a tool line in the OCKEAN TOOLS catalogue: power and hand tools for home repairs and everyday workshop jobs.',
     },
     color: '#FF4500',
     accent: '#1C1C1F',

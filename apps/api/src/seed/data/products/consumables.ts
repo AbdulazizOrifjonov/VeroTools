@@ -421,14 +421,14 @@ export const CONSUMABLES: SeedProduct[] = [
   },
   {
     sku: 'VT-ELC-1003',
-    slug: 'vero-pro-e6013-welding-electrodes-3-0-mm-5-kg',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-e6013-welding-electrodes-3-0-mm-5-kg',
+    brand: 'ockean-pro',
     category: 'welding-electrodes',
     illustration: 'welding_electrodes',
     name: {
-      uz: 'VERO PRO E6013 payvandlash elektrodlari, 3,0 mm, 5 kg',
-      ru: 'Сварочные электроды VERO PRO E6013, 3,0 мм, 5 кг',
-      en: 'VERO PRO E6013 Welding Electrodes, 3.0 mm, 5 kg',
+      uz: 'OCKEAN PRO E6013 payvandlash elektrodlari, 3,0 mm, 5 kg',
+      ru: 'Сварочные электроды OCKEAN PRO E6013, 3,0 мм, 5 кг',
+      en: 'OCKEAN PRO E6013 Welding Electrodes, 3.0 mm, 5 kg',
     },
     shortDescription: {
       uz: "Uy xo'jaligidagi payvandlash ishlari uchun hamyonbop 3 mm li rutil elektrodlar.",
@@ -437,7 +437,7 @@ export const CONSUMABLES: SeedProduct[] = [
     },
     description: {
       uz: md(
-        "VERO PRO E6013 har qanday maishiy invertor bilan yaxshi ishlaydi va mayda ta'mirlashda toza chok beradi. 5 kg qadoqda taxminan 190 ta elektrod bor.",
+        "OCKEAN PRO E6013 har qanday maishiy invertor bilan yaxshi ishlaydi va mayda ta'mirlashda toza chok beradi. 5 kg qadoqda taxminan 190 ta elektrod bor.",
         [
           'Diametri 3,0 mm, uzunligi 350 mm',
           'Tavsiya etilgan tok 80–120 A',
@@ -447,7 +447,7 @@ export const CONSUMABLES: SeedProduct[] = [
         "Garaj, dala hovli va uy xo'jaligida uglerodli po'latni payvandlash uchun.",
       ),
       ru: md(
-        'VERO PRO E6013 хорошо работают с любым бытовым инвертором и дают аккуратный шов при мелком ремонте. В упаковке 5 кг — примерно 190 электродов.',
+        'OCKEAN PRO E6013 хорошо работают с любым бытовым инвертором и дают аккуратный шов при мелком ремонте. В упаковке 5 кг — примерно 190 электродов.',
         [
           'Диаметр 3,0 мм, длина 350 мм',
           'Рекомендуемый ток 80–120 А',
@@ -457,7 +457,7 @@ export const CONSUMABLES: SeedProduct[] = [
         'Для сварки углеродистой стали в гараже, на даче и в хозяйстве.',
       ),
       en: md(
-        'VERO PRO E6013 electrodes work well with any household inverter and give a neat weld for small repairs. A 5 kg pack holds about 190 electrodes.',
+        'OCKEAN PRO E6013 electrodes work well with any household inverter and give a neat weld for small repairs. A 5 kg pack holds about 190 electrodes.',
         [
           '3.0 mm diameter, 350 mm long',
           'Recommended current 80–120 A',

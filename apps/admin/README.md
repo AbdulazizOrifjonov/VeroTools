@@ -1,4 +1,4 @@
-# VERO TOOLS — admin panel (`@vero/admin`)
+# OCKEAN TOOLS — admin panel (`@vero/admin`)
 
 React 19 + Vite 7 + React Router 7, TanStack Query / Table / Virtual, react-hook-form + zod (shared schemas),
 Recharts, Tailwind CSS 4 and `@vero/ui`. Staff sign in with e-mail or phone; every screen and action checks the

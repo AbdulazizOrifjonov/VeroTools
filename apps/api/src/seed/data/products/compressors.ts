@@ -79,14 +79,14 @@ export const COMPRESSORS: SeedProduct[] = [
   },
   {
     sku: 'VT-OCM-1002',
-    slug: 'vero-pro-ac-24-oil-lubricated-compressor-24-l',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-ac-24-oil-lubricated-compressor-24-l',
+    brand: 'ockean-pro',
     category: 'oil-compressors',
     illustration: 'compressor',
     name: {
-      uz: 'VERO PRO AC-24 moyli kompressor, 24 l, 1,5 kVt',
-      ru: 'Масляный компрессор VERO PRO AC-24, 24 л, 1,5 кВт',
-      en: 'VERO PRO AC-24 Oil-Lubricated Compressor, 24 L, 1.5 kW',
+      uz: 'OCKEAN PRO AC-24 moyli kompressor, 24 l, 1,5 kVt',
+      ru: 'Масляный компрессор OCKEAN PRO AC-24, 24 л, 1,5 кВт',
+      en: 'OCKEAN PRO AC-24 Oil-Lubricated Compressor, 24 L, 1.5 kW',
     },
     shortDescription: {
       uz: 'Garaj va uy ustaxonasi uchun 24 litrli ixcham moyli kompressor.',
@@ -292,14 +292,14 @@ export const COMPRESSORS: SeedProduct[] = [
   },
   {
     sku: 'VT-FCM-1002',
-    slug: 'vero-pro-of-50-oil-free-compressor-50-l',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-of-50-oil-free-compressor-50-l',
+    brand: 'ockean-pro',
     category: 'oil-free-compressors',
     illustration: 'compressor',
     name: {
-      uz: 'VERO PRO OF-50 moysiz kompressor, 50 l, 1,8 kVt',
-      ru: 'Безмасляный компрессор VERO PRO OF-50, 50 л, 1,8 кВт',
-      en: 'VERO PRO OF-50 Oil-Free Compressor, 50 L, 1.8 kW',
+      uz: 'OCKEAN PRO OF-50 moysiz kompressor, 50 l, 1,8 kVt',
+      ru: 'Безмасляный компрессор OCKEAN PRO OF-50, 50 л, 1,8 кВт',
+      en: 'OCKEAN PRO OF-50 Oil-Free Compressor, 50 L, 1.8 kW',
     },
     shortDescription: {
       uz: "Moy almashtirishni talab qilmaydigan va sovuq garajda ham oson ishga tushadigan 50 litrli kompressor.",

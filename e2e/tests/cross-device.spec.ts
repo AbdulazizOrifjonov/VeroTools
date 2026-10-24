@@ -14,7 +14,7 @@ import { devices, expect, test, type Browser, type Page } from '@playwright/test
 const WEB = (process.env.E2E_WEB_URL ?? 'http://localhost:3000').replace(/\/+$/, '');
 const ADMIN = (process.env.E2E_ADMIN_URL ?? 'http://localhost:3001').replace(/\/+$/, '');
 const MOBILE = process.env.E2E_MOBILE_URL?.replace(/\/+$/, '');
-const STAFF = { login: process.env.E2E_ADMIN_LOGIN ?? 'admin@verotools.uz', password: process.env.E2E_ADMIN_PASSWORD ?? 'VeroAdmin2026' };
+const STAFF = { login: process.env.E2E_ADMIN_LOGIN ?? 'admin@ockean.uz', password: process.env.E2E_ADMIN_PASSWORD ?? 'OckeanAdmin2026' };
 
 // a fresh, valid Uzbek mobile number for every run (+998 99 xxx xx xx)
 const localPhone = `99${String(Date.now()).slice(-7)}`;

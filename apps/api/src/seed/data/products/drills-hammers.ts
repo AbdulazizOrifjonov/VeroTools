@@ -110,9 +110,9 @@ export const DRILLS_HAMMERS: SeedProduct[] = [
       },
     ],
     seoTitle: {
-      uz: 'Volkstark VS-18 BL Pro drel-shurupoverti — narxi va xususiyatlari | VERO TOOLS',
-      ru: 'Дрель-шуруповёрт Volkstark VS-18 BL Pro — цена и характеристики | VERO TOOLS',
-      en: 'Volkstark VS-18 BL Pro Drill Driver — Price & Specs | VERO TOOLS',
+      uz: 'Volkstark VS-18 BL Pro drel-shurupoverti — narxi va xususiyatlari | OCKEAN TOOLS',
+      ru: 'Дрель-шуруповёрт Volkstark VS-18 BL Pro — цена и характеристики | OCKEAN TOOLS',
+      en: 'Volkstark VS-18 BL Pro Drill Driver — Price & Specs | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "Cho'tkasiz 18 V drel-shurupovert, 65 Nm, 2×4,0 Ah akkumulyator va keys bilan. O'zbekiston bo'ylab yetkazib berish va 36 oylik kafolat.",
@@ -122,14 +122,14 @@ export const DRILLS_HAMMERS: SeedProduct[] = [
   },
   {
     sku: 'VT-DRL-1002',
-    slug: 'vero-pro-cd-18-li-cordless-drill-driver',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-cd-18-li-cordless-drill-driver',
+    brand: 'ockean-pro',
     category: 'drills-drivers',
     illustration: 'drill_cordless',
     name: {
-      uz: 'VERO PRO CD-18 Li akkumulyatorli drel-shurupovert',
-      ru: 'Аккумуляторная дрель-шуруповёрт VERO PRO CD-18 Li',
-      en: 'VERO PRO CD-18 Li Cordless Drill Driver',
+      uz: 'OCKEAN PRO CD-18 Li akkumulyatorli drel-shurupovert',
+      ru: 'Аккумуляторная дрель-шуруповёрт OCKEAN PRO CD-18 Li',
+      en: 'OCKEAN PRO CD-18 Li Cordless Drill Driver',
     },
     shortDescription: {
       uz: "Uy va kundalik ta'mirlash uchun 42 Nm momentli yengil 18 V drel-shurupovert.",
@@ -299,9 +299,9 @@ export const DRILLS_HAMMERS: SeedProduct[] = [
     flags: { featured: true, isNew: true },
     weightKg: 4.2,
     seoTitle: {
-      uz: "Kaizentech KT-DH18X cho'tkasiz zarbli drel — narxi | VERO TOOLS",
-      ru: 'Ударная дрель-шуруповёрт Kaizentech KT-DH18X — цена | VERO TOOLS',
-      en: 'Kaizentech KT-DH18X Brushless Combi Drill — Price | VERO TOOLS',
+      uz: "Kaizentech KT-DH18X cho'tkasiz zarbli drel — narxi | OCKEAN TOOLS",
+      ru: 'Ударная дрель-шуруповёрт Kaizentech KT-DH18X — цена | OCKEAN TOOLS',
+      en: 'Kaizentech KT-DH18X Brushless Combi Drill — Price | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "90 Nm momentli cho'tkasiz 18 V zarbli drel-shurupovert, 2×5,0 Ah akkumulyator va keys bilan. 36 oylik kafolat, tez yetkazib berish.",
@@ -462,9 +462,9 @@ export const DRILLS_HAMMERS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 5.2,
     seoTitle: {
-      uz: 'Volkstark VH 2-28 SDS-plus perforatori — narxi va xususiyatlari | VERO TOOLS',
-      ru: 'Перфоратор Volkstark VH 2-28 SDS-plus — цена и характеристики | VERO TOOLS',
-      en: 'Volkstark VH 2-28 SDS-plus Rotary Hammer — Price & Specs | VERO TOOLS',
+      uz: 'Volkstark VH 2-28 SDS-plus perforatori — narxi va xususiyatlari | OCKEAN TOOLS',
+      ru: 'Перфоратор Volkstark VH 2-28 SDS-plus — цена и характеристики | OCKEAN TOOLS',
+      en: 'Volkstark VH 2-28 SDS-plus Rotary Hammer — Price & Specs | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "900 Vt, 3,2 J zarba energiyali uch rejimli perforator, keys bilan. Betonda 28 mm gacha teshik. 36 oylik kafolat va O'zbekiston bo'ylab yetkazib berish.",
@@ -474,14 +474,14 @@ export const DRILLS_HAMMERS: SeedProduct[] = [
   },
   {
     sku: 'VT-RHM-1002',
-    slug: 'vero-pro-rh-2680-rotary-hammer-800-w',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-rh-2680-rotary-hammer-800-w',
+    brand: 'ockean-pro',
     category: 'rotary-hammers',
     illustration: 'rotary_hammer',
     name: {
-      uz: 'VERO PRO RH-2680 perforatori, 800 Vt',
-      ru: 'Перфоратор VERO PRO RH-2680, 800 Вт',
-      en: 'VERO PRO RH-2680 Rotary Hammer, 800 W',
+      uz: 'OCKEAN PRO RH-2680 perforatori, 800 Vt',
+      ru: 'Перфоратор OCKEAN PRO RH-2680, 800 Вт',
+      en: 'OCKEAN PRO RH-2680 Rotary Hammer, 800 W',
     },
     shortDescription: {
       uz: "Uy ta'miri uchun 2,7 J zarba energiyali, uch rejimli SDS-plus perforator.",

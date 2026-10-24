@@ -156,9 +156,9 @@ export const PRESSURE_WASHERS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 24,
     seoTitle: {
-      uz: 'Hydrostorm HS 170 Pro yuvish apparati 170 bar — narxi | VERO TOOLS',
-      ru: 'Мойка высокого давления Hydrostorm HS 170 Pro 170 бар — цена | VERO TOOLS',
-      en: 'Hydrostorm HS 170 Pro Pressure Washer 170 bar — Price | VERO TOOLS',
+      uz: 'Hydrostorm HS 170 Pro yuvish apparati 170 bar — narxi | OCKEAN TOOLS',
+      ru: 'Мойка высокого давления Hydrostorm HS 170 Pro 170 бар — цена | OCKEAN TOOLS',
+      en: 'Hydrostorm HS 170 Pro Pressure Washer 170 bar — Price | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "170 bar, 510 l/soat, induksion dvigatel va latun nasos. Avtoyuvish va avtoservislar uchun professional moyka, 36 oylik kafolat.",
@@ -168,14 +168,14 @@ export const PRESSURE_WASHERS: SeedProduct[] = [
   },
   {
     sku: 'VT-EPW-1003',
-    slug: 'vero-pro-pw-120-compact-pressure-washer-120-bar',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-pw-120-compact-pressure-washer-120-bar',
+    brand: 'ockean-pro',
     category: 'electric-pressure-washers',
     illustration: 'pressure_washer',
     name: {
-      uz: 'VERO PRO PW-120 ixcham yuvish apparati, 120 bar',
-      ru: 'Компактная мойка высокого давления VERO PRO PW-120, 120 бар',
-      en: 'VERO PRO PW-120 Compact Pressure Washer, 120 bar',
+      uz: 'OCKEAN PRO PW-120 ixcham yuvish apparati, 120 bar',
+      ru: 'Компактная мойка высокого давления OCKEAN PRO PW-120, 120 бар',
+      en: 'OCKEAN PRO PW-120 Compact Pressure Washer, 120 bar',
     },
     shortDescription: {
       uz: "Balkon yoki garajda saqlash qulay bo'lgan, 8,5 kg li 120 bar ixcham moyka.",
@@ -316,14 +316,14 @@ export const PRESSURE_WASHERS: SeedProduct[] = [
   },
   {
     sku: 'VT-PPW-1002',
-    slug: 'vero-pro-pwp-200-petrol-pressure-washer-200-bar',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-pwp-200-petrol-pressure-washer-200-bar',
+    brand: 'ockean-pro',
     category: 'petrol-pressure-washers',
     illustration: 'pressure_washer',
     name: {
-      uz: 'VERO PRO PWP-200 benzinli yuvish apparati, 200 bar',
-      ru: 'Бензиновая мойка высокого давления VERO PRO PWP-200, 200 бар',
-      en: 'VERO PRO PWP-200 Petrol Pressure Washer, 200 bar',
+      uz: 'OCKEAN PRO PWP-200 benzinli yuvish apparati, 200 bar',
+      ru: 'Бензиновая мойка высокого давления OCKEAN PRO PWP-200, 200 бар',
+      en: 'OCKEAN PRO PWP-200 Petrol Pressure Washer, 200 bar',
     },
     shortDescription: {
       uz: 'Dala va fermalar uchun 200 bar bosimli, 6,5 o.k. dvigatelli avtonom yuvish apparati.',

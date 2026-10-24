@@ -18,11 +18,11 @@ const webHost = (() => {
   try {
     return new URL(WEB_URL).host.replace(/^www\./, '');
   } catch {
-    return 'verotools.uz';
+    return 'ockean.uz';
   }
 })();
 
-/** True for links that stay inside the store ("/catalog/x", "https://verotools.uz/product/y", "verotools://orders"). */
+/** True for links that stay inside the store ("/catalog/x", "https://ockean.uz/product/y", "verotools://orders"). */
 export function isInternalHref(href: string): boolean {
   if (href.startsWith('/') && !href.startsWith('//')) return true;
   if (/^verotools:\/\//i.test(href)) return true;

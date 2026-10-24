@@ -50,7 +50,7 @@ const ctxFor = (lang: Language, client: 'web' | 'mobile' = 'web'): RequestContex
   guestId: null,
   instanceId: null,
   ip: '127.0.0.1',
-  userAgent: client === 'mobile' ? 'VERO TOOLS mobile (demo seed)' : 'Mozilla/5.0 (demo seed)',
+  userAgent: client === 'mobile' ? 'OCKEAN TOOLS mobile (demo seed)' : 'Mozilla/5.0 (demo seed)',
 });
 
 interface DemoCustomer {
@@ -301,7 +301,7 @@ export async function seedOrders(log: SeedLog, rng: Rng, customers: DemoCustomer
         await changeStatus(orderId, to, staff.manager, {
           note: to === 'RETURNED' ? 'Customer return within the return period' : plan.installmentDecision && to === 'CONFIRMED' ? 'installment approved' : undefined,
           cancelReason: to === 'CANCELLED' ? (plan.installmentDecision === 'REJECTED' ? 'installment_rejected' : 'customer_request') : undefined,
-          carrier: to === 'SHIPPED' && regional ? 'Partner courier service' : to === 'SHIPPED' && courier ? 'VERO TOOLS courier' : undefined,
+          carrier: to === 'SHIPPED' && regional ? 'Partner courier service' : to === 'SHIPPED' && courier ? 'OCKEAN TOOLS courier' : undefined,
           trackingNumber: to === 'SHIPPED' && regional ? `VT${rng.int(10_000_000, 99_999_999)}` : undefined,
         });
       }
@@ -396,7 +396,7 @@ export async function seedReviews(log: SeedLog, rng: Rng, orders: IOrder[], cust
           status: reject ? 'REJECTED' : 'APPROVED',
           moderatedBy: staff.manager.id,
           moderatedAt: new Date(moderatedAt),
-          ...(reply ? { reply: { text: reply, by: staff.manager.id, byName: 'VERO TOOLS', at: new Date(moderatedAt) } } : {}),
+          ...(reply ? { reply: { text: reply, by: staff.manager.id, byName: 'OCKEAN TOOLS', at: new Date(moderatedAt) } } : {}),
         },
       },
     );
@@ -467,7 +467,7 @@ export async function seedQuestions(log: SeedLog, rng: Rng, customers: DemoCusto
     if (i < count - 3) {
       const answerAt = at + rng.int(1, 20) * HOUR;
       clock.pin(new Date(answerAt));
-      await ProductQuestion.updateOne({ _id: doc._id }, { $set: { status: 'PUBLISHED', answer: { text: qa.a(p, ctx)[c.lang], by: staff.manager.id, byName: 'VERO TOOLS', at: new Date(answerAt) } } });
+      await ProductQuestion.updateOne({ _id: doc._id }, { $set: { status: 'PUBLISHED', answer: { text: qa.a(p, ctx)[c.lang], by: staff.manager.id, byName: 'OCKEAN TOOLS', at: new Date(answerAt) } } });
       events.emit('question.answered', { questionId: doc._id });
       await events.drain();
       answered++;

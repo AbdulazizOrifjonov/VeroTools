@@ -2,7 +2,7 @@
   "name": "vero-tools",
   "version": "1.0.0",
   "private": true,
-  "description": "VERO TOOLS — e-commerce ecosystem (web, mobile, admin, API) for professional tools and equipment in Uzbekistan",
+  "description": "OCKEAN TOOLS — e-commerce ecosystem (web, mobile, admin, API) for professional tools and equipment in Uzbekistan",
   "workspaces": [
     "packages/*",
     "apps/*",

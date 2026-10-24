@@ -22,7 +22,7 @@ export const SPARE_PARTS: SeedProduct[] = [
     },
     description: {
       uz: md(
-        "Ko'mir cho'tkalar yeyilganda dvigatel uchqun chiqaradi va quvvatini yo'qotadi — ularni o'z vaqtida almashtirish yakorni saqlab qoladi. 6 × 10 mm kesimli cho'tkalar VERO PRO AG-125/1100 va shu o'lchamdagi cho'tkali ko'plab bolgarka va drellarga mos keladi.",
+        "Ko'mir cho'tkalar yeyilganda dvigatel uchqun chiqaradi va quvvatini yo'qotadi — ularni o'z vaqtida almashtirish yakorni saqlab qoladi. 6 × 10 mm kesimli cho'tkalar OCKEAN PRO AG-125/1100 va shu o'lchamdagi cho'tkali ko'plab bolgarka va drellarga mos keladi.",
         [
           "O'lcham 6 × 10 × 15 mm, qadoqda 2 dona",
           "Grafit-mis tarkib kollektorni kam yeydi",
@@ -32,7 +32,7 @@ export const SPARE_PARTS: SeedProduct[] = [
         "Bolgarka, drel va boshqa kollektorli dvigatelli asboblarni ta'mirlash uchun.",
       ),
       ru: md(
-        'Когда угольные щётки изнашиваются, двигатель искрит и теряет мощность — своевременная замена сохраняет якорь. Щётки сечением 6 × 10 мм подходят к VERO PRO AG-125/1100 и многим болгаркам и дрелям с таким же размером щёток.',
+        'Когда угольные щётки изнашиваются, двигатель искрит и теряет мощность — своевременная замена сохраняет якорь. Щётки сечением 6 × 10 мм подходят к OCKEAN PRO AG-125/1100 и многим болгаркам и дрелям с таким же размером щёток.',
         [
           'Размер 6 × 10 × 15 мм, в упаковке 2 шт.',
           'Графито-медный состав бережно работает с коллектором',
@@ -42,7 +42,7 @@ export const SPARE_PARTS: SeedProduct[] = [
         'Для ремонта болгарок, дрелей и другого инструмента с коллекторным двигателем.',
       ),
       en: md(
-        'When carbon brushes wear out, the motor sparks and loses power — replacing them in time saves the armature. These 6 × 10 mm brushes fit the VERO PRO AG-125/1100 and many grinders and drills that use the same size.',
+        'When carbon brushes wear out, the motor sparks and loses power — replacing them in time saves the armature. These 6 × 10 mm brushes fit the OCKEAN PRO AG-125/1100 and many grinders and drills that use the same size.',
         [
           '6 × 10 × 15 mm, pack of 2',
           'Copper-graphite mix that is gentle on the commutator',
@@ -92,7 +92,7 @@ export const SPARE_PARTS: SeedProduct[] = [
           "O'lcham 7 × 17 × 17 mm, qadoqda 2 dona",
           "Avto-stop funksiyasi — cho'tka yeyilganda dvigatel o'chadi",
           'Grafit-mis tarkib, prujina va klemma',
-          "VERO PRO RH-2680 va shu o'lchamdagi cho'tkali perforatorlarga mos",
+          "OCKEAN PRO RH-2680 va shu o'lchamdagi cho'tkali perforatorlarga mos",
         ],
         "Perforatorlar, buzish bolg'alari va 230 mm li bolgarkalarni ta'mirlash uchun.",
       ),
@@ -102,7 +102,7 @@ export const SPARE_PARTS: SeedProduct[] = [
           'Размер 7 × 17 × 17 мм, в упаковке 2 шт.',
           'Функция автостопа — при износе щётки двигатель отключается',
           'Графито-медный состав, пружина и клемма',
-          'Подходят к VERO PRO RH-2680 и перфораторам с таким же размером щёток',
+          'Подходят к OCKEAN PRO RH-2680 и перфораторам с таким же размером щёток',
         ],
         'Для ремонта перфораторов, отбойных молотков и болгарок 230 мм.',
       ),
@@ -112,7 +112,7 @@ export const SPARE_PARTS: SeedProduct[] = [
           '7 × 17 × 17 mm, pack of 2',
           'Auto-stop — the motor switches off when the brush is worn',
           'Copper-graphite mix, spring and terminal',
-          'Fits the VERO PRO RH-2680 and rotary hammers with the same brush size',
+          'Fits the OCKEAN PRO RH-2680 and rotary hammers with the same brush size',
         ],
         'For repairing rotary hammers, demolition hammers and 230 mm grinders.',
       ),

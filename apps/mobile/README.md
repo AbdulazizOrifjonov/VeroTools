@@ -1,4 +1,4 @@
-# VERO TOOLS — mobile app (`@vero/mobile`)
+# OCKEAN TOOLS — mobile app (`@vero/mobile`)
 
 Customer app for Android and iOS — Expo SDK 57, React Native 0.86, React Navigation, TanStack Query, the shared
 `@vero/api-client`, `@vero/i18n` and brand tokens from `@vero/config`. It uses the same API and the same account
@@ -19,7 +19,7 @@ npx expo start --web        # web preview on http://localhost:8081
 | Variable | Purpose | Default |
 |---|---|---|
 | `EXPO_PUBLIC_API_URL` | API base including `/api` | `http://localhost:4000/api` |
-| `EXPO_PUBLIC_WEB_URL` | storefront origin (share links, universal / app links) | `https://verotools.uz` |
+| `EXPO_PUBLIC_WEB_URL` | storefront origin (share links, universal / app links) | `https://ockean.uz` |
 | `EAS_PROJECT_ID` (or `EXPO_PUBLIC_EAS_PROJECT_ID`) | EAS project id, needed for push tokens | — |
 
 `EXPO_PUBLIC_*` values are embedded in the bundle — never put secrets there.
@@ -51,7 +51,7 @@ Checkout, Order, auth modals and the gallery.
 * **Orders:** list with filters, detail with live timeline, cancel with reason, pay, reorder, review delivered items.
 * **Profile:** avatar, phone verification, addresses, notifications, my reviews, help (FAQ, pages, contacts with
   call / e-mail / Telegram / map / form), settings (language, theme, notification channels, push, password).
-* Deep links: `verotools://…` and `https://verotools.uz/…` (all storefront routes, also with `/ru` or `/en`).
+* Deep links: `verotools://…` and `https://ockean.uz/…` (all storefront routes, also with `/ru` or `/en`).
 * Accessibility: 44 pt touch targets, screen-reader labels, reduced motion, dynamic type with a maximum scale.
 
 ## Checked

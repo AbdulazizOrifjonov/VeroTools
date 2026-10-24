@@ -36,7 +36,7 @@ import { Product } from '../models/product.model';
 import { Order } from '../models/order.model';
 
 /*
- * VERO TOOLS database seeding
+ * OCKEAN TOOLS database seeding
  *
  *   npm run seed                  base + demo data (development)
  *   npm run seed -- --reset       drop the database first, then base + demo
@@ -63,7 +63,7 @@ async function main() {
 
   await connectDatabase();
   const dbName = mongoose.connection.db?.databaseName ?? '?';
-  log.info(`\nVERO TOOLS seed → database "${dbName}" (${demo ? 'base + demo' : 'base only'}${reset ? ', reset' : ''})\n`);
+  log.info(`\nOCKEAN TOOLS seed → database "${dbName}" (${demo ? 'base + demo' : 'base only'}${reset ? ', reset' : ''})\n`);
 
   if (reset) {
     await mongoose.connection.db!.dropDatabase();
@@ -115,7 +115,7 @@ async function main() {
   await cache.invalidate(CacheTags.catalog, CacheTags.home, CacheTags.settings, CacheTags.content, CacheTags.translations);
 
   log.info(`\nDone in ${log.total()}s.\n`);
-  log.info(`  Admin panel owner : ${env.SEED_ADMIN_EMAIL} / ${env.SEED_ADMIN_PHONE}${env.SEED_ADMIN_PASSWORD === 'VeroAdmin2026' ? ' / VeroAdmin2026 (development default — change it)' : ''}`);
+  log.info(`  Admin panel owner : ${env.SEED_ADMIN_EMAIL} / ${env.SEED_ADMIN_PHONE}${env.SEED_ADMIN_PASSWORD === 'OckeanAdmin2026' ? ' / OckeanAdmin2026 (development default — change it)' : ''}`);
   if (demo) {
     log.info(`  Demo manager      : ${DEMO_STAFF.manager.email} / ${DEMO_STAFF.manager.password}`);
     log.info(`  Demo admin        : ${DEMO_STAFF.admin.email} / ${DEMO_STAFF.admin.password}`);

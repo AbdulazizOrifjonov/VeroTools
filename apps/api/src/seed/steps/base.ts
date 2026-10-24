@@ -152,7 +152,7 @@ export async function seedOwner(log: SeedLog): Promise<Types.ObjectId> {
     log.skip('owner account', `already exists (${existingOwner.email ?? existingOwner._id})`);
     return existingOwner._id;
   }
-  if (isProd && env.SEED_ADMIN_PASSWORD === 'VeroAdmin2026') {
+  if (isProd && env.SEED_ADMIN_PASSWORD === 'OckeanAdmin2026') {
     throw new Error('Refusing to create the owner account with the default password in production. Set SEED_ADMIN_PASSWORD (min. 8 chars, letters + digits).');
   }
   // the same rules as every other account, so the owner can actually sign in afterwards

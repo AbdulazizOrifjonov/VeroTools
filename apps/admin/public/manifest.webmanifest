@@ -1,11 +1,11 @@
 {
-  "name": "VERO TOOLS Admin",
-  "short_name": "VERO Admin",
+  "name": "OCKEAN TOOLS Admin",
+  "short_name": "OCKEAN Admin",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "theme_color": "#fd8902",
   "icons": [
     {
       "src": "/logo-192.png",

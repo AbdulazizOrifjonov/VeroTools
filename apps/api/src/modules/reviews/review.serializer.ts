@@ -33,7 +33,7 @@ export function toQuestionDTO(q: IProductQuestion): ProductQuestionDTO {
     id: String(q._id),
     question: q.question,
     author: { name: q.authorName },
-    answer: q.answer?.text ? { text: q.answer.text, author: q.answer.byName ?? 'VERO TOOLS', createdAt: iso(q.answer.at)! } : undefined,
+    answer: q.answer?.text ? { text: q.answer.text, author: q.answer.byName ?? 'OCKEAN TOOLS', createdAt: iso(q.answer.at)! } : undefined,
     createdAt: iso(q.createdAt)!,
   };
 }

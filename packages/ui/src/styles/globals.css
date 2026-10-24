@@ -33,12 +33,12 @@
   --muted-foreground: #65656f;
   --border: #e6e6ea;
   --input: #dadae0;
-  --primary: #fd470e;
-  --primary-hover: #db3b00;
+  --primary: #fd8902;
+  --primary-hover: #e67700;
   --primary-foreground: #ffffff;
-  --brand: #fd470e;
-  --brand-soft: #fff4ef;
-  --brand-soft-foreground: #b83100;
+  --brand: #fd8902;
+  --brand-soft: #fff9f0;
+  --brand-soft-foreground: #b85b00;
   --secondary: #f0f0f2;
   --secondary-foreground: #18181b;
   --success: #15803d;
@@ -90,12 +90,12 @@
   --muted-foreground: #a1a1ab;
   --border: #2a2a30;
   --input: #34343b;
-  --primary: #fd470e;
-  --primary-hover: #ff5a1f;
-  --primary-foreground: #ffffff;
-  --brand: #fd470e;
-  --brand-soft: #2a140c;
-  --brand-soft-foreground: #ff9a6b;
+  --primary: #fd8902;
+  --primary-hover: #ffa72e;
+  --primary-foreground: #000000;
+  --brand: #fd8902;
+  --brand-soft: #2d1a04;
+  --brand-soft-foreground: #ffc466;
   --secondary: #232328;
   --secondary-foreground: #f4f4f5;
   --success: #22c55e;
@@ -192,17 +192,17 @@
 @theme {
   --font-sans: 'Manrope Variable', 'Manrope', ui-sans-serif, system-ui, sans-serif;
 
-  --color-brand-50: #fff4ef;
-  --color-brand-100: #ffe4d6;
-  --color-brand-200: #ffc4a8;
-  --color-brand-300: #ff9a6b;
-  --color-brand-400: #ff6a33;
-  --color-brand-500: #fd470e;
-  --color-brand-600: #fd470e;
-  --color-brand-700: #b83100;
-  --color-brand-800: #942905;
-  --color-brand-900: #78240a;
-  --color-brand-950: #411003;
+  --color-brand-50: #fff9f0;
+  --color-brand-100: #ffeed4;
+  --color-brand-200: #ffdc9e;
+  --color-brand-300: #ffc466;
+  --color-brand-400: #ffa72e;
+  --color-brand-500: #fd8902;
+  --color-brand-600: #e67700;
+  --color-brand-700: #b85b00;
+  --color-brand-800: #8f4400;
+  --color-brand-900: #703500;
+  --color-brand-950: #3d1b00;
 
   --color-neutral-0: #ffffff;
   --color-neutral-50: #f7f7f8;

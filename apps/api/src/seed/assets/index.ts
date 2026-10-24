@@ -1,5 +1,5 @@
 /**
- * VERO TOOLS — seed media generator.
+ * OCKEAN TOOLS — seed media generator.
  *
  * Vector illustrations (./tools/*.svg, ./decor/*.svg) are tinted per brand and rendered to PNG
  * with sharp (librsvg). Everything is drawn with paths — no <text>, no system fonts — so the
@@ -92,7 +92,7 @@ function assetDir(): string {
   if (assetRoot) return assetRoot;
   const here = moduleDir();
   const candidates = [
-    process.env.VERO_SEED_ASSETS_DIR,
+    process.env.OCKEAN_SEED_ASSETS_DIR,
     here,
     here && path.join(here, 'assets'),
     here && path.join(here, 'seed-assets'),
@@ -104,7 +104,7 @@ function assetDir(): string {
   const found = candidates.find((dir) => existsSync(path.join(dir, 'tools', 'drill_cordless.svg')));
   if (!found) {
     throw new Error(
-      `[seed/assets] illustration folder not found (looked in: ${candidates.join(', ')}). Set VERO_SEED_ASSETS_DIR.`,
+      `[seed/assets] illustration folder not found (looked in: ${candidates.join(', ')}). Set OCKEAN_SEED_ASSETS_DIR.`,
     );
   }
   assetRoot = found;
@@ -1046,7 +1046,7 @@ function fonts(): Record<FontKey, GlyphFont> {
 }
 
 const BRAND_STYLES: Record<string, BrandStyle> = {
-  veropro: { font: 'geo', textCase: 'upper', tracking: 0.02, skew: 0, emblem: 'tile', split: 5 },
+  ockeanpro: { font: 'geo', textCase: 'upper', tracking: 0.02, skew: 0, emblem: 'tile', split: 5 },
   volkstark: { font: 'cond', textCase: 'upper', tracking: 0.07, skew: 0, emblem: 'hexnut' },
   kaizentech: { font: 'geo', textCase: 'lower', tracking: -0.01, skew: 0, emblem: 'loop', split: 6 },
   forgeline: { font: 'serif', textCase: 'upper', tracking: 0.06, skew: 0, emblem: 'anvil', bar: true },

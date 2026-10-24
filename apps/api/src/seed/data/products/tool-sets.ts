@@ -78,9 +78,9 @@ export const TOOL_SETS: SeedProduct[] = [
     flags: { featured: true, bestseller: true },
     weightKg: 7.8,
     seoTitle: {
-      uz: "Usta torts kallaklar to'plami 108 buyum — narxi | VERO TOOLS",
-      ru: 'Набор торцевых головок Usta, 108 предметов — цена | VERO TOOLS',
-      en: 'Usta 108-Piece Socket Set — Price | VERO TOOLS',
+      uz: "Usta torts kallaklar to'plami 108 buyum — narxi | OCKEAN TOOLS",
+      ru: 'Набор торцевых головок Usta, 108 предметов — цена | OCKEAN TOOLS',
+      en: 'Usta 108-Piece Socket Set — Price | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "108 buyumli avtomobil to'plami: 4–32 mm kallaklar, 1/4\" va 1/2\" treshotkalar, bitlar, Cr-V po'lat, keys. 24 oylik kafolat, tez yetkazib berish.",
@@ -445,14 +445,14 @@ export const TOOL_SETS: SeedProduct[] = [
   },
   {
     sku: 'VT-HTK-1002',
-    slug: 'vero-pro-108-piece-home-tool-kit',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-108-piece-home-tool-kit',
+    brand: 'ockean-pro',
     category: 'household-tool-kits',
     illustration: 'tool_case',
     name: {
-      uz: "VERO PRO uy uchun asboblar to'plami, 108 buyum",
-      ru: 'Бытовой набор инструментов VERO PRO, 108 предметов',
-      en: 'VERO PRO 108-Piece Home Tool Kit',
+      uz: "OCKEAN PRO uy uchun asboblar to'plami, 108 buyum",
+      ru: 'Бытовой набор инструментов OCKEAN PRO, 108 предметов',
+      en: 'OCKEAN PRO 108-Piece Home Tool Kit',
     },
     shortDescription: {
       uz: "Uy ta'miri va mebel yig'ish uchun mustahkam keysdagi kengaytirilgan 108 buyumli to'plam.",

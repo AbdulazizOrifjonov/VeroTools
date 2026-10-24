@@ -1,4 +1,4 @@
-# VERO TOOLS
+# OCKEAN TOOLS
 
 E-commerce ecosystem for a professional tools and equipment store in Uzbekistan: **storefront**, **mobile app**
 (Android / iOS), **admin panel** and **API** on one MongoDB database. A customer has one account on the website
@@ -12,7 +12,7 @@ in real time. Languages: Uzbek (default, Latin script), Russian, English. Curren
   bir xil; savat, sevimlilar, buyurtmalar real vaqtda sinxronlanadi.
 * **Tez ishga tushirish (kompyuterda):** Node.js 22, MongoDB 7 kerak → `npm install` → `npm run seed -- --reset`
   (demo ma'lumotlar) → `npm run dev` → do'kon http://localhost:5173, admin panel http://localhost:5174
-  (`admin@verotools.uz` / `VeroAdmin2026`).
+  (`admin@ockean.uz` / `OckeanAdmin2026`).
 * **Serverga o'rnatish:** Docker Compose bilan — [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) (boshida o'zbekcha
   qisqacha yo'riqnoma bor). Haqiqiy do'konda faqat `--base` seed ishlatiladi, demo ma'lumotlar **hech qachon**.
 * **To'lovlar:** naqd, karta (kuryer terminali), muddatli to'lov darhol ishlaydi. Payme, Click, Uzcard / Humo
@@ -96,7 +96,7 @@ build (`w` opens the web preview). Details: [apps/mobile/README.md](apps/mobile/
 
 | Role | Sign-in | Password |
 |---|---|---|
-| Owner (SUPER_ADMIN) | `admin@verotools.uz` or `+998900000001` | `VeroAdmin2026` (development default) |
+| Owner (SUPER_ADMIN) | `admin@ockean.uz` or `+998900000001` | `OckeanAdmin2026` (development default) |
 | Admin | `admin@example.com` | `Administrator2026` |
 | Manager (orders, stock, reviews — no finance data) | `manager@example.com` | `Manager2026` |
 | Customer | `+998901472536` (any phone in `apps/api/src/seed/data/customers.ts`) | `Demo2026` |
@@ -171,7 +171,7 @@ The base seed contains realistic-looking **sample** values so the store works fr
 * **Mobile app:** `EAS_PROJECT_ID`, store listings, `IOS_APP_IDS` / `ANDROID_SHA256_FINGERPRINTS` for app links.
 * **Catalogue:** your brands, products, prices, cost prices, stock, banners and promotions (never the demo data).
 
-The domain `verotools.uz` is used as the default everywhere; change it in `.env` and in `apps/mobile` if yours differs.
+The domain `ockean.uz` is used as the default everywhere; change it in `.env` and in `apps/mobile` if yours differs.
 
 ## Documentation
 

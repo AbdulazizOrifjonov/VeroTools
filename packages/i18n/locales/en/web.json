@@ -151,7 +151,7 @@
     "notificationsHint": "Notifications are always available in your account — choose where else to receive them.",
     "channels": "Channels",
     "topics": "Topics",
-    "pushHint": "In the VERO TOOLS mobile app",
+    "pushHint": "In the OCKEAN TOOLS mobile app",
     "noEmail": "Add an email address in your profile",
     "passwordSignOutNote": "After the change you'll be signed out on all devices — sign in again with the new password.",
     "passwordChangedRelogin": "Password changed. Please sign in with your new password."
@@ -169,7 +169,7 @@
     "pagesNav": "Information pages"
   },
   "contacts": {
-    "description": "VERO TOOLS contacts: phone, e-mail, store address and pickup points.",
+    "description": "OCKEAN TOOLS contacts: phone, e-mail, store address and pickup points.",
     "sendAnother": "Send another message",
     "privacyNote": "We use your details only to reply to your request.",
     "showOnMap": "On the map",

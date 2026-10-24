@@ -1,5 +1,5 @@
 /**
- * VERO TOOLS storefront — production server.
+ * OCKEAN TOOLS storefront — production server.
  *
  *  - serves the Vite build (hashed assets: 1 year immutable, index.html: no-cache)
  *  - proxies /api, /uploads, /socket.io (websocket), /sitemap*.xml and /robots.txt to the API
@@ -26,7 +26,7 @@ const SEO_TIMEOUT_MS = 1500;
 const SEO_TTL_MS = 60_000;
 const SEO_CACHE_MAX = 2000;
 const LANGS = ['uz', 'ru', 'en'];
-const DEFAULT_SITE_NAME = 'VERO TOOLS';
+const DEFAULT_SITE_NAME = 'OCKEAN TOOLS';
 
 if (!existsSync(INDEX_FILE)) {
   console.error(`[web] ${INDEX_FILE} not found — run "npm run build -w @vero/web" first.`);
@@ -100,7 +100,7 @@ const jsonForScript = (value) =>
 
 const escapeRegExp = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-/** The API appends the store name to SEO titles that may already contain it ("… | VERO TOOLS | VERO TOOLS"). */
+/** The API appends the store name to SEO titles that may already contain it ("… | OCKEAN TOOLS | OCKEAN TOOLS"). */
 function dedupeTitle(title, siteName) {
   if (!title || !siteName) return title;
   const suffix = new RegExp(`(?:\\s*\\|\\s*${escapeRegExp(siteName)})+\\s*$`, 'i');
@@ -213,7 +213,7 @@ app.get('/healthz', (_req, res) => {
 });
 
 /* ------------------------------------------ mobile app links (optional) */
-// iOS universal links and Android App Links open storefront URLs in the VERO TOOLS app. The operating
+// iOS universal links and Android App Links open storefront URLs in the OCKEAN TOOLS app. The operating
 // systems verify them with these two files, which are served only when the app identifiers are configured
 // (apple team + bundle id, Android signing certificate fingerprints); otherwise they are plain 404s.
 const list = (value) =>
@@ -347,7 +347,7 @@ app.use((err, _req, res, _next) => {
 });
 
 const server = app.listen(PORT, () => {
-  console.log(`[web] VERO TOOLS storefront on http://localhost:${PORT} → API ${API}`);
+  console.log(`[web] OCKEAN TOOLS storefront on http://localhost:${PORT} → API ${API}`);
 });
 server.on('upgrade', apiProxy.upgrade);
 

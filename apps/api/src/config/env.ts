@@ -75,7 +75,7 @@ const schema = z.object({
   CLIENT_URL: z.string().default('http://localhost:5173'),
   ADMIN_URL: z.string().default('http://localhost:5174'),
   /** deep-link scheme / URL used as payment return URL for the mobile app */
-  MOBILE_RETURN_URL: z.string().default('verotools://orders'),
+  MOBILE_RETURN_URL: z.string().default('ockeantools://orders'),
   CORS_ORIGINS: csv,
   /** public origin of this API, used to build absolute media URLs (local storage) */
   PUBLIC_API_URL: z.string().default('http://localhost:4000'),
@@ -97,7 +97,7 @@ const schema = z.object({
   SMTP_SECURE: bool(false),
   SMTP_USER: z.string().optional(),
   SMTP_PASSWORD: z.string().optional(),
-  MAIL_FROM: z.string().default('VERO TOOLS <no-reply@verotools.uz>'),
+  MAIL_FROM: z.string().default('OCKEAN TOOLS <no-reply@ockean.uz>'),
 
   SMS_PROVIDER: z.enum(['console', 'eskiz']).default('console'),
   ESKIZ_EMAIL: z.string().optional(),
@@ -130,9 +130,9 @@ const schema = z.object({
   JOBS_ENABLED: bool(true),
   /** allow search engines to index the storefront (robots.txt); only effective with NODE_ENV=production */
   SEO_INDEXING: bool(true),
-  SEED_ADMIN_EMAIL: z.string().default('admin@verotools.uz'),
+  SEED_ADMIN_EMAIL: z.string().default('admin@ockean.uz'),
   SEED_ADMIN_PHONE: z.string().default('+998900000001'),
-  SEED_ADMIN_PASSWORD: z.string().default('VeroAdmin2026'),
+  SEED_ADMIN_PASSWORD: z.string().default('OckeanAdmin2026'),
   /** the owner's name as shown in the admin panel (editable later in the profile) */
   SEED_ADMIN_FIRST_NAME: z.string().trim().min(2).max(60).default('Store'),
   SEED_ADMIN_LAST_NAME: z.string().trim().min(2).max(60).default('Owner'),

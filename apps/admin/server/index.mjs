@@ -1,5 +1,5 @@
 /**
- * VERO TOOLS admin panel — production server.
+ * OCKEAN TOOLS admin panel — production server.
  *
  *  - serves the Vite build: hashed files under /assets are cached for a year (immutable), index.html is
  *    never cached, every other client route falls back to index.html (SPA)

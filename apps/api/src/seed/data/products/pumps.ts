@@ -92,9 +92,9 @@ export const PUMPS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 21,
     seoTitle: {
-      uz: 'Idrovia 4SD 3/18 quduq nasosi 1,1 kVt — narxi | VERO TOOLS',
-      ru: 'Скважинный насос Idrovia 4SD 3/18 1,1 кВт — цена | VERO TOOLS',
-      en: 'Idrovia 4SD 3/18 Borehole Pump 1.1 kW — Price | VERO TOOLS',
+      uz: 'Idrovia 4SD 3/18 quduq nasosi 1,1 kVt — narxi | OCKEAN TOOLS',
+      ru: 'Скважинный насос Idrovia 4SD 3/18 1,1 кВт — цена | OCKEAN TOOLS',
+      en: 'Idrovia 4SD 3/18 Borehole Pump 1.1 kW — Price | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "4\" quduqlar uchun zanglamaydigan po'lat nasos: napor 110 m, 4,2 m³/soat, 30 m kabel. O'rnatish bo'yicha maslahat va 24 oylik kafolat.",
@@ -104,14 +104,14 @@ export const PUMPS: SeedProduct[] = [
   },
   {
     sku: 'VT-SUB-1002',
-    slug: 'vero-pro-sp-3-3-inch-borehole-pump-0-75-kw',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-sp-3-3-inch-borehole-pump-0-75-kw',
+    brand: 'ockean-pro',
     category: 'submersible-pumps',
     illustration: 'pump_submersible',
     name: {
-      uz: 'VERO PRO SP-3 3 dyuymli quduq nasosi, 0,75 kVt, 20 m kabel bilan',
-      ru: 'Скважинный насос VERO PRO SP-3 3", 0,75 кВт, с кабелем 20 м',
-      en: 'VERO PRO SP-3 3" Borehole Pump, 0.75 kW, with 20 m Cable',
+      uz: 'OCKEAN PRO SP-3 3 dyuymli quduq nasosi, 0,75 kVt, 20 m kabel bilan',
+      ru: 'Скважинный насос OCKEAN PRO SP-3 3", 0,75 кВт, с кабелем 20 м',
+      en: 'OCKEAN PRO SP-3 3" Borehole Pump, 0.75 kW, with 20 m Cable',
     },
     shortDescription: {
       uz: 'Tor quduqlar uchun 76 mm diametrli, 75 m gacha napor beradigan vintli nasos.',
@@ -323,14 +323,14 @@ export const PUMPS: SeedProduct[] = [
   },
   {
     sku: 'VT-SRF-1002',
-    slug: 'vero-pro-cp-750-centrifugal-surface-pump-750-w',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-cp-750-centrifugal-surface-pump-750-w',
+    brand: 'ockean-pro',
     category: 'surface-pumps',
     illustration: 'pump_surface',
     name: {
-      uz: 'VERO PRO CP-750 markazdan qochma yer usti nasosi, 750 Vt',
-      ru: 'Центробежный поверхностный насос VERO PRO CP-750, 750 Вт',
-      en: 'VERO PRO CP-750 Centrifugal Surface Pump, 750 W',
+      uz: 'OCKEAN PRO CP-750 markazdan qochma yer usti nasosi, 750 Vt',
+      ru: 'Центробежный поверхностный насос OCKEAN PRO CP-750, 750 Вт',
+      en: 'OCKEAN PRO CP-750 Centrifugal Surface Pump, 750 W',
     },
     shortDescription: {
       uz: "Ariq va hovuzdan sug'orish uchun soatiga 6 m³ gacha suv haydaydigan markazdan qochma nasos.",
@@ -472,9 +472,9 @@ export const PUMPS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 22,
     seoTitle: {
-      uz: 'Idrovia AquaHome 24 nasos stansiyasi — narxi | VERO TOOLS',
-      ru: 'Насосная станция Idrovia AquaHome 24 — цена | VERO TOOLS',
-      en: 'Idrovia AquaHome 24 Pumping Station — Price | VERO TOOLS',
+      uz: 'Idrovia AquaHome 24 nasos stansiyasi — narxi | OCKEAN TOOLS',
+      ru: 'Насосная станция Idrovia AquaHome 24 — цена | OCKEAN TOOLS',
+      en: 'Idrovia AquaHome 24 Pumping Station — Price | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "Uy uchun avtomatik suv ta'minoti: 1,0 kVt nasos, 24 l bak, bosim relesi va manometr. O'zbekiston bo'ylab yetkazib berish, 24 oylik kafolat.",
@@ -484,14 +484,14 @@ export const PUMPS: SeedProduct[] = [
   },
   {
     sku: 'VT-PST-1002',
-    slug: 'vero-pro-ps-800-50-pumping-station-800-w-50-l',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-ps-800-50-pumping-station-800-w-50-l',
+    brand: 'ockean-pro',
     category: 'pumping-stations',
     illustration: 'pump_surface',
     name: {
-      uz: 'VERO PRO PS-800/50 nasos stansiyasi, 800 Vt, 50 l',
-      ru: 'Насосная станция VERO PRO PS-800/50, 800 Вт, 50 л',
-      en: 'VERO PRO PS-800/50 Pumping Station, 800 W, 50 L',
+      uz: 'OCKEAN PRO PS-800/50 nasos stansiyasi, 800 Vt, 50 l',
+      ru: 'Насосная станция OCKEAN PRO PS-800/50, 800 Вт, 50 л',
+      en: 'OCKEAN PRO PS-800/50 Pumping Station, 800 W, 50 L',
     },
     shortDescription: {
       uz: "Katta oila uyida barqaror bosimni ta'minlaydigan, 50 litrli bakli cho'yan nasosli stansiya.",
@@ -633,14 +633,14 @@ export const PUMPS: SeedProduct[] = [
   },
   {
     sku: 'VT-DRN-1002',
-    slug: 'vero-pro-dp-400-clean-water-drainage-pump-400-w',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-dp-400-clean-water-drainage-pump-400-w',
+    brand: 'ockean-pro',
     category: 'drainage-pumps',
     illustration: 'pump_submersible',
     name: {
-      uz: 'VERO PRO DP-400 toza suv uchun drenaj nasosi, 400 Vt',
-      ru: 'Дренажный насос для чистой воды VERO PRO DP-400, 400 Вт',
-      en: 'VERO PRO DP-400 Clean-Water Drainage Pump, 400 W',
+      uz: 'OCKEAN PRO DP-400 toza suv uchun drenaj nasosi, 400 Vt',
+      ru: 'Дренажный насос для чистой воды OCKEAN PRO DP-400, 400 Вт',
+      en: 'OCKEAN PRO DP-400 Clean-Water Drainage Pump, 400 W',
     },
     shortDescription: {
       uz: 'Suvni 5 mm qoldiq sathigacha chiqaradigan, plastik korpusli yengil drenaj nasosi.',

@@ -34,8 +34,8 @@ export function writeJson(key: string, value: unknown): void {
 }
 
 export const ADMIN_STORAGE = {
-  language: 'vt.admin.language',
-  sidebarCollapsed: 'vt.admin.sidebar',
-  columns: (tableId: string) => `vt.admin.columns.${tableId}`,
-  mediaView: 'vt.admin.media.view',
+  language: 'ot.admin.language',
+  sidebarCollapsed: 'ot.admin.sidebar',
+  columns: (tableId: string) => `ot.admin.columns.${tableId}`,
+  mediaView: 'ot.admin.media.view',
 } as const;

@@ -78,14 +78,14 @@ export const INDUSTRIAL: SeedProduct[] = [
   },
   {
     sku: 'VT-DPR-1002',
-    slug: 'vero-pro-dp-25f-floor-drill-press-1100-w-25-mm',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-dp-25f-floor-drill-press-1100-w-25-mm',
+    brand: 'ockean-pro',
     category: 'drill-presses',
     illustration: 'drill_press',
     name: {
-      uz: 'VERO PRO DP-25F kolonnali parmalash dastgohi, 1100 Vt, 25 mm',
-      ru: 'Сверлильный станок колонного типа VERO PRO DP-25F, 1100 Вт, 25 мм',
-      en: 'VERO PRO DP-25F Floor Drill Press, 1100 W, 25 mm',
+      uz: 'OCKEAN PRO DP-25F kolonnali parmalash dastgohi, 1100 Vt, 25 mm',
+      ru: 'Сверлильный станок колонного типа OCKEAN PRO DP-25F, 1100 Вт, 25 мм',
+      en: 'OCKEAN PRO DP-25F Floor Drill Press, 1100 W, 25 mm',
     },
     shortDescription: {
       uz: "Ishlab chiqarish ustaxonalari uchun po'latda 25 mm gacha teshik ochadigan, polga o'rnatiladigan kolonnali dastgoh.",
@@ -226,14 +226,14 @@ export const INDUSTRIAL: SeedProduct[] = [
   },
   {
     sku: 'VT-BGR-1002',
-    slug: 'vero-pro-bg-150-bench-grinder-150-mm-350-w',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-bg-150-bench-grinder-150-mm-350-w',
+    brand: 'ockean-pro',
     category: 'bench-grinders',
     illustration: 'bench_grinder',
     name: {
-      uz: 'VERO PRO BG-150 charxlash dastgohi, 150 mm, 350 Vt, chiroqli',
-      ru: 'Точильный станок VERO PRO BG-150, 150 мм, 350 Вт, с подсветкой',
-      en: 'VERO PRO BG-150 Bench Grinder, 150 mm, 350 W, with Light',
+      uz: 'OCKEAN PRO BG-150 charxlash dastgohi, 150 mm, 350 Vt, chiroqli',
+      ru: 'Точильный станок OCKEAN PRO BG-150, 150 мм, 350 Вт, с подсветкой',
+      en: 'OCKEAN PRO BG-150 Bench Grinder, 150 mm, 350 W, with Light',
     },
     shortDescription: {
       uz: 'Uy ustaxonasi uchun ikki toshli, LED yoritgichli ixcham 150 mm charx.',

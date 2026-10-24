@@ -1,4 +1,4 @@
-# VERO TOOLS — payments
+# OCKEAN TOOLS — payments
 
 > **No payment credentials are included in this repository.** Merchant ids, keys and secret keys come from the
 > Payme and Click merchant cabinets and are set only in the server's `.env` (`PAYME_*`, `CLICK_*`). The values in
@@ -44,7 +44,7 @@ or polling never changes a payment.
 ```mermaid
 sequenceDiagram
   participant C as Customer (web / app)
-  participant A as VERO TOOLS API
+  participant A as OCKEAN TOOLS API
   participant P as Payme / Click
   C->>A: POST /api/orders (payment.method = payme | click | uzcard | humo | bank_card)
   A-->>C: 201 order PENDING, payment PENDING, stock reserved, payment.action = redirect URL
@@ -72,8 +72,8 @@ Setup in the Payme merchant cabinet (business account, "Cashbox" / kassa setting
 
 | Cabinet setting | Value |
 |---|---|
-| Endpoint URL | `https://verotools.uz/api/payments/payme` (or `https://api.verotools.uz/api/payments/payme`) |
-| Account field | `order_id` — the VERO TOOLS order number, e.g. `VT-261001-007` |
+| Endpoint URL | `https://ockean.uz/api/payments/payme` (or `https://api.ockean.uz/api/payments/payme`) |
+| Account field | `order_id` — the OCKEAN TOOLS order number, e.g. `VT-261001-007` |
 | Merchant (cashbox) id | → `PAYME_MERCHANT_ID` |
 | Key | test key while testing, production key afterwards → `PAYME_KEY` |
 
@@ -122,7 +122,7 @@ the sandbox (test.paycom.uz) and run its scenario checks — it calls every meth
 with a Payme test card. A quick manual check of the endpoint:
 
 ```bash
-curl -s https://verotools.uz/api/payments/payme \
+curl -s https://ockean.uz/api/payments/payme \
   -u "Paycom:$PAYME_KEY" -H 'Content-Type: application/json' \
   -d '{"jsonrpc":"2.0","id":1,"method":"CheckPerformTransaction","params":{"amount":100,"account":{"order_id":"VT-000000-000"}}}'
 # → {"jsonrpc":"2.0","id":1,"error":{"code":-31050,...,"data":"order_id"}}   (authenticated, order unknown)
@@ -137,8 +137,8 @@ Setup in the Click merchant cabinet (service settings):
 
 | Cabinet setting | Value |
 |---|---|
-| Prepare URL | `https://verotools.uz/api/payments/click/prepare` |
-| Complete URL | `https://verotools.uz/api/payments/click/complete` |
+| Prepare URL | `https://ockean.uz/api/payments/click/prepare` |
+| Complete URL | `https://ockean.uz/api/payments/click/complete` |
 | Service id, merchant id, merchant user id, secret key | → `CLICK_SERVICE_ID`, `CLICK_MERCHANT_ID`, `CLICK_MERCHANT_USER_ID` (optional), `CLICK_SECRET_KEY` |
 
 The checkout redirect is `https://my.click.uz/services/pay?service_id=…&merchant_id=…&amount=<so'm, 2 decimals>&
@@ -186,7 +186,7 @@ yourself:
 ```bash
 SECRET='<CLICK_SECRET_KEY>'; SID='<CLICK_SERVICE_ID>'; ORDER='VT-261001-007'; AMOUNT='250000'; T='2026-10-01 12:00:00'
 SIGN=$(printf '%s' "12345${SID}${SECRET}${ORDER}${AMOUNT}0${T}" | md5sum | cut -d' ' -f1)
-curl -s https://verotools.uz/api/payments/click/prepare \
+curl -s https://ockean.uz/api/payments/click/prepare \
   --data-urlencode click_trans_id=12345 --data-urlencode service_id="$SID" --data-urlencode click_paydoc_id=1 \
   --data-urlencode merchant_trans_id="$ORDER" --data-urlencode amount="$AMOUNT" --data-urlencode action=0 \
   --data-urlencode error=0 --data-urlencode sign_time="$T" --data-urlencode sign_string="$SIGN"

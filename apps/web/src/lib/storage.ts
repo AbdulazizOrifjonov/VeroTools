@@ -48,7 +48,7 @@ export function writeJson(key: string, value: unknown, kind: Area = 'local'): vo
 
 /** App-specific keys (the shared ones live in STORAGE_KEYS from @vero/config). */
 export const WEB_KEYS = {
-  recentlyViewed: 'vt.recentlyViewed',
-  listingView: 'vt.listingView',
-  checkout: 'vt.checkout',
+  recentlyViewed: 'ot.recentlyViewed',
+  listingView: 'ot.listingView',
+  checkout: 'ot.checkout',
 } as const;

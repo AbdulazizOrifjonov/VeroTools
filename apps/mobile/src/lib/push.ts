@@ -37,7 +37,7 @@ async function ensureAndroidChannel(): Promise<void> {
   await Notifications.setNotificationChannelAsync('default', {
     name: i18n.t('mobile:push.channelName'),
     importance: Notifications.AndroidImportance.HIGH,
-    lightColor: '#FD470E',
+    lightColor: '#FD8902',
     vibrationPattern: [0, 200, 120, 200],
   });
 }

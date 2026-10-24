@@ -6,14 +6,14 @@ export const GRINDERS_SAWS: SeedProduct[] = [
   // ─── angle-grinders ────────────────────────────────────────────────────
   {
     sku: 'VT-AGR-1001',
-    slug: 'vero-pro-ag-125-1100-angle-grinder',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-ag-125-1100-angle-grinder',
+    brand: 'ockean-pro',
     category: 'angle-grinders',
     illustration: 'angle_grinder',
     name: {
-      uz: 'VERO PRO AG-125/1100 burchakli silliqlash mashinasi (bolgarka)',
-      ru: 'Угловая шлифмашина (болгарка) VERO PRO AG-125/1100',
-      en: 'VERO PRO AG-125/1100 Angle Grinder',
+      uz: 'OCKEAN PRO AG-125/1100 burchakli silliqlash mashinasi (bolgarka)',
+      ru: 'Угловая шлифмашина (болгарка) OCKEAN PRO AG-125/1100',
+      en: 'OCKEAN PRO AG-125/1100 Angle Grinder',
     },
     shortDescription: {
       uz: '125 mm diskli, 1100 Vt quvvatli bolgarka: metallni kesish va payvand choklarini tozalash uchun.',
@@ -468,9 +468,9 @@ export const GRINDERS_SAWS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 6.4,
     seoTitle: {
-      uz: 'Volkstark VK 66-1600 diskli arra — narxi va xususiyatlari | VERO TOOLS',
-      ru: 'Циркулярная пила Volkstark VK 66-1600 — цена и характеристики | VERO TOOLS',
-      en: 'Volkstark VK 66-1600 Circular Saw — Price & Specs | VERO TOOLS',
+      uz: 'Volkstark VK 66-1600 diskli arra — narxi va xususiyatlari | OCKEAN TOOLS',
+      ru: 'Циркулярная пила Volkstark VK 66-1600 — цена и характеристики | OCKEAN TOOLS',
+      en: 'Volkstark VK 66-1600 Circular Saw — Price & Specs | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "1600 Vt professional diskli arra: 66 mm kesish chuqurligi, 48 tishli disk, elektron tormoz. Mebel ustaxonalari uchun, 36 oylik kafolat.",

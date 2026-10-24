@@ -80,12 +80,12 @@ export const SETTING_GROUPS: Record<SettingKey, string> = {
 };
 
 export const DEFAULT_SETTINGS: StoreSettingsValues = {
-  'store.name': 'VERO TOOLS',
-  'store.legalName': L('"VERO TOOLS" MChJ', 'ООО «VERO TOOLS»', 'VERO TOOLS LLC'),
-  'store.website': 'https://verotools.uz',
+  'store.name': 'OCKEAN TOOLS',
+  'store.legalName': L('"OCKEAN TOOLS" MChJ', 'ООО «OCKEAN TOOLS»', 'OCKEAN TOOLS LLC'),
+  'store.website': 'https://ockean.uz',
   'store.phone': '+998712000000',
   'store.phoneSecondary': '',
-  'store.email': 'info@verotools.uz',
+  'store.email': 'info@ockean.uz',
   'store.supportEmail': '',
   'store.address': L('Toshkent', 'Ташкент', 'Tashkent'),
   'store.workingHours': L('Du–Sha: 9:00–19:00', 'Пн–Сб: 9:00–19:00', 'Mon–Sat: 9:00–19:00'),
@@ -107,7 +107,7 @@ export const DEFAULT_SETTINGS: StoreSettingsValues = {
   'order.autoCancelUnpaidMinutes': 30,
   'inventory.lowStockThreshold': 5,
   'payments.enabledMethods': [...PAYMENT_METHODS],
-  'seo.title': L('VERO TOOLS — professional asboblar', 'VERO TOOLS — профессиональные инструменты', 'VERO TOOLS — professional tools'),
+  'seo.title': L('OCKEAN TOOLS — professional asboblar', 'OCKEAN TOOLS — профессиональные инструменты', 'OCKEAN TOOLS — professional tools'),
   'seo.description': L(),
   'home.advantages': [],
   'product.trustBullets': [],

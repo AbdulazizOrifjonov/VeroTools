@@ -159,14 +159,14 @@ export const CONSTRUCTION: SeedProduct[] = [
   },
   {
     sku: 'VT-CMX-1003',
-    slug: 'vero-pro-cm-140-concrete-mixer-140-l-650-w',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-cm-140-concrete-mixer-140-l-650-w',
+    brand: 'ockean-pro',
     category: 'concrete-mixers',
     illustration: 'concrete_mixer',
     name: {
-      uz: 'VERO PRO CM-140 beton qorgich, 140 l, 650 Vt',
-      ru: 'Бетономешалка VERO PRO CM-140, 140 л, 650 Вт',
-      en: 'VERO PRO CM-140 Concrete Mixer, 140 L, 650 W',
+      uz: 'OCKEAN PRO CM-140 beton qorgich, 140 l, 650 Vt',
+      ru: 'Бетономешалка OCKEAN PRO CM-140, 140 л, 650 Вт',
+      en: 'OCKEAN PRO CM-140 Concrete Mixer, 140 L, 650 W',
     },
     shortDescription: {
       uz: "Ta'mirlash va kichik qurilish ishlari uchun ixcham 140 litrli beton qorgich.",

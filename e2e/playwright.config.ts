@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
 /**
- * Cross-device end-to-end checks against a RUNNING VERO TOOLS stack (they create a real customer and a real
+ * Cross-device end-to-end checks against a RUNNING OCKEAN TOOLS stack (they create a real customer and a real
  * order — run them against a development / staging database, never against the live store).
  *
  *   E2E_WEB_URL      storefront          default http://localhost:3000  (npm run start -w @vero/web, or Vite :5173)

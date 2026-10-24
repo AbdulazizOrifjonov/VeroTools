@@ -42,7 +42,7 @@ export interface TokenStorage {
 }
 
 export interface ApiClientConfig {
-  /** e.g. "/api" (same origin) or "https://api.verotools.uz/api" */
+  /** e.g. "/api" (same origin) or "https://api.ockean.uz/api" */
   baseUrl: string;
   client: ClientApp;
   getLanguage: () => Language;

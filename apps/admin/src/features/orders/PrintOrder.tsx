@@ -31,7 +31,7 @@ export function PrintOrder({ order, kind }: { order: AdminOrder; kind: PrintKind
         <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
           <Logo size={44} />
           <div>
-            <div style={{ fontSize: 16, fontWeight: 800 }}>{store?.name ?? 'VERO TOOLS'}</div>
+            <div style={{ fontSize: 16, fontWeight: 800 }}>{store?.name ?? 'OCKEAN TOOLS'}</div>
             {store?.legalName ? <div>{store.legalName}</div> : null}
             {store?.address ? <div>{store.address}</div> : null}
             <div>{[store?.phone ? f.phone(store.phone) : null, store?.email].filter(Boolean).join(' · ')}</div>

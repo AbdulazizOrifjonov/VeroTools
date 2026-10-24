@@ -1,9 +1,9 @@
-# VERO TOOLS — deployment and operations
+# OCKEAN TOOLS — deployment and operations
 
 ## Qisqacha (o'zbekcha)
 
 **Nima kerak:** Linux server (Ubuntu 22.04 / 24.04 yoki Debian 12), kamida 2 vCPU, 4 GB RAM, 40 GB SSD; Docker Engine va
-Docker Compose v2; domenlar `verotools.uz`, `www.verotools.uz`, `admin.verotools.uz` (ixtiyoriy `api.verotools.uz`)
+Docker Compose v2; domenlar `ockean.uz`, `www.ockean.uz`, `admin.ockean.uz` (ixtiyoriy `api.ockean.uz`)
 server IP manziliga yo'naltirilgan bo'lishi kerak.
 
 **Birinchi o'rnatish:**
@@ -18,7 +18,7 @@ server IP manziliga yo'naltirilgan bo'lishi kerak.
    Keyin `.env` dan `SEED_ADMIN_PASSWORD` ni o'chiring.
 5. nginx va Let's Encrypt (certbot) bilan HTTPS ni sozlang (4-bo'lim). `.env` da `COOKIE_SECURE=true` va
    `TRUST_PROXY=2` bo'lishi shart.
-6. `https://admin.verotools.uz` ga kiring, parolni darhol o'zgartiring. **Admin → Sozlamalar** bo'limida do'kon
+6. `https://admin.ockean.uz` ga kiring, parolni darhol o'zgartiring. **Admin → Sozlamalar** bo'limida do'kon
    ma'lumotlarini (nom, yuridik nom, telefonlar, email, manzil, ish vaqti, xarita, ijtimoiy tarmoqlar) haqiqiy
    ma'lumotlar bilan almashtiring — seed dagi qiymatlar faqat namuna. Olib ketish punktlari, yetkazib berish narxlari
    va sahifalardagi (shartlar, maxfiylik, qaytarish) matnlarni ham tekshiring.
@@ -48,9 +48,9 @@ Contents: [1. Topology](#1-topology) · [2. Requirements](#2-requirements) · [3
 
 ```
 Internet ──443──▶ nginx (host, TLS)
-                   ├─ verotools.uz        → 127.0.0.1:3000  web    (storefront; proxies /api /uploads /socket.io … to api)
-                   ├─ admin.verotools.uz  → 127.0.0.1:3001  admin  (admin panel; proxies /api /uploads /socket.io to api)
-                   └─ api.verotools.uz    → 127.0.0.1:4000  api    (optional: mobile app, payment callbacks)
+                   ├─ ockean.uz        → 127.0.0.1:3000  web    (storefront; proxies /api /uploads /socket.io … to api)
+                   ├─ admin.ockean.uz  → 127.0.0.1:3001  admin  (admin panel; proxies /api /uploads /socket.io to api)
+                   └─ api.ockean.uz    → 127.0.0.1:4000  api    (optional: mobile app, payment callbacks)
 docker compose (project "vero-tools")
    network edge:     web, admin, api            (internet access for SMTP, SMS, Telegram, push, S3)
    network backend:  api, mongo, redis          (internal: no internet, no published ports)
@@ -76,8 +76,8 @@ container. Architecture details: [ARCHITECTURE.md](ARCHITECTURE.md).
   40 GB SSD; recommended 4 vCPU / 8 GB. Building the images needs about 2 GB of free RAM; MongoDB uses up to
   half of (RAM − 1 GB) for its cache.
 * **Docker Engine 24+ with the Compose plugin v2.20+** (`docker compose version`); BuildKit is the default builder.
-* **DNS:** A (and AAAA if the server has IPv6) records for `verotools.uz`, `www.verotools.uz`,
-  `admin.verotools.uz` and optionally `api.verotools.uz`.
+* **DNS:** A (and AAAA if the server has IPv6) records for `ockean.uz`, `www.ockean.uz`,
+  `admin.ockean.uz` and optionally `api.ockean.uz`.
 * **Firewall:** inbound 22 (SSH, keys only), 80 and 443. Nothing else — the stack binds to 127.0.0.1.
 * **Outbound HTTPS** from the server: `registry.npmjs.org` and Docker Hub (image builds), your SMTP server,
   `notify.eskiz.uz`, `api.telegram.org`, `exp.host` (Expo push), the S3 / Cloudinary endpoint if used.
@@ -121,9 +121,9 @@ Every variable is documented in `.env.example`. For the first start set at least
 | Variable | Production value |
 |---|---|
 | `JWT_SECRET`, `JWT_REFRESH_SECRET` | generated above — two different values (the API refuses to start otherwise) |
-| `CLIENT_URL` | `https://verotools.uz` |
-| `ADMIN_URL` | `https://admin.verotools.uz` |
-| `PUBLIC_API_URL` | `https://verotools.uz` (the storefront proxies `/api` and `/uploads`) or `https://api.verotools.uz` |
+| `CLIENT_URL` | `https://ockean.uz` |
+| `ADMIN_URL` | `https://admin.ockean.uz` |
+| `PUBLIC_API_URL` | `https://ockean.uz` (the storefront proxies `/api` and `/uploads`) or `https://api.ockean.uz` |
 | `TRUST_PROXY` | `2` (nginx → web/admin server → API; see §4) |
 | `COOKIE_SECURE` | `true` |
 | `SEED_ADMIN_EMAIL`, `SEED_ADMIN_PHONE` | the owner's real e-mail and `+998…` phone (sign-in identifiers) |
@@ -146,7 +146,7 @@ docker compose ps                                  # mongo, redis, api, web, adm
 curl -fsS http://127.0.0.1:4000/ready             # {"status":"ready","database":true,"redis":"ready"}
 curl -fsS http://127.0.0.1:3000/healthz           # {"status":"ok"}
 curl -fsS http://127.0.0.1:3001/healthz           # {"status":"ok"}
-docker compose logs api | tail                    # JSON logs, e.g. "VERO TOOLS API listening", "transactions": true
+docker compose logs api | tail                    # JSON logs, e.g. "OCKEAN TOOLS API listening", "transactions": true
 ```
 
 On the first start the `mongo` healthcheck initiates the replica set `rs0` (member `mongo:27017`); `api` waits
@@ -163,7 +163,7 @@ ADMIN, SUPER_ADMIN), the **owner account** (SUPER_ADMIN) from `SEED_ADMIN_*`, st
 pickup points, expense categories, content pages and FAQ, product specification definitions and the category tree
 with illustrations. It is idempotent: existing records and settings changed in the admin panel are never
 overwritten, and an existing owner is never modified. Production refuses the development default password
-(`VeroAdmin2026`) as well as demo data.
+(`OckeanAdmin2026`) as well as demo data.
 
 Afterwards remove `SEED_ADMIN_PASSWORD` from `.env` (or comment it out again) — the owner changes the password in
 the admin panel.
@@ -175,11 +175,11 @@ the admin panel.
 ### 3.6 Reverse proxy and TLS
 
 Configure nginx and certificates as described in [§4](#4-reverse-proxy-nginx--lets-encrypt), then open
-`https://verotools.uz` and `https://admin.verotools.uz`.
+`https://ockean.uz` and `https://admin.ockean.uz`.
 
 ### 3.7 First sign-in and store setup
 
-1. Sign in at `https://admin.verotools.uz` with the owner's e-mail or phone and **change the password**.
+1. Sign in at `https://admin.ockean.uz` with the owner's e-mail or phone and **change the password**.
 2. **Admin → Settings:** replace every store detail — the seeded values are realistic-looking **placeholders**:
    store and legal name, phones, e-mails, address, working hours, map position, footer text, SEO title and
    description, homepage
@@ -214,20 +214,20 @@ sudo mkdir -p /var/www/certbot
 
 1. Put only the first `server { listen 80; … }` block of the file below into `/etc/nginx/conf.d/vero-tools.conf`
    (the TLS blocks need the certificate first), then `sudo nginx -t && sudo systemctl reload nginx`.
-2. Request one certificate for all names (drop `api.verotools.uz` if you do not use it):
+2. Request one certificate for all names (drop `api.ockean.uz` if you do not use it):
 
    ```bash
    sudo certbot certonly --webroot -w /var/www/certbot \
-     -d verotools.uz -d www.verotools.uz -d admin.verotools.uz -d api.verotools.uz \
+     -d ockean.uz -d www.ockean.uz -d admin.ockean.uz -d api.ockean.uz \
      --deploy-hook "systemctl reload nginx"
    ```
 
    Renewal runs automatically (certbot systemd timer); test it with `sudo certbot renew --dry-run`.
 3. Install the complete file, `sudo nginx -t && sudo systemctl reload nginx`. Remove the `listen [::]:…` lines if
-   the server has no IPv6, and the `api.verotools.uz` block if you do not use that host.
+   the server has no IPv6, and the `api.ockean.uz` block if you do not use that host.
 
 ```nginx
-# /etc/nginx/conf.d/vero-tools.conf — VERO TOOLS behind nginx.
+# /etc/nginx/conf.d/vero-tools.conf — OCKEAN TOOLS behind nginx.
 # Docker Compose publishes web on 127.0.0.1:3000, admin on 127.0.0.1:3001 and the API on 127.0.0.1:4000.
 
 # Socket.IO WebSocket upgrade; an empty Connection header keeps upstream keep-alive for normal requests.
@@ -244,7 +244,7 @@ upstream vero_api   { server 127.0.0.1:4000; keepalive 16; }
 server {
     listen 80;
     listen [::]:80;
-    server_name verotools.uz www.verotools.uz admin.verotools.uz api.verotools.uz;
+    server_name ockean.uz www.ockean.uz admin.ockean.uz api.ockean.uz;
 
     location /.well-known/acme-challenge/ { root /var/www/certbot; }
     location / { return 301 https://$host$request_uri; }
@@ -254,19 +254,19 @@ server {
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name www.verotools.uz;
-    ssl_certificate     /etc/letsencrypt/live/verotools.uz/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/verotools.uz/privkey.pem;
-    return 301 https://verotools.uz$request_uri;
+    server_name www.ockean.uz;
+    ssl_certificate     /etc/letsencrypt/live/ockean.uz/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/ockean.uz/privkey.pem;
+    return 301 https://ockean.uz$request_uri;
 }
 
 # Storefront (also proxies /api, /uploads, /socket.io, sitemaps and robots.txt to the API)
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name verotools.uz;
-    ssl_certificate     /etc/letsencrypt/live/verotools.uz/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/verotools.uz/privkey.pem;
+    server_name ockean.uz;
+    ssl_certificate     /etc/letsencrypt/live/ockean.uz/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/ockean.uz/privkey.pem;
 
     # review photos (5 × 5 MB), avatars (3 MB)
     client_max_body_size 30m;
@@ -289,9 +289,9 @@ server {
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name admin.verotools.uz;
-    ssl_certificate     /etc/letsencrypt/live/verotools.uz/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/verotools.uz/privkey.pem;
+    server_name admin.ockean.uz;
+    ssl_certificate     /etc/letsencrypt/live/ockean.uz/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/ockean.uz/privkey.pem;
 
     # optional: office / VPN addresses only
     # allow 203.0.113.0/24;
@@ -315,13 +315,13 @@ server {
     location / { proxy_pass http://vero_admin; }
 }
 
-# Optional: dedicated API host for the mobile app and payment callbacks (PUBLIC_API_URL=https://api.verotools.uz)
+# Optional: dedicated API host for the mobile app and payment callbacks (PUBLIC_API_URL=https://api.ockean.uz)
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name api.verotools.uz;
-    ssl_certificate     /etc/letsencrypt/live/verotools.uz/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/verotools.uz/privkey.pem;
+    server_name api.ockean.uz;
+    ssl_certificate     /etc/letsencrypt/live/ockean.uz/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/ockean.uz/privkey.pem;
 
     client_max_body_size 30m;
 
@@ -343,7 +343,7 @@ What matters in this configuration:
 
 * **`X-Forwarded-For $remote_addr` (overwrite, not `$proxy_add_x_forwarded_for`)** together with
   **`TRUST_PROXY=2`**: requests to the storefront and the admin panel pass two proxies (nginx → web/admin server →
-  API), direct `api.verotools.uz` requests one. Because nginx replaces whatever the client sent, the API resolves
+  API), direct `api.ockean.uz` requests one. Because nginx replaces whatever the client sent, the API resolves
   the real visitor IP on every route and a client cannot spoof its address. With the default `TRUST_PROXY=1` every
   storefront visitor would appear with the web server's IP and share one rate-limit bucket (global 429s); with an
   appending `X-Forwarded-For` a client could forge its IP on the direct API host. If a CDN or load balancer sits in
@@ -355,7 +355,7 @@ What matters in this configuration:
 * **Upload limits:** storefront 30 MB (review photos 5 × 5 MB), admin 210 MB (media library 20 × 10 MB per
   request), API host 30 MB. The API enforces the per-file limits itself.
 * **Timeouts:** report exports in the admin panel may take up to two minutes (the admin server allows 120 s).
-* Leave `COOKIE_DOMAIN` empty: the refresh cookies are host-only for `verotools.uz` and `admin.verotools.uz`.
+* Leave `COOKIE_DOMAIN` empty: the refresh cookies are host-only for `ockean.uz` and `admin.ockean.uz`.
 
 Proxy-related variables:
 
@@ -363,9 +363,9 @@ Proxy-related variables:
 |---|---|---|
 | `TRUST_PROXY` | `2` | two trusted hops, see above (`1` only without nginx, e.g. local tests) |
 | `COOKIE_SECURE` | `true` | refresh cookies only over HTTPS |
-| `CLIENT_URL` | `https://verotools.uz` | canonical URLs, sitemap, e-mail links, payment return URL, CORS |
-| `ADMIN_URL` | `https://admin.verotools.uz` | CORS / Socket.IO origin of the admin panel |
-| `PUBLIC_API_URL` | `https://verotools.uz` or `https://api.verotools.uz` | absolute media URLs, payment callback URLs shown in the admin panel — must be public HTTPS, never `http://api:4000` |
+| `CLIENT_URL` | `https://ockean.uz` | canonical URLs, sitemap, e-mail links, payment return URL, CORS |
+| `ADMIN_URL` | `https://admin.ockean.uz` | CORS / Socket.IO origin of the admin panel |
+| `PUBLIC_API_URL` | `https://ockean.uz` or `https://api.ockean.uz` | absolute media URLs, payment callback URLs shown in the admin panel — must be public HTTPS, never `http://api:4000` |
 | `CORS_ORIGINS` | empty | extra browser origins only (e.g. Expo web during development); the native app needs none |
 | `MOBILE_RETURN_URL` | `verotools://orders` | payment return deep link of the app (scheme `verotools`) |
 
@@ -496,8 +496,8 @@ docker image prune -f
 | `GET /ready` (also `/api/ready`) | readiness — `200 {"status":"ready","database":true,"redis":"ready"}`, or `503 {"status":"degraded", …}` when MongoDB is disconnected or Redis is not ready |
 | `GET /healthz` on web / admin | the Node server is up |
 
-* External uptime checks: `https://verotools.uz/api/ready` (whole chain nginx → web → API → MongoDB / Redis),
-  `https://verotools.uz/`, `https://admin.verotools.uz/healthz`.
+* External uptime checks: `https://ockean.uz/api/ready` (whole chain nginx → web → API → MongoDB / Redis),
+  `https://ockean.uz/`, `https://admin.ockean.uz/healthz`.
 * `docker compose ps` shows the healthcheck state. Docker restarts containers that **exit**
   (`restart: unless-stopped`), not ones that are merely unhealthy — alert on unhealthy containers.
 * **Logs** are JSON lines (pino) in production: `level` (30 info, 40 warn, 50 error, 60 fatal), `time` (ms), `msg`,
@@ -530,12 +530,12 @@ Identifiers: Android package and iOS bundle id `uz.verotools.app`, URL scheme `v
 | Profile | Output | API (`EXPO_PUBLIC_API_URL`) | Use |
 |---|---|---|---|
 | `development` | Android debug APK / iOS simulator build | `http://192.168.1.20:4000/api` (LAN IP of a dev machine) | local testing |
-| `preview` | internal APK, channel `preview` | `https://staging.verotools.uz/api` | testers / staging |
-| `production` | Android App Bundle, channel `production`, build numbers auto-incremented | `https://verotools.uz/api` | store release |
+| `preview` | internal APK, channel `preview` | `https://staging.ockean.uz/api` | testers / staging |
+| `production` | Android App Bundle, channel `production`, build numbers auto-incremented | `https://ockean.uz/api` | store release |
 
 `EXPO_PUBLIC_*` values are embedded into the bundle at build time and are not secret. EAS builds do not read
 `apps/mobile/.env` (it is not uploaded); change them in `eas.json` (`build.<profile>.env`) or as EAS environment
-variables — e.g. use `https://api.verotools.uz/api` if you run the dedicated API host.
+variables — e.g. use `https://api.ockean.uz/api` if you run the dedicated API host.
 
 ```bash
 npm install -g eas-cli                     # >= 16
@@ -565,12 +565,12 @@ eas submit --platform ios --profile production         # App Store Connect API k
 
 The marketing version (`version` in `app.config.ts`) is bumped manually; build numbers are managed remotely by EAS
 (`appVersionSource: remote`, `autoIncrement`). Store listings need the privacy policy URL
-(`https://verotools.uz/privacy`), the data-safety / privacy questionnaire (account data, orders, push token,
+(`https://ockean.uz/privacy`), the data-safety / privacy questionnaire (account data, orders, push token,
 photos for reviews), screenshots and support contacts. `expo-updates` is not installed, so every change ships
 through a store release (the `channel` settings only matter once it is added).
 
-**App links.** The Android intent filters (`autoVerify`) for `https://verotools.uz/product|catalog|account|
-promotions|brands` and the iOS associated domain `applinks:verotools.uz` only verify when the storefront serves
+**App links.** The Android intent filters (`autoVerify`) for `https://ockean.uz/product|catalog|account|
+promotions|brands` and the iOS associated domain `applinks:ockean.uz` only verify when the storefront serves
 `/.well-known/assetlinks.json` and `/.well-known/apple-app-site-association`. The storefront server generates both
 files from its environment (set in `.env`, passed through by `docker-compose.yml`):
 
@@ -580,7 +580,7 @@ files from its environment (set in `.env`, passed through by `docker-compose.yml
 | `ANDROID_APP_PACKAGE` | `uz.verotools.app` (default) |
 | `ANDROID_SHA256_FINGERPRINTS` | SHA-256 fingerprint(s) of the **Play app-signing** certificate (Play Console → Test and release → App integrity), plus the upload key for internal builds if needed |
 
-Then `docker compose up -d web` and check `curl -s https://verotools.uz/.well-known/assetlinks.json`. While a
+Then `docker compose up -d web` and check `curl -s https://ockean.uz/.well-known/assetlinks.json`. While a
 variable is empty the file answers 404 and links simply open in the browser; the `verotools://` scheme (payment
 return) works regardless.
 

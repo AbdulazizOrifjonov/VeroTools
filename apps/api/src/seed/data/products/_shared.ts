@@ -25,7 +25,7 @@ export const COUNTRY = {
 };
 
 export const COLOR = {
-  /** VERO PRO */
+  /** OCKEAN PRO */
   orangeBlack: t("To'q sariq / qora", 'Оранжевый / чёрный', 'Orange / black'),
   /** Volkstark, Idrovia */
   blue: t("Ko'k", 'Синий', 'Blue'),

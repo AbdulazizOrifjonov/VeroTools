@@ -1,4 +1,4 @@
-# VERO TOOLS — frontend guide (web · admin · mobile)
+# OCKEAN TOOLS — frontend guide (web · admin · mobile)
 
 This is the contract every client app follows. The three apps talk to **one API** and **one database**;
 a customer uses the same account on the website and in the mobile app, and every change (cart, wishlist,
@@ -107,7 +107,7 @@ Do not copy other stores' code, layout, texts or branding (protools.uz, epamarke
 
 | Role | Login | Password |
 |---|---|---|
-| Owner (SUPER_ADMIN) | admin@verotools.uz | VeroAdmin2026 |
+| Owner (SUPER_ADMIN) | admin@ockean.uz | OckeanAdmin2026 |
 | Admin | admin@example.com | Administrator2026 |
 | Manager | manager@example.com | Manager2026 |
 | Customer | +998901472536 (any phone in `apps/api/src/seed/data/customers.ts`) | Demo2026 |

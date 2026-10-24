@@ -40,13 +40,13 @@ export const LIMITS = {
 } as const;
 
 export const STORAGE_KEYS = {
-  guestId: 'vt.guestId',
-  theme: 'vt.theme',
-  language: 'vt.language',
-  recentSearches: 'vt.recentSearches',
-  onboardingDone: 'vt.onboardingDone',
-  accessToken: 'vt.accessToken',
-  refreshToken: 'vt.refreshToken',
+  guestId: 'ot.guestId',
+  theme: 'ot.theme',
+  language: 'ot.language',
+  recentSearches: 'ot.recentSearches',
+  onboardingDone: 'ot.onboardingDone',
+  accessToken: 'ot.accessToken',
+  refreshToken: 'ot.refreshToken',
 } as const;
 
 /** Headers understood by the API. */

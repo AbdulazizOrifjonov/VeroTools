@@ -81,9 +81,9 @@ export const GARDEN: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 36,
     seoTitle: {
-      uz: "Bog'bon BM-46 SP o'ziyurar maysa o'rish mashinasi — narxi | VERO TOOLS",
-      ru: "Самоходная газонокосилка Bog'bon BM-46 SP — цена | VERO TOOLS",
-      en: "Bog'bon BM-46 SP Self-Propelled Lawn Mower — Price | VERO TOOLS",
+      uz: "Bog'bon BM-46 SP o'ziyurar maysa o'rish mashinasi — narxi | OCKEAN TOOLS",
+      ru: "Самоходная газонокосилка Bog'bon BM-46 SP — цена | OCKEAN TOOLS",
+      en: "Bog'bon BM-46 SP Self-Propelled Lawn Mower — Price | OCKEAN TOOLS",
     },
     seoDescription: {
       uz: "O'ziyurar benzinli maysa o'rish mashinasi: 46 sm, 60 l o't yig'gich, mulchalash. Issiq va changli sharoitga moslashtirilgan, 24 oylik kafolat.",
@@ -166,14 +166,14 @@ export const GARDEN: SeedProduct[] = [
   },
   {
     sku: 'VT-LMW-1003',
-    slug: 'vero-pro-lm-420p-petrol-lawn-mower-42-cm',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-lm-420p-petrol-lawn-mower-42-cm',
+    brand: 'ockean-pro',
     category: 'lawn-mowers',
     illustration: 'lawn_mower',
     name: {
-      uz: "VERO PRO LM-420P benzinli maysa o'rish mashinasi, 42 sm",
-      ru: 'Газонокосилка бензиновая VERO PRO LM-420P, 42 см',
-      en: 'VERO PRO LM-420P Petrol Lawn Mower, 42 cm',
+      uz: "OCKEAN PRO LM-420P benzinli maysa o'rish mashinasi, 42 sm",
+      ru: 'Газонокосилка бензиновая OCKEAN PRO LM-420P, 42 см',
+      en: 'OCKEAN PRO LM-420P Petrol Lawn Mower, 42 cm',
     },
     shortDescription: {
       uz: "Rozetkadan uzoqdagi maysazorlar uchun 42 sm li, qo'lda suriladigan benzinli maysa o'rish mashinasi.",
@@ -531,9 +531,9 @@ export const GARDEN: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 7.4,
     seoTitle: {
-      uz: 'Nordvik NCS 452 benzopila 45 sm — narxi | VERO TOOLS',
-      ru: 'Бензопила Nordvik NCS 452, шина 45 см — цена | VERO TOOLS',
-      en: 'Nordvik NCS 452 Chainsaw, 45 cm Bar — Price | VERO TOOLS',
+      uz: 'Nordvik NCS 452 benzopila 45 sm — narxi | OCKEAN TOOLS',
+      ru: 'Бензопила Nordvik NCS 452, шина 45 см — цена | OCKEAN TOOLS',
+      en: 'Nordvik NCS 452 Chainsaw, 45 cm Bar — Price | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "2,3 kVt professional benzopila: 45 sm shina, dekompressor, inersion zanjir tormozi. O'tin va daraxt kesish uchun, 24 oylik kafolat.",

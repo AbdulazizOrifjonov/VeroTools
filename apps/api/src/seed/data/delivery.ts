@@ -103,9 +103,9 @@ export const PICKUP_POINTS: SeedPickupPoint[] = [
   {
     code: 'TAS-01',
     name: {
-      uz: 'VERO TOOLS shourumi — Chilonzor',
-      ru: 'Шоурум VERO TOOLS — Чиланзар',
-      en: 'VERO TOOLS showroom — Chilanzar',
+      uz: 'OCKEAN TOOLS shourumi — Chilonzor',
+      ru: 'Шоурум OCKEAN TOOLS — Чиланзар',
+      en: 'OCKEAN TOOLS showroom — Chilanzar',
     },
     address: {
       uz: "Toshkent shahri, Chilonzor tumani, Bunyodkor shoh ko'chasi, 27-uy. Mo'ljal: «Chilonzor» metro bekati",

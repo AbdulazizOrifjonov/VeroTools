@@ -12,9 +12,9 @@ export const BANNERS: SeedBanner[] = [
   {
     placement: 'home_hero',
     title: {
-      uz: 'VERO PRO kunlari: 15% chegirma',
-      ru: 'Дни VERO PRO: скидка 15%',
-      en: 'VERO PRO days: 15% off',
+      uz: 'OCKEAN PRO kunlari: 15% chegirma',
+      ru: 'Дни OCKEAN PRO: скидка 15%',
+      en: 'OCKEAN PRO days: 15% off',
     },
     subtitle: {
       uz: "Do'konimiz brendining rasmiy kafolatli asboblari — endi yanada arzon",
@@ -22,7 +22,7 @@ export const BANNERS: SeedBanner[] = [
       en: 'Our own-brand tools with an official warranty — now for less',
     },
     buttonText: { uz: "Aksiyani ko'rish", ru: 'Смотреть акцию', en: 'View offer' },
-    buttonUrl: '/promotions/vero-pro-days',
+    buttonUrl: '/promotions/ockean-pro-days',
     art: 'power-tools',
     textTheme: 'dark',
     priority: 100,

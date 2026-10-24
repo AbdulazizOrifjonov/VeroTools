@@ -9,10 +9,9 @@ import * as React from 'react';
 
 import { cn } from '../lib/utils';
 
-const WORDMARK_RATIO = 476 / 211;
+const WORDMARK_RATIO = 895 / 148;
 
 function useSvgId(prefix: string): string {
-  // React ids may contain characters that are awkward inside url(#…) references.
   return `${prefix}-${React.useId().replace(/[^a-zA-Z0-9_-]/g, '')}`;
 }
 
@@ -22,14 +21,16 @@ export interface LogoProps extends Omit<
 > {
   /** Width and height in px (the logo is always square). Default 48. */
   size?: number;
-  /** Accessible name. Default 'VERO TOOLS'. */
+  /** Accessible name. Default 'OCKEAN TOOLS'. */
   title?: string;
+  /** Color of the inner wordmark. Default '#000000' (official). */
+  textColor?: string;
 }
 
-/** Official VERO TOOLS logo — orange radial-gradient circle with the white wordmark. Never distorted (1:1). */
-function Logo({ size = 48, title = 'VERO TOOLS', className, style, ...props }: LogoProps) {
-  const gradientId = useSvgId('vt-logo-gradient');
-  const titleId = useSvgId('vt-logo-title');
+/** Official OCKEAN TOOLS logo — vibrant golden-amber circle/squircle with the bold geometric wordmark. */
+function Logo({ size = 48, title = 'OCKEAN TOOLS', textColor = '#000000', className, style, ...props }: LogoProps) {
+  const gradientId = useSvgId('ockean-logo-gradient');
+  const titleId = useSvgId('ockean-logo-title');
 
   return (
     <svg
@@ -53,7 +54,7 @@ function Logo({ size = 48, title = 'VERO TOOLS', className, style, ...props }: L
         </radialGradient>
       </defs>
       <circle cx={LOGO_CIRCLE.cx} cy={LOGO_CIRCLE.cy} r={LOGO_CIRCLE.r} fill={`url(#${gradientId})`} />
-      <path d={LOGO_WORDMARK_PATH} fill="#FFFFFF" />
+      <path d={LOGO_WORDMARK_PATH} fill={textColor} fillRule="evenodd" />
     </svg>
   );
 }
@@ -62,15 +63,15 @@ export interface LogoWordmarkProps extends Omit<
   React.ComponentProps<'svg'>,
   'width' | 'height' | 'viewBox' | 'children'
 > {
-  /** Height in px; width follows the wordmark ratio (476 : 211). Default 24. */
+  /** Height in px; width follows the wordmark ratio (895 : 148). Default 24. */
   height?: number;
-  /** Accessible name. Default 'VERO TOOLS'. */
+  /** Accessible name. Default 'OCKEAN TOOLS'. */
   title?: string;
 }
 
-/** Wordmark only ("vero® TOOLS"), filled with `currentColor` — use on light or dark surfaces. */
-function LogoWordmark({ height = 24, title = 'VERO TOOLS', className, ...props }: LogoWordmarkProps) {
-  const titleId = useSvgId('vt-wordmark-title');
+/** Wordmark only ("OCKEAN"), filled with `currentColor` — use on light or dark surfaces. */
+function LogoWordmark({ height = 24, title = 'OCKEAN TOOLS', className, ...props }: LogoWordmarkProps) {
+  const titleId = useSvgId('ockean-wordmark-title');
   return (
     <svg
       data-slot="logo-wordmark"
@@ -84,7 +85,7 @@ function LogoWordmark({ height = 24, title = 'VERO TOOLS', className, ...props }
       {...props}
     >
       <title id={titleId}>{title}</title>
-      <path d={LOGO_WORDMARK_PATH} fill="currentColor" />
+      <path d={LOGO_WORDMARK_PATH} fill="currentColor" fillRule="evenodd" />
     </svg>
   );
 }

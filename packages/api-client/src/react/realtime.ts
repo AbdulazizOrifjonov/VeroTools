@@ -29,7 +29,7 @@ export interface AdminOrderEvent {
 }
 
 export interface RealtimeOptions {
-  /** Socket.IO server origin, e.g. "" (same origin) or "https://api.verotools.uz" */
+  /** Socket.IO server origin, e.g. "" (same origin) or "https://api.ockean.uz" */
   url: string;
   path?: string;
   enabled?: boolean;

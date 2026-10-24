@@ -1,4 +1,4 @@
-# VERO TOOLS — architecture
+# OCKEAN TOOLS — architecture
 
 One API, one MongoDB database, three clients. A customer uses the same account on the storefront and in the
 mobile app; staff work in the admin panel. Cart, wishlist, compare list, orders, addresses, notifications and
@@ -13,8 +13,8 @@ Related documents: [DEPLOYMENT.md](DEPLOYMENT.md) (operations) · [SECURITY.md](
 ```mermaid
 flowchart LR
   subgraph Clients
-    B["Storefront in the browser<br/>verotools.uz"]
-    A["Admin panel in the browser<br/>admin.verotools.uz"]
+    B["Storefront in the browser<br/>ockean.uz"]
+    A["Admin panel in the browser<br/>admin.ockean.uz"]
     M["Mobile app<br/>Expo / React Native"]
   end
   subgraph Host["Docker host"]
@@ -35,7 +35,7 @@ flowchart LR
   M -->|"HTTPS /api"| N
   N --> W
   N --> AD
-  N -.->|"optional api.verotools.uz"| API
+  N -.->|"optional api.ockean.uz"| API
   W -->|"/api /uploads /socket.io, SEO meta, sitemaps, robots.txt"| API
   AD -->|"/api /uploads /socket.io"| API
   API --> DB
@@ -99,7 +99,7 @@ Responses use `{ "data": … }` (lists add `"meta": { page, limit, total, pages 
 
 ### Mobile request
 
-The app calls `https://verotools.uz/api` (or `https://api.verotools.uz/api`) directly with `X-Client: mobile`
+The app calls `https://ockean.uz/api` (or `https://api.ockean.uz/api`) directly with `X-Client: mobile`
 and `Authorization: Bearer <access token>`; images come as absolute URLs built from `PUBLIC_API_URL`.
 
 ### Payment callback

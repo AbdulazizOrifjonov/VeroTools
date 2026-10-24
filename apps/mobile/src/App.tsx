@@ -80,7 +80,7 @@ function Navigation() {
       linking={linking}
       onReady={flushNavigationQueue}
       documentTitle={{
-        formatter: (options) => (options?.title ? `${options.title} · VERO TOOLS` : 'VERO TOOLS'),
+        formatter: (options) => (options?.title ? `${options.title} · OCKEAN TOOLS` : 'OCKEAN TOOLS'),
       }}
     >
       <StatusBar style={dark ? 'light' : 'dark'} />

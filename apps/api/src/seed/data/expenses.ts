@@ -391,7 +391,7 @@ export const EXPENSE_TEMPLATES: SeedExpenseTemplate[] = [
   {
     category: 'PACKAGING',
     title: 'Brendlangan paketlar va stikerlar',
-    description: 'VERO TOOLS logotipli paketlar va qadoq stikerlari',
+    description: 'OCKEAN TOOLS logotipli paketlar va qadoq stikerlari',
     amountMin: 2500000,
     amountMax: 5000000,
     frequency: 'occasional',

@@ -80,9 +80,9 @@ export const WELDING: SeedProduct[] = [
     flags: { featured: true, bestseller: true },
     weightKg: 7.5,
     seoTitle: {
-      uz: 'Weldora ARC 200 invertorli payvandlash apparati — narxi | VERO TOOLS',
-      ru: 'Сварочный инвертор Weldora ARC 200 — цена и характеристики | VERO TOOLS',
-      en: 'Weldora ARC 200 MMA Inverter Welder — Price & Specs | VERO TOOLS',
+      uz: 'Weldora ARC 200 invertorli payvandlash apparati — narxi | OCKEAN TOOLS',
+      ru: 'Сварочный инвертор Weldora ARC 200 — цена и характеристики | OCKEAN TOOLS',
+      en: 'Weldora ARC 200 MMA Inverter Welder — Price & Specs | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "200 A MMA invertor: 160 V da ham ishlaydi, PV 60%, Hot Start va Anti-Stick. Kabellar komplektda, 24 oylik kafolat va tez yetkazib berish.",
@@ -92,14 +92,14 @@ export const WELDING: SeedProduct[] = [
   },
   {
     sku: 'VT-MMA-1002',
-    slug: 'vero-pro-mma-250-inverter-welder',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-mma-250-inverter-welder',
+    brand: 'ockean-pro',
     category: 'mma-welders',
     illustration: 'welder_inverter',
     name: {
-      uz: 'VERO PRO MMA-250 invertorli payvandlash apparati',
-      ru: 'Сварочный инвертор VERO PRO MMA-250',
-      en: 'VERO PRO MMA-250 Inverter Welder',
+      uz: 'OCKEAN PRO MMA-250 invertorli payvandlash apparati',
+      ru: 'Сварочный инвертор OCKEAN PRO MMA-250',
+      en: 'OCKEAN PRO MMA-250 Inverter Welder',
     },
     shortDescription: {
       uz: 'Uy va ustaxona uchun 250 A gacha tok beradigan, displeyli ixcham IGBT invertor.',
@@ -311,9 +311,9 @@ export const WELDING: SeedProduct[] = [
     flags: { featured: true, isNew: true },
     weightKg: 17,
     seoTitle: {
-      uz: 'Weldora MIG 200 Synergic yarim avtomat — narxi | VERO TOOLS',
-      ru: 'Сварочный полуавтомат Weldora MIG 200 Synergic — цена | VERO TOOLS',
-      en: 'Weldora MIG 200 Synergic Welder — Price | VERO TOOLS',
+      uz: 'Weldora MIG 200 Synergic yarim avtomat — narxi | OCKEAN TOOLS',
+      ru: 'Сварочный полуавтомат Weldora MIG 200 Synergic — цена | OCKEAN TOOLS',
+      en: 'Weldora MIG 200 Synergic Welder — Price | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "Sinergetik yarim avtomat 3 in 1: MIG/MAG, gazsiz sim va MMA, 200 A, PV 60%. Kuzov va yupqa metall uchun. 24 oylik kafolat.",
@@ -323,14 +323,14 @@ export const WELDING: SeedProduct[] = [
   },
   {
     sku: 'VT-MIG-1002',
-    slug: 'vero-pro-mig-160-mig-welder',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-mig-160-mig-welder',
+    brand: 'ockean-pro',
     category: 'mig-welders',
     illustration: 'welder_inverter',
     name: {
-      uz: 'VERO PRO MIG-160 yarim avtomat payvandlash apparati',
-      ru: 'Сварочный полуавтомат VERO PRO MIG-160',
-      en: 'VERO PRO MIG-160 MIG Welder',
+      uz: 'OCKEAN PRO MIG-160 yarim avtomat payvandlash apparati',
+      ru: 'Сварочный полуавтомат OCKEAN PRO MIG-160',
+      en: 'OCKEAN PRO MIG-160 MIG Welder',
     },
     shortDescription: {
       uz: 'Gaz ballonisiz, kukunli sim bilan ham payvandlaydigan 160 A ixcham yarim avtomat.',
@@ -557,14 +557,14 @@ export const WELDING: SeedProduct[] = [
   },
   {
     sku: 'VT-WHL-1003',
-    slug: 'vero-pro-wh-350-auto-darkening-welding-helmet-din-11',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-wh-350-auto-darkening-welding-helmet-din-11',
+    brand: 'ockean-pro',
     category: 'welding-helmets',
     illustration: 'welding_helmet',
     name: {
-      uz: 'VERO PRO WH-350 xameleon payvandchi niqobi, DIN 11',
-      ru: 'Сварочная маска-хамелеон VERO PRO WH-350, DIN 11',
-      en: 'VERO PRO WH-350 Auto-Darkening Welding Helmet, DIN 11',
+      uz: 'OCKEAN PRO WH-350 xameleon payvandchi niqobi, DIN 11',
+      ru: 'Сварочная маска-хамелеон OCKEAN PRO WH-350, DIN 11',
+      en: 'OCKEAN PRO WH-350 Auto-Darkening Welding Helmet, DIN 11',
     },
     shortDescription: {
       uz: 'Elektrod bilan payvandlash uchun sobit DIN 11 darajali, yengil va hamyonbop xameleon niqob.',

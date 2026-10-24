@@ -160,9 +160,9 @@ export const GENERATORS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 92,
     seoTitle: {
-      uz: 'Voltaris VG-7500E benzinli generator 6,5 kVt — narxi | VERO TOOLS',
-      ru: 'Бензиновый генератор Voltaris VG-7500E 6,5 кВт — цена | VERO TOOLS',
-      en: 'Voltaris VG-7500E Petrol Generator 6.5 kW — Price | VERO TOOLS',
+      uz: 'Voltaris VG-7500E benzinli generator 6,5 kVt — narxi | OCKEAN TOOLS',
+      ru: 'Бензиновый генератор Voltaris VG-7500E 6,5 кВт — цена | OCKEAN TOOLS',
+      en: 'Voltaris VG-7500E Petrol Generator 6.5 kW — Price | OCKEAN TOOLS',
     },
     seoDescription: {
       uz: "6,5 kVt benzinli generator: elektr starter, AVR, 25 l bak va g'ildiraklar. Butun uy uchun zaxira quvvat, O'zbekiston bo'ylab yetkazib berish.",
@@ -172,14 +172,14 @@ export const GENERATORS: SeedProduct[] = [
   },
   {
     sku: 'VT-PGN-1003',
-    slug: 'vero-pro-pg-2800-petrol-generator-2-5-kw',
-    brand: 'vero-pro',
+    slug: 'ockean-pro-pg-2800-petrol-generator-2-5-kw',
+    brand: 'ockean-pro',
     category: 'petrol-generators',
     illustration: 'generator_open',
     name: {
-      uz: 'VERO PRO PG-2800 benzinli generator, 2,5 kVt',
-      ru: 'Бензиновый генератор VERO PRO PG-2800, 2,5 кВт',
-      en: 'VERO PRO PG-2800 Petrol Generator, 2.5 kW',
+      uz: 'OCKEAN PRO PG-2800 benzinli generator, 2,5 kVt',
+      ru: 'Бензиновый генератор OCKEAN PRO PG-2800, 2,5 кВт',
+      en: 'OCKEAN PRO PG-2800 Petrol Generator, 2.5 kW',
     },
     shortDescription: {
       uz: "Dala hovli va kichik do'kon uchun 2,5 kVt quvvatli hamyonbop va ishonchli generator.",

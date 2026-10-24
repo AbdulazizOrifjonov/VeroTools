@@ -55,7 +55,7 @@ export function toCsv(report: ReportDTO): Buffer {
 
 export async function toXlsx(report: ReportDTO, lang: Language): Promise<Buffer> {
   const wb = new ExcelJS.Workbook();
-  wb.creator = 'VERO TOOLS';
+  wb.creator = 'OCKEAN TOOLS';
   wb.created = new Date();
   const ws = wb.addWorksheet(report.title.slice(0, 31));
   ws.addRow([report.title]).font = { bold: true, size: 14 };
@@ -64,7 +64,7 @@ export async function toXlsx(report: ReportDTO, lang: Language): Promise<Buffer>
   const header = ws.addRow(report.columns.map((c) => c.label));
   header.font = { bold: true, color: { argb: 'FFFFFFFF' } };
   header.eachCell((c) => {
-    c.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFDB3B00' } };
+    c.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFFD8902' } };
     c.alignment = { vertical: 'middle' };
   });
   for (const row of report.rows) {
@@ -118,7 +118,7 @@ export function toPdf(report: ReportDTO, lang: Language): Promise<Buffer> {
       .fontSize(9)
       .fillColor('#65656F')
       .text(
-        `${formatDate(report.range.from, lang, 'numeric')} — ${formatDate(new Date(new Date(report.range.to).getTime() - 1), lang, 'numeric')}   ·   VERO TOOLS`,
+        `${formatDate(report.range.from, lang, 'numeric')} — ${formatDate(new Date(new Date(report.range.to).getTime() - 1), lang, 'numeric')}   ·   OCKEAN TOOLS`,
         80,
         54,
       );
@@ -173,7 +173,7 @@ export function toPdf(report: ReportDTO, lang: Language): Promise<Buffer> {
 
     let y = 86;
     const drawHeader = () => {
-      doc.rect(36, y, width, headH).fill('#DB3B00');
+      doc.rect(36, y, width, headH).fill('#FD8902');
       let x = 36;
       doc.font('bold').fontSize(fontSize).fillColor('#FFFFFF');
       cols.forEach((c, i) => {

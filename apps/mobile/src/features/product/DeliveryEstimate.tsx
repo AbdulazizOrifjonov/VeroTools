@@ -9,7 +9,7 @@ import { useTheme } from '../../theme/theme';
 import { SelectField, Skeleton, Text } from '../../ui';
 import { Store, Truck } from '../../ui/icons';
 
-const REGION_KEY = 'vt.deliveryRegion';
+const REGION_KEY = 'ot.deliveryRegion';
 let rememberedRegion: string | null = null;
 
 /** Delivery price / timing to a region (courier zone, free threshold) and the number of pickup points. */

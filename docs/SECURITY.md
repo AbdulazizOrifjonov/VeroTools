@@ -1,4 +1,4 @@
-# VERO TOOLS — security
+# OCKEAN TOOLS — security
 
 How the system protects accounts, data and payments, and what operators must configure. Deployment checklist:
 [DEPLOYMENT.md §11](DEPLOYMENT.md#11-security-checklist-before-launch). Payment specifics: [PAYMENTS.md](PAYMENTS.md).
@@ -6,7 +6,7 @@ How the system protects accounts, data and payments, and what operators must con
 ## Reporting a vulnerability
 
 Do not open a public issue. Send a description (affected URL / endpoint, steps to reproduce, impact) to the
-store's technical contact — `security@verotools.uz` once that mailbox exists, until then the owner's address in
+store's technical contact — `security@ockean.uz` once that mailbox exists, until then the owner's address in
 Admin → Settings — or privately to the repository maintainers. Please give us reasonable time to fix the issue
 before disclosure and do not access other customers' data, run denial-of-service tests or use social engineering.
 We confirm receipt and keep the reporter informed until the fix is deployed.
@@ -180,5 +180,5 @@ Sign-ins are not audit entries; refresh-token records keep IP and user agent for
 * Demo data must never be loaded into production: it creates staff accounts whose passwords are published in the
   repository (`docs/FRONTEND_GUIDE.md`). Production refuses `--demo` / `--reset` without `--force`.
 * Keep the host patched, rebuild images regularly (`docker compose build --pull`), and restrict SSH to keys.
-* Optional: restrict `admin.verotools.uz` to office / VPN addresses in nginx and the payment callback paths to the
+* Optional: restrict `admin.ockean.uz` to office / VPN addresses in nginx and the payment callback paths to the
   providers' IP ranges.

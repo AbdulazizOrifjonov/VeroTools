@@ -3,7 +3,7 @@ import * as React from 'react';
 import { extendTailwindMerge } from 'tailwind-merge';
 
 /**
- * tailwind-merge that knows about the VERO TOOLS theme extensions
+ * tailwind-merge that knows about the OCKEAN TOOLS theme extensions
  * (custom easing / animations / utilities), so conflicting classes are resolved correctly.
  */
 const twMerge = extendTailwindMerge({

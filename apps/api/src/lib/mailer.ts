@@ -47,12 +47,12 @@ const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&
 /** Branded, inline-styled e-mail layout (works in all major mail clients). */
 export function emailLayout(opts: { title: string; intro: string; button?: { label: string; url: string }; footer: string; body?: string }) {
   const button = opts.button
-    ? `<p style="margin:28px 0"><a href="${esc(opts.button.url)}" style="background:#DB3B00;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:10px;font-weight:700;display:inline-block">${esc(opts.button.label)}</a></p>`
+    ? `<p style="margin:28px 0"><a href="${esc(opts.button.url)}" style="background:#E67700;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:10px;font-weight:700;display:inline-block">${esc(opts.button.label)}</a></p>`
     : '';
   return `<!doctype html><html><body style="margin:0;background:#F6F6F7;font-family:Manrope,Segoe UI,Arial,sans-serif;color:#141416">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="padding:24px 12px"><tr><td align="center">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border-radius:16px;border:1px solid #E6E6EA;overflow:hidden">
-<tr><td style="background:#141417;padding:18px 24px"><span style="display:inline-block;width:34px;height:34px;border-radius:50%;background:#FD470E;vertical-align:middle"></span><span style="color:#fff;font-weight:800;font-size:18px;letter-spacing:.5px;margin-left:10px;vertical-align:middle">VERO TOOLS</span></td></tr>
+<tr><td style="background:#141417;padding:18px 24px"><span style="display:inline-block;width:34px;height:34px;border-radius:50%;background:#FD8902;vertical-align:middle"></span><span style="color:#fff;font-weight:800;font-size:18px;letter-spacing:.5px;margin-left:10px;vertical-align:middle">OCKEAN TOOLS</span></td></tr>
 <tr><td style="padding:28px 24px"><h1 style="margin:0 0 12px;font-size:22px">${esc(opts.title)}</h1><p style="margin:0;line-height:1.6;color:#3F3F47">${esc(opts.intro)}</p>${opts.body ?? ''}${button}</td></tr>
 <tr><td style="padding:16px 24px;border-top:1px solid #EFEFF1;color:#75757F;font-size:12px;line-height:1.5">${esc(opts.footer)}</td></tr>
 </table></td></tr></table></body></html>`;

@@ -1,4 +1,4 @@
-// Metro configuration for the VERO TOOLS monorepo (npm workspaces).
+// Metro configuration for the OCKEAN TOOLS monorepo (npm workspaces).
 // The @vero/* workspace packages are consumed as TypeScript source (packages/*/src) — Metro must watch
 // the repository root and resolve modules from both the app and the root node_modules.
 const path = require('node:path');

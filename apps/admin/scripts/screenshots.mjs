@@ -28,7 +28,7 @@ const args = Object.fromEntries(
 );
 const BASE = args.base ?? 'http://localhost:5174';
 const USERS = {
-  owner: { login: 'admin@verotools.uz', password: 'VeroAdmin2026' },
+  owner: { login: 'admin@ockean.uz', password: 'OckeanAdmin2026' },
   admin: { login: 'admin@example.com', password: 'Administrator2026' },
   manager: { login: 'manager@example.com', password: 'Manager2026' },
 };

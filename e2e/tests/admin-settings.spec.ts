@@ -7,7 +7,7 @@ import { expect, test, type Locator, type Page } from '@playwright/test';
 
 const WEB = (process.env.E2E_WEB_URL ?? 'http://localhost:3000').replace(/\/+$/, '');
 const ADMIN = (process.env.E2E_ADMIN_URL ?? 'http://localhost:3001').replace(/\/+$/, '');
-const STAFF = { login: process.env.E2E_ADMIN_LOGIN ?? 'admin@verotools.uz', password: process.env.E2E_ADMIN_PASSWORD ?? 'VeroAdmin2026' };
+const STAFF = { login: process.env.E2E_ADMIN_LOGIN ?? 'admin@ockean.uz', password: process.env.E2E_ADMIN_PASSWORD ?? 'OckeanAdmin2026' };
 
 let panel: Page;
 

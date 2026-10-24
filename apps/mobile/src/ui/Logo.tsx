@@ -8,17 +8,17 @@ import {
 import { memo, useId } from 'react';
 import Svg, { Circle, Defs, Path, RadialGradient, Stop } from 'react-native-svg';
 
-/** The official VERO TOOLS logo (vector geometry from @vero/config) — always 1:1, never stretched. */
+/** The official OCKEAN TOOLS logo (vector geometry from @vero/config) — always 1:1, never stretched. */
 export const Logo = memo(function Logo({
   size = 40,
-  label = 'VERO TOOLS',
+  label = 'OCKEAN TOOLS',
+  textColor = '#000000',
 }: {
   size?: number;
   label?: string;
+  textColor?: string;
 }) {
-  // unique per instance: on the web the ids share one document, and a gradient defined inside a hidden
-  // screen (display: none) does not paint for the others
-  const gradientId = `vtLogo${useId().replace(/[^a-zA-Z0-9_-]/g, '')}`;
+  const gradientId = `ockeanLogo${useId().replace(/[^a-zA-Z0-9_-]/g, '')}`;
   return (
     <Svg
       width={size}
@@ -35,19 +35,19 @@ export const Logo = memo(function Logo({
         </RadialGradient>
       </Defs>
       <Circle cx={LOGO_CIRCLE.cx} cy={LOGO_CIRCLE.cy} r={LOGO_CIRCLE.r} fill={`url(#${gradientId})`} />
-      <Path d={LOGO_WORDMARK_PATH} fill="#FFFFFF" />
+      <Path d={LOGO_WORDMARK_PATH} fill={textColor} fillRule="evenodd" />
     </Svg>
   );
 });
 
-/** Wordmark only ("vero TOOLS"), keeps the original aspect ratio (476 × 211). */
+/** Wordmark only ("OCKEAN"), keeps the official aspect ratio (895 × 148). */
 export const Wordmark = memo(function Wordmark({
   height = 22,
-  color,
-  label = 'VERO TOOLS',
+  color = '#000000',
+  label = 'OCKEAN TOOLS',
 }: {
   height?: number;
-  color: string;
+  color?: string;
   label?: string;
 }) {
   const [, , w, h] = LOGO_WORDMARK_VIEWBOX.split(' ').map(Number) as [number, number, number, number];
@@ -59,7 +59,7 @@ export const Wordmark = memo(function Wordmark({
       accessibilityRole="image"
       accessibilityLabel={label}
     >
-      <Path d={LOGO_WORDMARK_PATH} fill={color} />
+      <Path d={LOGO_WORDMARK_PATH} fill={color} fillRule="evenodd" />
     </Svg>
   );
 });

@@ -1,4 +1,4 @@
-# VERO TOOLS — storefront (`@vero/web`)
+# OCKEAN TOOLS — storefront (`@vero/web`)
 
 React 19 + Vite 7 + React Router 7 (data router, lazy route chunks), TanStack Query, Tailwind CSS 4 and the
 shared `@vero/ui` kit. Talks to the API through `@vero/api-client` (same origin: `/api`, `/uploads`,

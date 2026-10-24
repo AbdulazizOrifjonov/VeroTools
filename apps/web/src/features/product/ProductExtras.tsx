@@ -20,7 +20,7 @@ import { useFormat } from '../../hooks/use-format';
 import { useLang } from '../../hooks/use-lang';
 import { readString, writeString } from '../../lib/storage';
 
-const REGION_KEY = 'vt.deliveryRegion';
+const REGION_KEY = 'ot.deliveryRegion';
 
 export function regionOptions(lang: Language) {
   return UZ_REGIONS.map((r) => ({ value: r.code, label: r.name[lang] }));

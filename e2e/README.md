@@ -36,7 +36,7 @@ The Vite dev servers work as well: `E2E_WEB_URL=http://localhost:5173 E2E_ADMIN_
 | `E2E_WEB_URL` | `http://localhost:3000` |
 | `E2E_ADMIN_URL` | `http://localhost:3001` |
 | `E2E_MOBILE_URL` | not set → the mobile step is skipped |
-| `E2E_ADMIN_LOGIN` / `E2E_ADMIN_PASSWORD` | the development owner account of the seed (`admin@verotools.uz` / `VeroAdmin2026`) |
+| `E2E_ADMIN_LOGIN` / `E2E_ADMIN_PASSWORD` | the development owner account of the seed (`admin@ockean.uz` / `OckeanAdmin2026`) |
 
 CI runs the same suite in the `e2e` job of `.github/workflows/ci.yml` (MongoDB service, demo seed, production
 builds, mobile web export).

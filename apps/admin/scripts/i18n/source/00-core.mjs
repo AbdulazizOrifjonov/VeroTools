@@ -3,7 +3,7 @@ import { P } from '../plural.mjs';
 /** App shell, navigation, auth, errors and shared UI texts. Order: [uz, ru, en]. */
 export default {
   app: {
-    name: ["VERO TOOLS boshqaruv paneli", "Панель управления VERO TOOLS", "VERO TOOLS admin panel"],
+    name: ["OCKEAN TOOLS boshqaruv paneli", "Панель управления OCKEAN TOOLS", "OCKEAN TOOLS admin panel"],
     short: ["Admin", "Админ", "Admin"],
     loading: ["Panel yuklanmoqda…", "Загружаем панель…", "Loading the panel…"],
     restoring: ["Sessiya tiklanmoqda…", "Восстанавливаем сессию…", "Restoring your session…"],
@@ -109,13 +109,13 @@ export default {
     title: ["Boshqaruv paneliga kirish", "Вход в панель управления", "Sign in to the admin panel"],
     subtitle: ["Faqat do'kon xodimlari uchun", "Только для сотрудников магазина", "For store staff only"],
     login: ["Email yoki telefon", "Email или телефон", "Email or phone"],
-    loginPlaceholder: ["name@verotools.uz yoki +998 90 123 45 67", "name@verotools.uz или +998 90 123 45 67", "name@verotools.uz or +998 90 123 45 67"],
+    loginPlaceholder: ["name@ockean.uz yoki +998 90 123 45 67", "name@ockean.uz или +998 90 123 45 67", "name@ockean.uz or +998 90 123 45 67"],
     password: ["Parol", "Пароль", "Password"],
     submit: ["Kirish", "Войти", "Sign in"],
     notStaff: ["Bu hisobda boshqaruv paneliga kirish huquqi yo'q", "У этого аккаунта нет доступа к панели управления", "This account has no access to the admin panel"],
     required: ["Login va parolni kiriting", "Введите логин и пароль", "Enter your login and password"],
     secure: ["Ulanish himoyalangan. Sessiya faqat shu brauzerda saqlanadi.", "Соединение защищено. Сессия хранится только в этом браузере.", "Secure connection. The session is kept in this browser only."],
-    footer: ["© {{year}} VERO TOOLS. Barcha huquqlar himoyalangan.", "© {{year}} VERO TOOLS. Все права защищены.", "© {{year}} VERO TOOLS. All rights reserved."],
+    footer: ["© {{year}} OCKEAN TOOLS. Barcha huquqlar himoyalangan.", "© {{year}} OCKEAN TOOLS. Все права защищены.", "© {{year}} OCKEAN TOOLS. All rights reserved."],
     welcome: ["Xush kelibsiz, {{name}}!", "Добро пожаловать, {{name}}!", "Welcome, {{name}}!"],
     loggedOut: ["Tizimdan chiqdingiz", "Вы вышли из системы", "You have signed out"],
   },

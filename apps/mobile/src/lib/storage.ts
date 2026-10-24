@@ -95,8 +95,8 @@ export const secure = {
 
 /** App-specific storage keys (shared keys live in STORAGE_KEYS of @vero/config). */
 export const MOBILE_KEYS = {
-  recentlyViewed: 'vt.recentlyViewed',
-  languageChosen: 'vt.languageChosen',
-  pushToken: 'vt.pushToken',
-  pushPrompted: 'vt.pushPrompted',
+  recentlyViewed: 'ot.recentlyViewed',
+  languageChosen: 'ot.languageChosen',
+  pushToken: 'ot.pushToken',
+  pushPrompted: 'ot.pushPrompted',
 } as const;

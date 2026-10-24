@@ -25,7 +25,7 @@ import {
 export const app = createApp();
 export const api = () => request(app);
 
-export const OWNER = { login: 'admin@verotools.uz', password: 'VeroAdmin2026' };
+export const OWNER = { login: 'admin@ockean.uz', password: 'OckeanAdmin2026' };
 
 /** Fresh database for one test file, with the base data (roles, owner, settings, delivery …). */
 export async function setupDatabase(name: string) {

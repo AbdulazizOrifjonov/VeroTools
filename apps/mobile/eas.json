@@ -7,7 +7,7 @@
     "base": {
       "node": "22.12.0",
       "env": {
-        "EXPO_PUBLIC_WEB_URL": "https://verotools.uz"
+        "EXPO_PUBLIC_WEB_URL": "https://ockean.uz"
       }
     },
     "development": {
@@ -26,7 +26,7 @@
       "channel": "preview",
       "android": { "buildType": "apk" },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://staging.verotools.uz/api"
+        "EXPO_PUBLIC_API_URL": "https://staging.ockean.uz/api"
       }
     },
     "production": {
@@ -35,7 +35,7 @@
       "autoIncrement": true,
       "android": { "buildType": "app-bundle" },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://verotools.uz/api"
+        "EXPO_PUBLIC_API_URL": "https://ockean.uz/api"
       }
     }
   },
