@@ -146,7 +146,7 @@ function orderEmail(number: string, orderId: string, status: OrderStatus, total:
         intro: loc(t.body(number), lang),
         body: `<p style="margin:16px 0 0;font-weight:700">${lang === 'ru' ? 'Сумма' : lang === 'en' ? 'Total' : 'Jami'}: ${formatPrice(total, lang)}</p>`,
         button: { label: lang === 'ru' ? 'Открыть заказ' : lang === 'en' ? 'View order' : "Buyurtmani ko'rish", url: `${env.CLIENT_URL}/account/orders/${orderId}` },
-        footer: 'OCKEAN TOOLS · ockean.uz',
+        footer: 'OCKEAN · ockean.uz',
       }),
   };
 }
@@ -319,8 +319,8 @@ export async function broadcast(
                 emailLayout({
                   title: loc(input.title, lang),
                   intro: loc(input.body, lang),
-                  button: input.url ? { label: 'OCKEAN TOOLS', url: input.url.startsWith('http') ? input.url : `${env.CLIENT_URL}${input.url}` } : undefined,
-                  footer: 'OCKEAN TOOLS · ockean.uz',
+                  button: input.url ? { label: 'OCKEAN', url: input.url.startsWith('http') ? input.url : `${env.CLIENT_URL}${input.url}` } : undefined,
+                  footer: 'OCKEAN · ockean.uz',
                 }),
             }
           : undefined,

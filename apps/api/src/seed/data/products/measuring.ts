@@ -81,9 +81,9 @@ export const MEASURING: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 2.1,
     seoTitle: {
-      uz: 'Mezon ML-4D lazerli nivelir 16 chiziq — narxi | OCKEAN TOOLS',
-      ru: 'Лазерный нивелир Mezon ML-4D, 16 линий — цена | OCKEAN TOOLS',
-      en: 'Mezon ML-4D 16-Line Laser Level — Price | OCKEAN TOOLS',
+      uz: 'Mezon ML-4D lazerli nivelir 16 chiziq — narxi | OCKEAN',
+      ru: 'Лазерный нивелир Mezon ML-4D, 16 линий — цена | OCKEAN',
+      en: 'Mezon ML-4D 16-Line Laser Level — Price | OCKEAN',
     },
     seoDescription: {
       uz: "4×360° yashil nurli lazerli nivelir: 16 chiziq, ±0,2 mm/m aniqlik, pult va 2 ta akkumulyator. Plitka va gipsokarton ishlari uchun, 24 oylik kafolat.",

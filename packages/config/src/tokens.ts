@@ -1,5 +1,5 @@
 /**
- * OCKEAN TOOLS design tokens — single source of truth for web, admin and mobile.
+ * OCKEAN design tokens — single source of truth for web, admin and mobile.
  * Colours are derived from the official OCKEAN brand artwork (brand orange #FD8902).
  *
  * brand.500 (#FD8902) — brand accents, icons, focus rings, large surfaces.

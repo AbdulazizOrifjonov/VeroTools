@@ -1,6 +1,6 @@
 import type { L } from './types';
 
-/** One card of the homepage "Why choose OCKEAN TOOLS" block. */
+/** One card of the homepage "Why choose OCKEAN" block. */
 export interface StoreAdvantage {
   /** lucide-react icon name in PascalCase */
   icon: string;
@@ -56,7 +56,7 @@ export interface StoreSettings {
     title: L;
     description: L;
   };
-  /** homepage "Why choose OCKEAN TOOLS" advantages */
+  /** homepage "Why choose OCKEAN" advantages */
   advantages: StoreAdvantage[];
   /** short trust bullets shown next to the buy box on product pages */
   trustBullets: L[];
@@ -64,11 +64,11 @@ export interface StoreSettings {
 }
 
 export const STORE_SETTINGS: StoreSettings = {
-  storeName: 'OCKEAN TOOLS',
+  storeName: 'OCKEAN',
   legalName: {
-    uz: '"OCKEAN TOOLS" MChJ',
-    ru: 'ООО «OCKEAN TOOLS»',
-    en: 'OCKEAN TOOLS LLC',
+    uz: '"OCKEAN" MChJ',
+    ru: 'ООО «OCKEAN»',
+    en: 'OCKEAN LLC',
   },
   website: 'https://ockean.uz',
   phones: {
@@ -110,9 +110,9 @@ export const STORE_SETTINGS: StoreSettings = {
   inventory: { lowStockThreshold: 5 },
   seo: {
     title: {
-      uz: "OCKEAN TOOLS — professional asboblar va uskunalar internet-do'koni",
-      ru: 'OCKEAN TOOLS — интернет-магазин профессионального инструмента и оборудования',
-      en: 'OCKEAN TOOLS — online store for professional tools and equipment',
+      uz: "OCKEAN — professional asboblar va uskunalar internet-do'koni",
+      ru: 'OCKEAN — интернет-магазин профессионального инструмента и оборудования',
+      en: 'OCKEAN — online store for professional tools and equipment',
     },
     description: {
       uz: "Elektr va qo'l asboblari, generatorlar, kompressorlar, nasoslar, payvandlash va bog' texnikasi. Rasmiy kafolat, O'zbekiston bo'ylab yetkazib berish va muddatli to'lov.",
@@ -213,8 +213,8 @@ export const STORE_SETTINGS: StoreSettings = {
     },
   ],
   footerAbout: {
-    uz: "OCKEAN TOOLS — professional asboblar va sanoat uskunalari internet-do'koni. Ustalar, quruvchilar, ustaxonalar va korxonalarga rasmiy kafolatli asbob-uskunalarni taklif etamiz va Toshkentdan butun O'zbekiston bo'ylab yetkazib beramiz.",
-    ru: 'OCKEAN TOOLS — интернет-магазин профессионального инструмента и промышленного оборудования. Предлагаем мастерам, строителям, мастерским и предприятиям инструмент с официальной гарантией и доставляем его из Ташкента по всему Узбекистану.',
-    en: 'OCKEAN TOOLS is an online store for professional tools and industrial equipment. We supply tradespeople, builders, workshops and businesses with officially warranted tools and deliver from Tashkent across Uzbekistan.',
+    uz: "OCKEAN — professional asboblar va sanoat uskunalari internet-do'koni. Ustalar, quruvchilar, ustaxonalar va korxonalarga rasmiy kafolatli asbob-uskunalarni taklif etamiz va Toshkentdan butun O'zbekiston bo'ylab yetkazib beramiz.",
+    ru: 'OCKEAN — интернет-магазин профессионального инструмента и промышленного оборудования. Предлагаем мастерам, строителям, мастерским и предприятиям инструмент с официальной гарантией и доставляем его из Ташкента по всему Узбекистану.',
+    en: 'OCKEAN is an online store for professional tools and industrial equipment. We supply tradespeople, builders, workshops and businesses with officially warranted tools and deliver from Tashkent across Uzbekistan.',
   },
 };

@@ -1,4 +1,4 @@
-# OCKEAN TOOLS — analytics and reports
+# OCKEAN — analytics and reports
 
 > **Management information, not accounting.** Dashboard, analytics and reports give an operational estimate for
 > running the store. They are not bookkeeping, tax or fiscal reporting (no VAT, no fiscal receipts, no accrual or

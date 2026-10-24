@@ -3,7 +3,7 @@ import { P } from '../plural.mjs';
 /** App shell, navigation, auth, errors and shared UI texts. Order: [uz, ru, en]. */
 export default {
   app: {
-    name: ["OCKEAN TOOLS boshqaruv paneli", "Панель управления OCKEAN TOOLS", "OCKEAN TOOLS admin panel"],
+    name: ["OCKEAN boshqaruv paneli", "Панель управления OCKEAN", "OCKEAN admin panel"],
     short: ["Admin", "Админ", "Admin"],
     loading: ["Panel yuklanmoqda…", "Загружаем панель…", "Loading the panel…"],
     restoring: ["Sessiya tiklanmoqda…", "Восстанавливаем сессию…", "Restoring your session…"],
@@ -115,7 +115,7 @@ export default {
     notStaff: ["Bu hisobda boshqaruv paneliga kirish huquqi yo'q", "У этого аккаунта нет доступа к панели управления", "This account has no access to the admin panel"],
     required: ["Login va parolni kiriting", "Введите логин и пароль", "Enter your login and password"],
     secure: ["Ulanish himoyalangan. Sessiya faqat shu brauzerda saqlanadi.", "Соединение защищено. Сессия хранится только в этом браузере.", "Secure connection. The session is kept in this browser only."],
-    footer: ["© {{year}} OCKEAN TOOLS. Barcha huquqlar himoyalangan.", "© {{year}} OCKEAN TOOLS. Все права защищены.", "© {{year}} OCKEAN TOOLS. All rights reserved."],
+    footer: ["© {{year}} OCKEAN. Barcha huquqlar himoyalangan.", "© {{year}} OCKEAN. Все права защищены.", "© {{year}} OCKEAN. All rights reserved."],
     welcome: ["Xush kelibsiz, {{name}}!", "Добро пожаловать, {{name}}!", "Welcome, {{name}}!"],
     loggedOut: ["Tizimdan chiqdingiz", "Вы вышли из системы", "You have signed out"],
   },

@@ -8,10 +8,10 @@ import {
 import { memo, useId } from 'react';
 import Svg, { Circle, Defs, Path, RadialGradient, Stop } from 'react-native-svg';
 
-/** The official OCKEAN TOOLS logo (vector geometry from @vero/config) — always 1:1, never stretched. */
+/** The official OCKEAN logo (vector geometry from @vero/config) — always 1:1, never stretched. */
 export const Logo = memo(function Logo({
   size = 40,
-  label = 'OCKEAN TOOLS',
+  label = 'OCKEAN',
   textColor = '#000000',
 }: {
   size?: number;
@@ -44,7 +44,7 @@ export const Logo = memo(function Logo({
 export const Wordmark = memo(function Wordmark({
   height = 22,
   color = '#000000',
-  label = 'OCKEAN TOOLS',
+  label = 'OCKEAN',
 }: {
   height?: number;
   color?: string;

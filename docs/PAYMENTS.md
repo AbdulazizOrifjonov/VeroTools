@@ -1,4 +1,4 @@
-# OCKEAN TOOLS — payments
+# OCKEAN — payments
 
 > **No payment credentials are included in this repository.** Merchant ids, keys and secret keys come from the
 > Payme and Click merchant cabinets and are set only in the server's `.env` (`PAYME_*`, `CLICK_*`). The values in
@@ -44,7 +44,7 @@ or polling never changes a payment.
 ```mermaid
 sequenceDiagram
   participant C as Customer (web / app)
-  participant A as OCKEAN TOOLS API
+  participant A as OCKEAN API
   participant P as Payme / Click
   C->>A: POST /api/orders (payment.method = payme | click | uzcard | humo | bank_card)
   A-->>C: 201 order PENDING, payment PENDING, stock reserved, payment.action = redirect URL
@@ -73,7 +73,7 @@ Setup in the Payme merchant cabinet (business account, "Cashbox" / kassa setting
 | Cabinet setting | Value |
 |---|---|
 | Endpoint URL | `https://ockean.uz/api/payments/payme` (or `https://api.ockean.uz/api/payments/payme`) |
-| Account field | `order_id` — the OCKEAN TOOLS order number, e.g. `VT-261001-007` |
+| Account field | `order_id` — the OCKEAN order number, e.g. `VT-261001-007` |
 | Merchant (cashbox) id | → `PAYME_MERCHANT_ID` |
 | Key | test key while testing, production key afterwards → `PAYME_KEY` |
 

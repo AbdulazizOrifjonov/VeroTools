@@ -26,7 +26,7 @@ export default function LoginPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    document.title = `${t('auth.submit')} · OCKEAN TOOLS Admin`;
+    document.title = `${t('auth.submit')} · OCKEAN Admin`;
   }, [t]);
 
   const form = useForm<LoginInput>({

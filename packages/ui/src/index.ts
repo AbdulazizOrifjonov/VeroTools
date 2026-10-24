@@ -1,5 +1,5 @@
 /**
- * @vero/ui — OCKEAN TOOLS design system (React 19 + Tailwind CSS v4 + Radix).
+ * @vero/ui — OCKEAN design system (React 19 + Tailwind CSS v4 + Radix).
  * Styles: `@import "@vero/ui/styles.css";` in the app's root stylesheet.
  */
 

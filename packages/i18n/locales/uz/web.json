@@ -151,7 +151,7 @@
     "notificationsHint": "Bildirishnomalar hisobingizda doim ko'rinadi — ularni yana qayerda olishni tanlang.",
     "channels": "Kanallar",
     "topics": "Mavzular",
-    "pushHint": "OCKEAN TOOLS mobil ilovasida",
+    "pushHint": "OCKEAN mobil ilovasida",
     "noEmail": "Profilda email manzilini qo'shing",
     "passwordSignOutNote": "Parol o'zgartirilgach, barcha qurilmalardagi seanslar yakunlanadi — yangi parol bilan qayta kirasiz.",
     "passwordChangedRelogin": "Parol o'zgartirildi. Yangi parol bilan qayta kiring."
@@ -169,7 +169,7 @@
     "pagesNav": "Ma'lumot sahifalari"
   },
   "contacts": {
-    "description": "OCKEAN TOOLS kontaktlari: telefon, email, do'kon manzili va olib ketish punktlari.",
+    "description": "OCKEAN kontaktlari: telefon, email, do'kon manzili va olib ketish punktlari.",
     "sendAnother": "Yana xabar yuborish",
     "privacyNote": "Ma'lumotlaringizni faqat so'rovingizga javob berish uchun ishlatamiz.",
     "showOnMap": "Xaritada",

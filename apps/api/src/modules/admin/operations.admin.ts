@@ -91,7 +91,7 @@ reviewsAdminRouter.patch('/:id', requirePermission('reviews.moderate'), validate
   if (!review) throw notFound('Review');
   const set: Record<string, unknown> = { moderatedBy: req.auth!.id, moderatedAt: new Date() };
   if (input.status) set.status = input.status;
-  if (input.reply !== undefined) set.reply = input.reply ? { text: input.reply, by: req.auth!.id, byName: 'OCKEAN TOOLS', at: new Date() } : undefined;
+  if (input.reply !== undefined) set.reply = input.reply ? { text: input.reply, by: req.auth!.id, byName: 'OCKEAN', at: new Date() } : undefined;
   await Review.updateOne({ _id: review._id }, input.reply === '' ? { $set: set, $unset: { reply: 1 } } : { $set: set });
   if (input.status && input.status !== review.status) await recomputeRating(review.product);
   await cache.invalidate(CacheTags.home);
@@ -153,7 +153,7 @@ questionsAdminRouter.patch('/:id', requirePermission('reviews.moderate'), valida
   if (!q) throw notFound('Question');
   const set: Record<string, unknown> = {};
   if (input.answer) {
-    set.answer = { text: input.answer, by: req.auth!.id, byName: 'OCKEAN TOOLS', at: new Date() };
+    set.answer = { text: input.answer, by: req.auth!.id, byName: 'OCKEAN', at: new Date() };
     set.status = input.status ?? 'PUBLISHED';
   } else if (input.status) set.status = input.status;
   await ProductQuestion.updateOne({ _id: q._id }, { $set: set });

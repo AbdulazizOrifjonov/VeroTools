@@ -1,5 +1,5 @@
 /**
- * OCKEAN TOOLS — seed media generator.
+ * OCKEAN — seed media generator.
  *
  * Vector illustrations (./tools/*.svg, ./decor/*.svg) are tinted per brand and rendered to PNG
  * with sharp (librsvg). Everything is drawn with paths — no <text>, no system fonts — so the

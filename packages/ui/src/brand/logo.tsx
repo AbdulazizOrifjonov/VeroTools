@@ -21,14 +21,14 @@ export interface LogoProps extends Omit<
 > {
   /** Width and height in px (the logo is always square). Default 48. */
   size?: number;
-  /** Accessible name. Default 'OCKEAN TOOLS'. */
+  /** Accessible name. Default 'OCKEAN'. */
   title?: string;
   /** Color of the inner wordmark. Default '#000000' (official). */
   textColor?: string;
 }
 
-/** Official OCKEAN TOOLS logo — vibrant golden-amber circle/squircle with the bold geometric wordmark. */
-function Logo({ size = 48, title = 'OCKEAN TOOLS', textColor = '#000000', className, style, ...props }: LogoProps) {
+/** Official OCKEAN logo — vibrant golden-amber circle/squircle with the bold geometric wordmark. */
+function Logo({ size = 48, title = 'OCKEAN', textColor = '#000000', className, style, ...props }: LogoProps) {
   const gradientId = useSvgId('ockean-logo-gradient');
   const titleId = useSvgId('ockean-logo-title');
 
@@ -65,12 +65,12 @@ export interface LogoWordmarkProps extends Omit<
 > {
   /** Height in px; width follows the wordmark ratio (895 : 148). Default 24. */
   height?: number;
-  /** Accessible name. Default 'OCKEAN TOOLS'. */
+  /** Accessible name. Default 'OCKEAN'. */
   title?: string;
 }
 
 /** Wordmark only ("OCKEAN"), filled with `currentColor` — use on light or dark surfaces. */
-function LogoWordmark({ height = 24, title = 'OCKEAN TOOLS', className, ...props }: LogoWordmarkProps) {
+function LogoWordmark({ height = 24, title = 'OCKEAN', className, ...props }: LogoWordmarkProps) {
   const titleId = useSvgId('ockean-wordmark-title');
   return (
     <svg

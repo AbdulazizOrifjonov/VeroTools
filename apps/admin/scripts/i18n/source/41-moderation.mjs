@@ -36,7 +36,7 @@ export default {
     replyRemoved: ["Javob o'chirildi", "Ответ удалён", "Reply removed"],
     replyDialog: {
       title: ["Do'kon nomidan javob", "Ответ от имени магазина", "Reply as the store"],
-      description: ["Javob sharh ostida «OCKEAN TOOLS» nomidan ko'rsatiladi, mijozga bildirishnoma yuboriladi.", "Ответ показывается под отзывом от имени «OCKEAN TOOLS», клиенту придёт уведомление.", "The reply appears under the review as “OCKEAN TOOLS” and the customer is notified."],
+      description: ["Javob sharh ostida «OCKEAN» nomidan ko'rsatiladi, mijozga bildirishnoma yuboriladi.", "Ответ показывается под отзывом от имени «OCKEAN», клиенту придёт уведомление.", "The reply appears under the review as “OCKEAN” and the customer is notified."],
       label: ["Javob matni", "Текст ответа", "Reply text"],
       placeholder: ["Rahmat! …", "Спасибо за отзыв! …", "Thank you for your feedback! …"],
       approveToo: ["Javob bilan birga sharhni tasdiqlash", "Одобрить отзыв вместе с ответом", "Approve the review together with the reply"],
@@ -63,7 +63,7 @@ export default {
     },
     answerDialog: {
       title: ["Savolga javob", "Ответ на вопрос", "Answer the question"],
-      description: ["Javob «OCKEAN TOOLS» nomidan mahsulot sahifasida e'lon qilinadi va savol beruvchiga bildirishnoma boradi.", "Ответ публикуется на странице товара от имени «OCKEAN TOOLS», автор вопроса получит уведомление.", "The answer is published on the product page as “OCKEAN TOOLS” and the author is notified."],
+      description: ["Javob «OCKEAN» nomidan mahsulot sahifasida e'lon qilinadi va savol beruvchiga bildirishnoma boradi.", "Ответ публикуется на странице товара от имени «OCKEAN», автор вопроса получит уведомление.", "The answer is published on the product page as “OCKEAN” and the author is notified."],
       label: ["Javob matni", "Текст ответа", "Answer"],
     },
     answered: ["Javob e'lon qilindi", "Ответ опубликован", "Answer published"],

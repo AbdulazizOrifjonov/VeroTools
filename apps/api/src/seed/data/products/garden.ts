@@ -81,9 +81,9 @@ export const GARDEN: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 36,
     seoTitle: {
-      uz: "Bog'bon BM-46 SP o'ziyurar maysa o'rish mashinasi — narxi | OCKEAN TOOLS",
-      ru: "Самоходная газонокосилка Bog'bon BM-46 SP — цена | OCKEAN TOOLS",
-      en: "Bog'bon BM-46 SP Self-Propelled Lawn Mower — Price | OCKEAN TOOLS",
+      uz: "Bog'bon BM-46 SP o'ziyurar maysa o'rish mashinasi — narxi | OCKEAN",
+      ru: "Самоходная газонокосилка Bog'bon BM-46 SP — цена | OCKEAN",
+      en: "Bog'bon BM-46 SP Self-Propelled Lawn Mower — Price | OCKEAN",
     },
     seoDescription: {
       uz: "O'ziyurar benzinli maysa o'rish mashinasi: 46 sm, 60 l o't yig'gich, mulchalash. Issiq va changli sharoitga moslashtirilgan, 24 oylik kafolat.",
@@ -531,9 +531,9 @@ export const GARDEN: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 7.4,
     seoTitle: {
-      uz: 'Nordvik NCS 452 benzopila 45 sm — narxi | OCKEAN TOOLS',
-      ru: 'Бензопила Nordvik NCS 452, шина 45 см — цена | OCKEAN TOOLS',
-      en: 'Nordvik NCS 452 Chainsaw, 45 cm Bar — Price | OCKEAN TOOLS',
+      uz: 'Nordvik NCS 452 benzopila 45 sm — narxi | OCKEAN',
+      ru: 'Бензопила Nordvik NCS 452, шина 45 см — цена | OCKEAN',
+      en: 'Nordvik NCS 452 Chainsaw, 45 cm Bar — Price | OCKEAN',
     },
     seoDescription: {
       uz: "2,3 kVt professional benzopila: 45 sm shina, dekompressor, inersion zanjir tormozi. O'tin va daraxt kesish uchun, 24 oylik kafolat.",

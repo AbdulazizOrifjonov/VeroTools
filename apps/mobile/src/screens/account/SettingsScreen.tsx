@@ -247,7 +247,7 @@ export function SettingsScreen({ navigation }: Props) {
       ) : null}
 
       <Text variant="caption" color="mutedForeground" align="center">
-        OCKEAN TOOLS · {t('settings.version', { version: APP_VERSION })}
+        OCKEAN · {t('settings.version', { version: APP_VERSION })}
       </Text>
     </ScreenScroll>
   );

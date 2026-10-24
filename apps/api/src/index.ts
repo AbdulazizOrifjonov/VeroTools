@@ -16,7 +16,7 @@ async function main() {
   initSocket(server);
 
   await new Promise<void>((resolve) => server.listen(env.PORT, env.HOST, resolve));
-  logger.info({ port: env.PORT, env: env.NODE_ENV, storage: env.STORAGE_DRIVER, redis: Boolean(env.REDIS_URL) }, 'OCKEAN TOOLS API listening');
+  logger.info({ port: env.PORT, env: env.NODE_ENV, storage: env.STORAGE_DRIVER, redis: Boolean(env.REDIS_URL) }, 'OCKEAN API listening');
   if (env.JOBS_ENABLED) startJobs();
 
   let shuttingDown = false;

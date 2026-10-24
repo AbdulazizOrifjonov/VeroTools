@@ -160,9 +160,9 @@ export const GENERATORS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 92,
     seoTitle: {
-      uz: 'Voltaris VG-7500E benzinli generator 6,5 kVt — narxi | OCKEAN TOOLS',
-      ru: 'Бензиновый генератор Voltaris VG-7500E 6,5 кВт — цена | OCKEAN TOOLS',
-      en: 'Voltaris VG-7500E Petrol Generator 6.5 kW — Price | OCKEAN TOOLS',
+      uz: 'Voltaris VG-7500E benzinli generator 6,5 kVt — narxi | OCKEAN',
+      ru: 'Бензиновый генератор Voltaris VG-7500E 6,5 кВт — цена | OCKEAN',
+      en: 'Voltaris VG-7500E Petrol Generator 6.5 kW — Price | OCKEAN',
     },
     seoDescription: {
       uz: "6,5 kVt benzinli generator: elektr starter, AVR, 25 l bak va g'ildiraklar. Butun uy uchun zaxira quvvat, O'zbekiston bo'ylab yetkazib berish.",

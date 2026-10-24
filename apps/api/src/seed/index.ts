@@ -36,7 +36,7 @@ import { Product } from '../models/product.model';
 import { Order } from '../models/order.model';
 
 /*
- * OCKEAN TOOLS database seeding
+ * OCKEAN database seeding
  *
  *   npm run seed                  base + demo data (development)
  *   npm run seed -- --reset       drop the database first, then base + demo
@@ -63,7 +63,7 @@ async function main() {
 
   await connectDatabase();
   const dbName = mongoose.connection.db?.databaseName ?? '?';
-  log.info(`\nOCKEAN TOOLS seed → database "${dbName}" (${demo ? 'base + demo' : 'base only'}${reset ? ', reset' : ''})\n`);
+  log.info(`\nOCKEAN seed → database "${dbName}" (${demo ? 'base + demo' : 'base only'}${reset ? ', reset' : ''})\n`);
 
   if (reset) {
     await mongoose.connection.db!.dropDatabase();

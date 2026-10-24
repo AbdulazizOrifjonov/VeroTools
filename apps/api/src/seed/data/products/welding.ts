@@ -80,9 +80,9 @@ export const WELDING: SeedProduct[] = [
     flags: { featured: true, bestseller: true },
     weightKg: 7.5,
     seoTitle: {
-      uz: 'Weldora ARC 200 invertorli payvandlash apparati — narxi | OCKEAN TOOLS',
-      ru: 'Сварочный инвертор Weldora ARC 200 — цена и характеристики | OCKEAN TOOLS',
-      en: 'Weldora ARC 200 MMA Inverter Welder — Price & Specs | OCKEAN TOOLS',
+      uz: 'Weldora ARC 200 invertorli payvandlash apparati — narxi | OCKEAN',
+      ru: 'Сварочный инвертор Weldora ARC 200 — цена и характеристики | OCKEAN',
+      en: 'Weldora ARC 200 MMA Inverter Welder — Price & Specs | OCKEAN',
     },
     seoDescription: {
       uz: "200 A MMA invertor: 160 V da ham ishlaydi, PV 60%, Hot Start va Anti-Stick. Kabellar komplektda, 24 oylik kafolat va tez yetkazib berish.",
@@ -311,9 +311,9 @@ export const WELDING: SeedProduct[] = [
     flags: { featured: true, isNew: true },
     weightKg: 17,
     seoTitle: {
-      uz: 'Weldora MIG 200 Synergic yarim avtomat — narxi | OCKEAN TOOLS',
-      ru: 'Сварочный полуавтомат Weldora MIG 200 Synergic — цена | OCKEAN TOOLS',
-      en: 'Weldora MIG 200 Synergic Welder — Price | OCKEAN TOOLS',
+      uz: 'Weldora MIG 200 Synergic yarim avtomat — narxi | OCKEAN',
+      ru: 'Сварочный полуавтомат Weldora MIG 200 Synergic — цена | OCKEAN',
+      en: 'Weldora MIG 200 Synergic Welder — Price | OCKEAN',
     },
     seoDescription: {
       uz: "Sinergetik yarim avtomat 3 in 1: MIG/MAG, gazsiz sim va MMA, 200 A, PV 60%. Kuzov va yupqa metall uchun. 24 oylik kafolat.",

@@ -17,7 +17,7 @@ import { SPARE_PARTS } from './spare-parts';
 import { TOOL_SETS } from './tool-sets';
 import { WELDING } from './welding';
 
-/** Full OCKEAN TOOLS catalogue, ordered like the category tree. */
+/** Full OCKEAN catalogue, ordered like the category tree. */
 export const PRODUCTS: SeedProduct[] = [
   ...DRILLS_HAMMERS,
   ...GRINDERS_SAWS,

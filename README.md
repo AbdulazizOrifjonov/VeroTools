@@ -1,4 +1,4 @@
-# OCKEAN TOOLS
+# OCKEAN
 
 E-commerce ecosystem for a professional tools and equipment store in Uzbekistan: **storefront**, **mobile app**
 (Android / iOS), **admin panel** and **API** on one MongoDB database. A customer has one account on the website

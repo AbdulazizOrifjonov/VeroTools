@@ -78,9 +78,9 @@ export const TOOL_SETS: SeedProduct[] = [
     flags: { featured: true, bestseller: true },
     weightKg: 7.8,
     seoTitle: {
-      uz: "Usta torts kallaklar to'plami 108 buyum — narxi | OCKEAN TOOLS",
-      ru: 'Набор торцевых головок Usta, 108 предметов — цена | OCKEAN TOOLS',
-      en: 'Usta 108-Piece Socket Set — Price | OCKEAN TOOLS',
+      uz: "Usta torts kallaklar to'plami 108 buyum — narxi | OCKEAN",
+      ru: 'Набор торцевых головок Usta, 108 предметов — цена | OCKEAN',
+      en: 'Usta 108-Piece Socket Set — Price | OCKEAN',
     },
     seoDescription: {
       uz: "108 buyumli avtomobil to'plami: 4–32 mm kallaklar, 1/4\" va 1/2\" treshotkalar, bitlar, Cr-V po'lat, keys. 24 oylik kafolat, tez yetkazib berish.",

@@ -135,7 +135,7 @@ const sortKey = (p: string) => p.replace(/:/g, '~');
 const unique = new Map(endpoints.map((e) => [`${e.method} ${e.path}`, e]));
 const rows = [...unique.values()].sort((a, b) => (sortKey(a.path) < sortKey(b.path) ? -1 : sortKey(a.path) > sortKey(b.path) ? 1 : methodOrder(a.method) - methodOrder(b.method)));
 
-const out = `# OCKEAN TOOLS API — endpoint index
+const out = `# OCKEAN API — endpoint index
 
 Generated from the routers the API mounts (\`npm run docs:api -w @vero/api\`, ${rows.length} endpoints). All responses use
 the envelope \`{ "data": … }\` (lists add \`"meta": { page, limit, total, pages }\`); errors are

@@ -110,9 +110,9 @@ export const DRILLS_HAMMERS: SeedProduct[] = [
       },
     ],
     seoTitle: {
-      uz: 'Volkstark VS-18 BL Pro drel-shurupoverti — narxi va xususiyatlari | OCKEAN TOOLS',
-      ru: 'Дрель-шуруповёрт Volkstark VS-18 BL Pro — цена и характеристики | OCKEAN TOOLS',
-      en: 'Volkstark VS-18 BL Pro Drill Driver — Price & Specs | OCKEAN TOOLS',
+      uz: 'Volkstark VS-18 BL Pro drel-shurupoverti — narxi va xususiyatlari | OCKEAN',
+      ru: 'Дрель-шуруповёрт Volkstark VS-18 BL Pro — цена и характеристики | OCKEAN',
+      en: 'Volkstark VS-18 BL Pro Drill Driver — Price & Specs | OCKEAN',
     },
     seoDescription: {
       uz: "Cho'tkasiz 18 V drel-shurupovert, 65 Nm, 2×4,0 Ah akkumulyator va keys bilan. O'zbekiston bo'ylab yetkazib berish va 36 oylik kafolat.",
@@ -299,9 +299,9 @@ export const DRILLS_HAMMERS: SeedProduct[] = [
     flags: { featured: true, isNew: true },
     weightKg: 4.2,
     seoTitle: {
-      uz: "Kaizentech KT-DH18X cho'tkasiz zarbli drel — narxi | OCKEAN TOOLS",
-      ru: 'Ударная дрель-шуруповёрт Kaizentech KT-DH18X — цена | OCKEAN TOOLS',
-      en: 'Kaizentech KT-DH18X Brushless Combi Drill — Price | OCKEAN TOOLS',
+      uz: "Kaizentech KT-DH18X cho'tkasiz zarbli drel — narxi | OCKEAN",
+      ru: 'Ударная дрель-шуруповёрт Kaizentech KT-DH18X — цена | OCKEAN',
+      en: 'Kaizentech KT-DH18X Brushless Combi Drill — Price | OCKEAN',
     },
     seoDescription: {
       uz: "90 Nm momentli cho'tkasiz 18 V zarbli drel-shurupovert, 2×5,0 Ah akkumulyator va keys bilan. 36 oylik kafolat, tez yetkazib berish.",
@@ -462,9 +462,9 @@ export const DRILLS_HAMMERS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 5.2,
     seoTitle: {
-      uz: 'Volkstark VH 2-28 SDS-plus perforatori — narxi va xususiyatlari | OCKEAN TOOLS',
-      ru: 'Перфоратор Volkstark VH 2-28 SDS-plus — цена и характеристики | OCKEAN TOOLS',
-      en: 'Volkstark VH 2-28 SDS-plus Rotary Hammer — Price & Specs | OCKEAN TOOLS',
+      uz: 'Volkstark VH 2-28 SDS-plus perforatori — narxi va xususiyatlari | OCKEAN',
+      ru: 'Перфоратор Volkstark VH 2-28 SDS-plus — цена и характеристики | OCKEAN',
+      en: 'Volkstark VH 2-28 SDS-plus Rotary Hammer — Price & Specs | OCKEAN',
     },
     seoDescription: {
       uz: "900 Vt, 3,2 J zarba energiyali uch rejimli perforator, keys bilan. Betonda 28 mm gacha teshik. 36 oylik kafolat va O'zbekiston bo'ylab yetkazib berish.",

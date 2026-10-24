@@ -75,7 +75,7 @@ const schema = z.object({
   CLIENT_URL: z.string().default('http://localhost:5173'),
   ADMIN_URL: z.string().default('http://localhost:5174'),
   /** deep-link scheme / URL used as payment return URL for the mobile app */
-  MOBILE_RETURN_URL: z.string().default('ockeantools://orders'),
+  MOBILE_RETURN_URL: z.string().default('ockean://orders'),
   CORS_ORIGINS: csv,
   /** public origin of this API, used to build absolute media URLs (local storage) */
   PUBLIC_API_URL: z.string().default('http://localhost:4000'),
@@ -97,7 +97,7 @@ const schema = z.object({
   SMTP_SECURE: bool(false),
   SMTP_USER: z.string().optional(),
   SMTP_PASSWORD: z.string().optional(),
-  MAIL_FROM: z.string().default('OCKEAN TOOLS <no-reply@ockean.uz>'),
+  MAIL_FROM: z.string().default('OCKEAN <no-reply@ockean.uz>'),
 
   SMS_PROVIDER: z.enum(['console', 'eskiz']).default('console'),
   ESKIZ_EMAIL: z.string().optional(),

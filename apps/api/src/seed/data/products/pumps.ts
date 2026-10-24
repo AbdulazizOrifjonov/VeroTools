@@ -92,9 +92,9 @@ export const PUMPS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 21,
     seoTitle: {
-      uz: 'Idrovia 4SD 3/18 quduq nasosi 1,1 kVt — narxi | OCKEAN TOOLS',
-      ru: 'Скважинный насос Idrovia 4SD 3/18 1,1 кВт — цена | OCKEAN TOOLS',
-      en: 'Idrovia 4SD 3/18 Borehole Pump 1.1 kW — Price | OCKEAN TOOLS',
+      uz: 'Idrovia 4SD 3/18 quduq nasosi 1,1 kVt — narxi | OCKEAN',
+      ru: 'Скважинный насос Idrovia 4SD 3/18 1,1 кВт — цена | OCKEAN',
+      en: 'Idrovia 4SD 3/18 Borehole Pump 1.1 kW — Price | OCKEAN',
     },
     seoDescription: {
       uz: "4\" quduqlar uchun zanglamaydigan po'lat nasos: napor 110 m, 4,2 m³/soat, 30 m kabel. O'rnatish bo'yicha maslahat va 24 oylik kafolat.",
@@ -472,9 +472,9 @@ export const PUMPS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 22,
     seoTitle: {
-      uz: 'Idrovia AquaHome 24 nasos stansiyasi — narxi | OCKEAN TOOLS',
-      ru: 'Насосная станция Idrovia AquaHome 24 — цена | OCKEAN TOOLS',
-      en: 'Idrovia AquaHome 24 Pumping Station — Price | OCKEAN TOOLS',
+      uz: 'Idrovia AquaHome 24 nasos stansiyasi — narxi | OCKEAN',
+      ru: 'Насосная станция Idrovia AquaHome 24 — цена | OCKEAN',
+      en: 'Idrovia AquaHome 24 Pumping Station — Price | OCKEAN',
     },
     seoDescription: {
       uz: "Uy uchun avtomatik suv ta'minoti: 1,0 kVt nasos, 24 l bak, bosim relesi va manometr. O'zbekiston bo'ylab yetkazib berish, 24 oylik kafolat.",

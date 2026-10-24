@@ -1,4 +1,4 @@
-# OCKEAN TOOLS — architecture
+# OCKEAN — architecture
 
 One API, one MongoDB database, three clients. A customer uses the same account on the storefront and in the
 mobile app; staff work in the admin panel. Cart, wishlist, compare list, orders, addresses, notifications and

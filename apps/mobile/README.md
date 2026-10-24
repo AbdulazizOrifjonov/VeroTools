@@ -1,4 +1,4 @@
-# OCKEAN TOOLS — mobile app (`@vero/mobile`)
+# OCKEAN — mobile app (`@vero/mobile`)
 
 Customer app for Android and iOS — Expo SDK 57, React Native 0.86, React Navigation, TanStack Query, the shared
 `@vero/api-client`, `@vero/i18n` and brand tokens from `@vero/config`. It uses the same API and the same account

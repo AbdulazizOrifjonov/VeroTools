@@ -31,7 +31,7 @@
     "enabled": "Push-bildirishnomalar yoqildi",
     "active": "Bu qurilmaga buyurtma holati va aksiyalar haqida xabarlar keladi.",
     "denied": "Bildirishnomalarga ruxsat berilmadi",
-    "deniedHint": "Bildirishnomalar tizim sozlamalarida o'chirilgan. Ularni OCKEAN TOOLS ilovasi uchun yoqing.",
+    "deniedHint": "Bildirishnomalar tizim sozlamalarida o'chirilgan. Ularni OCKEAN ilovasi uchun yoqing.",
     "openSettings": "Sozlamalarni ochish",
     "signInFirst": "Push-bildirishnomalarni yoqish uchun hisobingizga kiring.",
     "unavailable": {
@@ -44,7 +44,7 @@
     "channels": "Kanallar",
     "topics": "Mavzular",
     "notificationsHint": "Bildirishnomalar har doim kabinetingizda mavjud — ularni yana qayerga olishni tanlang.",
-    "pushHint": "OCKEAN TOOLS mobil ilovasida",
+    "pushHint": "OCKEAN mobil ilovasida",
     "noEmail": "Profilingizga e-pochta manzilini qo'shing",
     "passwordSignOutNote": "Paroldan so'ng barcha qurilmalarda hisobdan chiqasiz — yangi parol bilan qayta kiring.",
     "passwordChangedRelogin": "Parol o'zgartirildi. Yangi parol bilan qayta kiring.",

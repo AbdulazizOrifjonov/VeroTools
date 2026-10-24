@@ -1,4 +1,4 @@
-# OCKEAN TOOLS — frontend guide (web · admin · mobile)
+# OCKEAN — frontend guide (web · admin · mobile)
 
 This is the contract every client app follows. The three apps talk to **one API** and **one database**;
 a customer uses the same account on the website and in the mobile app, and every change (cart, wishlist,

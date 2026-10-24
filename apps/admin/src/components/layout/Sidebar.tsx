@@ -10,10 +10,10 @@ function Brand({ collapsed }: { collapsed: boolean }) {
   const { t } = useTranslation();
   return (
     <NavLink to="/" className="flex min-w-0 items-center gap-2.5 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring" aria-label={t('app.name')}>
-      <Logo size={30} title="OCKEAN TOOLS" />
+      <Logo size={30} title="OCKEAN" />
       {collapsed ? null : (
         <span className="flex min-w-0 flex-col leading-none">
-          <span className="truncate text-[15px] font-extrabold tracking-[-0.02em] text-foreground">OCKEAN TOOLS</span>
+          <span className="truncate text-[15px] font-extrabold tracking-[-0.02em] text-foreground">OCKEAN</span>
           <span className="mt-0.5 text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">{t('app.short')}</span>
         </span>
       )}

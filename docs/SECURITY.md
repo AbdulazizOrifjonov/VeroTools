@@ -1,4 +1,4 @@
-# OCKEAN TOOLS — security
+# OCKEAN — security
 
 How the system protects accounts, data and payments, and what operators must configure. Deployment checklist:
 [DEPLOYMENT.md §11](DEPLOYMENT.md#11-security-checklist-before-launch). Payment specifics: [PAYMENTS.md](PAYMENTS.md).

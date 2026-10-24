@@ -80,8 +80,8 @@ export const SETTING_GROUPS: Record<SettingKey, string> = {
 };
 
 export const DEFAULT_SETTINGS: StoreSettingsValues = {
-  'store.name': 'OCKEAN TOOLS',
-  'store.legalName': L('"OCKEAN TOOLS" MChJ', 'ООО «OCKEAN TOOLS»', 'OCKEAN TOOLS LLC'),
+  'store.name': 'OCKEAN',
+  'store.legalName': L('"OCKEAN" MChJ', 'ООО «OCKEAN»', 'OCKEAN LLC'),
   'store.website': 'https://ockean.uz',
   'store.phone': '+998712000000',
   'store.phoneSecondary': '',
@@ -107,7 +107,7 @@ export const DEFAULT_SETTINGS: StoreSettingsValues = {
   'order.autoCancelUnpaidMinutes': 30,
   'inventory.lowStockThreshold': 5,
   'payments.enabledMethods': [...PAYMENT_METHODS],
-  'seo.title': L('OCKEAN TOOLS — professional asboblar', 'OCKEAN TOOLS — профессиональные инструменты', 'OCKEAN TOOLS — professional tools'),
+  'seo.title': L('OCKEAN — professional asboblar', 'OCKEAN — профессиональные инструменты', 'OCKEAN — professional tools'),
   'seo.description': L(),
   'home.advantages': [],
   'product.trustBullets': [],

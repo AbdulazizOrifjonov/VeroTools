@@ -1,5 +1,5 @@
 /**
- * OCKEAN TOOLS logo geometry (vector trace of the official logo, verified against the original artwork).
+ * OCKEAN logo geometry (vector trace of the official logo, verified against the original artwork).
  * Render as: circle or squircle (brand orange #FD8902) + black/white wordmark path.
  * Never stretch — always keep 1:1 aspect ratio for the square/circle mark, and 895:148 for the wordmark.
  */

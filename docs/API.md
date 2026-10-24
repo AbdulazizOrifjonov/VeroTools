@@ -1,4 +1,4 @@
-# OCKEAN TOOLS API — endpoint index
+# OCKEAN API — endpoint index
 
 Generated from the routers the API mounts (`npm run docs:api -w @vero/api`, 214 endpoints). All responses use
 the envelope `{ "data": … }` (lists add `"meta": { page, limit, total, pages }`); errors are

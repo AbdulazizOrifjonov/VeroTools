@@ -55,7 +55,7 @@ export function toCsv(report: ReportDTO): Buffer {
 
 export async function toXlsx(report: ReportDTO, lang: Language): Promise<Buffer> {
   const wb = new ExcelJS.Workbook();
-  wb.creator = 'OCKEAN TOOLS';
+  wb.creator = 'OCKEAN';
   wb.created = new Date();
   const ws = wb.addWorksheet(report.title.slice(0, 31));
   ws.addRow([report.title]).font = { bold: true, size: 14 };
@@ -118,7 +118,7 @@ export function toPdf(report: ReportDTO, lang: Language): Promise<Buffer> {
       .fontSize(9)
       .fillColor('#65656F')
       .text(
-        `${formatDate(report.range.from, lang, 'numeric')} — ${formatDate(new Date(new Date(report.range.to).getTime() - 1), lang, 'numeric')}   ·   OCKEAN TOOLS`,
+        `${formatDate(report.range.from, lang, 'numeric')} — ${formatDate(new Date(new Date(report.range.to).getTime() - 1), lang, 'numeric')}   ·   OCKEAN`,
         80,
         54,
       );

@@ -12,9 +12,9 @@ export const BRANDS: SeedBrand[] = [
     name: 'OCKEAN PRO',
     country: { uz: "O'zbekiston", ru: 'Узбекистан', en: 'Uzbekistan' },
     description: {
-      uz: "OCKEAN PRO — OCKEAN TOOLS katalogidagi asboblar liniyasi: uy ta'miri va kundalik ustaxona ishlari uchun elektr va qo'l asboblari.",
-      ru: 'OCKEAN PRO — линейка инструмента в каталоге OCKEAN TOOLS: электро- и ручной инструмент для домашнего ремонта и повседневной работы в мастерской.',
-      en: 'OCKEAN PRO is a tool line in the OCKEAN TOOLS catalogue: power and hand tools for home repairs and everyday workshop jobs.',
+      uz: "OCKEAN PRO — OCKEAN katalogidagi asboblar liniyasi: uy ta'miri va kundalik ustaxona ishlari uchun elektr va qo'l asboblari.",
+      ru: 'OCKEAN PRO — линейка инструмента в каталоге OCKEAN: электро- и ручной инструмент для домашнего ремонта и повседневной работы в мастерской.',
+      en: 'OCKEAN PRO is a tool line in the OCKEAN catalogue: power and hand tools for home repairs and everyday workshop jobs.',
     },
     color: '#FF4500',
     accent: '#1C1C1F',

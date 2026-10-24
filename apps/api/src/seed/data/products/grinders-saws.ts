@@ -468,9 +468,9 @@ export const GRINDERS_SAWS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 6.4,
     seoTitle: {
-      uz: 'Volkstark VK 66-1600 diskli arra — narxi va xususiyatlari | OCKEAN TOOLS',
-      ru: 'Циркулярная пила Volkstark VK 66-1600 — цена и характеристики | OCKEAN TOOLS',
-      en: 'Volkstark VK 66-1600 Circular Saw — Price & Specs | OCKEAN TOOLS',
+      uz: 'Volkstark VK 66-1600 diskli arra — narxi va xususiyatlari | OCKEAN',
+      ru: 'Циркулярная пила Volkstark VK 66-1600 — цена и характеристики | OCKEAN',
+      en: 'Volkstark VK 66-1600 Circular Saw — Price & Specs | OCKEAN',
     },
     seoDescription: {
       uz: "1600 Vt professional diskli arra: 66 mm kesish chuqurligi, 48 tishli disk, elektron tormoz. Mebel ustaxonalari uchun, 36 oylik kafolat.",

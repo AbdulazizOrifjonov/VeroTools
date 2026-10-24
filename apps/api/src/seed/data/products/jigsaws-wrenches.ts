@@ -255,9 +255,9 @@ export const JIGSAWS_WRENCHES: SeedProduct[] = [
       },
     ],
     seoTitle: {
-      uz: 'Forgeline FX-1850 zarbli gaykovyort 850 Nm — narxi | OCKEAN TOOLS',
-      ru: 'Ударный гайковёрт Forgeline FX-1850 850 Нм — цена | OCKEAN TOOLS',
-      en: 'Forgeline FX-1850 Impact Wrench 850 Nm — Price | OCKEAN TOOLS',
+      uz: 'Forgeline FX-1850 zarbli gaykovyort 850 Nm — narxi | OCKEAN',
+      ru: 'Ударный гайковёрт Forgeline FX-1850 850 Нм — цена | OCKEAN',
+      en: 'Forgeline FX-1850 Impact Wrench 850 Nm — Price | OCKEAN',
     },
     seoDescription: {
       uz: "Cho'tkasiz 18 V gaykovyort, 850 Nm, 1/2\" kvadrat. Faqat asbob yoki 2×5,0 Ah to'plam. Shinomontaj va avtoservislar uchun, 36 oylik kafolat.",

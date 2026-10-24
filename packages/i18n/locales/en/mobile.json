@@ -31,7 +31,7 @@
     "enabled": "Push notifications are on",
     "active": "This device receives order updates and promotions.",
     "denied": "Notifications are not allowed",
-    "deniedHint": "Notifications are turned off in the system settings. Allow them for the OCKEAN TOOLS app.",
+    "deniedHint": "Notifications are turned off in the system settings. Allow them for the OCKEAN app.",
     "openSettings": "Open settings",
     "signInFirst": "Sign in to enable push notifications.",
     "unavailable": {
@@ -44,7 +44,7 @@
     "channels": "Channels",
     "topics": "Topics",
     "notificationsHint": "Notifications are always available in your account — choose where else to receive them.",
-    "pushHint": "In the OCKEAN TOOLS mobile app",
+    "pushHint": "In the OCKEAN mobile app",
     "noEmail": "Add an e-mail address in your profile",
     "passwordSignOutNote": "After the change you'll be signed out on all devices — sign in again with the new password.",
     "passwordChangedRelogin": "Password changed. Please sign in with your new password.",

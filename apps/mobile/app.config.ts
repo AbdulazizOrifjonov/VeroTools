@@ -1,7 +1,7 @@
 import type { ConfigContext, ExpoConfig } from 'expo/config';
 
 /**
- * OCKEAN TOOLS customer app (Expo). Environment:
+ * OCKEAN customer app (Expo). Environment:
  *   EXPO_PUBLIC_API_URL   absolute API base, e.g. http://192.168.1.20:4000/api (LAN IP for a phone)
  *   EXPO_PUBLIC_WEB_URL   storefront origin used for share links / universal links (default https://ockean.uz)
  *   EAS_PROJECT_ID        EAS project id — required for Expo push tokens (push is skipped without it)
@@ -26,9 +26,9 @@ export default ({ config }: ConfigContext): ExpoConfig => {
   const webHost = hostOf(WEB_URL);
   return {
     ...config,
-    name: 'OCKEAN TOOLS',
-    slug: 'ockean-tools',
-    scheme: 'ockeantools',
+    name: 'OCKEAN',
+    slug: 'ockean',
+    scheme: 'ockean',
     version: '1.0.0',
     orientation: 'portrait',
     icon: './assets/icon.png',
@@ -77,7 +77,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       bundler: 'metro',
       output: 'single',
       favicon: './assets/favicon.png',
-      name: 'OCKEAN TOOLS',
+      name: 'OCKEAN',
       shortName: 'OCKEAN',
       themeColor: BRAND,
       backgroundColor: LIGHT_BG,
@@ -109,9 +109,9 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         'expo-image-picker',
         {
           photosPermission:
-            'OCKEAN TOOLS uses your photo library so you can add photos to product reviews and set a profile picture.',
+            'OCKEAN uses your photo library so you can add photos to product reviews and set a profile picture.',
           cameraPermission:
-            'OCKEAN TOOLS uses the camera so you can take photos for product reviews and your profile picture.',
+            'OCKEAN uses the camera so you can take photos for product reviews and your profile picture.',
           microphonePermission: false,
         },
       ],

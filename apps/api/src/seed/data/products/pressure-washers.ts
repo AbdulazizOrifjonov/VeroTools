@@ -156,9 +156,9 @@ export const PRESSURE_WASHERS: SeedProduct[] = [
     flags: { featured: true },
     weightKg: 24,
     seoTitle: {
-      uz: 'Hydrostorm HS 170 Pro yuvish apparati 170 bar — narxi | OCKEAN TOOLS',
-      ru: 'Мойка высокого давления Hydrostorm HS 170 Pro 170 бар — цена | OCKEAN TOOLS',
-      en: 'Hydrostorm HS 170 Pro Pressure Washer 170 bar — Price | OCKEAN TOOLS',
+      uz: 'Hydrostorm HS 170 Pro yuvish apparati 170 bar — narxi | OCKEAN',
+      ru: 'Мойка высокого давления Hydrostorm HS 170 Pro 170 бар — цена | OCKEAN',
+      en: 'Hydrostorm HS 170 Pro Pressure Washer 170 bar — Price | OCKEAN',
     },
     seoDescription: {
       uz: "170 bar, 510 l/soat, induksion dvigatel va latun nasos. Avtoyuvish va avtoservislar uchun professional moyka, 36 oylik kafolat.",

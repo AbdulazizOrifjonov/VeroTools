@@ -63,7 +63,7 @@
   },
   "app": {
     "loading": "Panel yuklanmoqda…",
-    "name": "OCKEAN TOOLS boshqaruv paneli",
+    "name": "OCKEAN boshqaruv paneli",
     "restoring": "Sessiya tiklanmoqda…",
     "short": "Admin"
   },
@@ -174,7 +174,7 @@
     }
   },
   "auth": {
-    "footer": "© {{year}} OCKEAN TOOLS. Barcha huquqlar himoyalangan.",
+    "footer": "© {{year}} OCKEAN. Barcha huquqlar himoyalangan.",
     "loggedOut": "Tizimdan chiqdingiz",
     "login": "Email yoki telefon",
     "loginPlaceholder": "name@ockean.uz yoki +998 90 123 45 67",
@@ -2001,7 +2001,7 @@
     },
     "answer": "Javob",
     "answerDialog": {
-      "description": "Javob «OCKEAN TOOLS» nomidan mahsulot sahifasida e'lon qilinadi va savol beruvchiga bildirishnoma boradi.",
+      "description": "Javob «OCKEAN» nomidan mahsulot sahifasida e'lon qilinadi va savol beruvchiga bildirishnoma boradi.",
       "label": "Javob matni",
       "title": "Savolga javob"
     },
@@ -2088,7 +2088,7 @@
     "rejected": "Sharh rad etildi",
     "replyDialog": {
       "approveToo": "Javob bilan birga sharhni tasdiqlash",
-      "description": "Javob sharh ostida «OCKEAN TOOLS» nomidan ko'rsatiladi, mijozga bildirishnoma yuboriladi.",
+      "description": "Javob sharh ostida «OCKEAN» nomidan ko'rsatiladi, mijozga bildirishnoma yuboriladi.",
       "label": "Javob matni",
       "placeholder": "Rahmat! …",
       "title": "Do'kon nomidan javob"

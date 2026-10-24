@@ -36,7 +36,7 @@ export interface DocumentMeta {
  */
 export function useDocumentMeta({ title, description, noindex = false, raw = false }: DocumentMeta): void {
   const settings = useSettings();
-  const siteName = settings.data?.store.name || 'OCKEAN TOOLS';
+  const siteName = settings.data?.store.name || 'OCKEAN';
   const fallbackDescription = settings.data?.seo.description ?? null;
 
   useEffect(() => {

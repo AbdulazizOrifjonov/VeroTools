@@ -63,7 +63,7 @@
   },
   "app": {
     "loading": "Loading the panel…",
-    "name": "OCKEAN TOOLS admin panel",
+    "name": "OCKEAN admin panel",
     "restoring": "Restoring your session…",
     "short": "Admin"
   },
@@ -174,7 +174,7 @@
     }
   },
   "auth": {
-    "footer": "© {{year}} OCKEAN TOOLS. All rights reserved.",
+    "footer": "© {{year}} OCKEAN. All rights reserved.",
     "loggedOut": "You have signed out",
     "login": "Email or phone",
     "loginPlaceholder": "name@ockean.uz or +998 90 123 45 67",
@@ -2001,7 +2001,7 @@
     },
     "answer": "Answer",
     "answerDialog": {
-      "description": "The answer is published on the product page as “OCKEAN TOOLS” and the author is notified.",
+      "description": "The answer is published on the product page as “OCKEAN” and the author is notified.",
       "label": "Answer",
       "title": "Answer the question"
     },
@@ -2088,7 +2088,7 @@
     "rejected": "Review rejected",
     "replyDialog": {
       "approveToo": "Approve the review together with the reply",
-      "description": "The reply appears under the review as “OCKEAN TOOLS” and the customer is notified.",
+      "description": "The reply appears under the review as “OCKEAN” and the customer is notified.",
       "label": "Reply text",
       "placeholder": "Thank you for your feedback! …",
       "title": "Reply as the store"

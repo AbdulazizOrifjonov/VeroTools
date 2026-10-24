@@ -95,7 +95,7 @@ export async function resolveMeta(rawPath: string): Promise<SeoMetaDTO> {
 
 async function buildMeta(lang: Language, path: string): Promise<SeoMetaDTO> {
   const [s, idx] = await Promise.all([getSettings(), getCatalogIndex()]);
-  const siteName = s['store.name'] || 'OCKEAN TOOLS';
+  const siteName = s['store.name'] || 'OCKEAN';
   const homeTitle = pickLocalized(s['seo.title'], lang) || siteName;
   const homeDescription = pickLocalized(s['seo.description'], lang);
   const defaultImage = abs('/og-image.png');

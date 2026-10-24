@@ -166,8 +166,8 @@ export async function sendOtp(phone: string, purpose: 'verify_phone' | 'reset_pa
   });
   const text =
     purpose === 'reset_password'
-      ? `OCKEAN TOOLS: parolni tiklash kodi / код восстановления: ${code}`
-      : `OCKEAN TOOLS: tasdiqlash kodi / код подтверждения: ${code}`;
+      ? `OCKEAN: parolni tiklash kodi / код восстановления: ${code}`
+      : `OCKEAN: tasdiqlash kodi / код подтверждения: ${code}`;
   await sendSms(phone, text);
   if (env.NODE_ENV === 'development') logger.info({ phone, code, purpose }, '[otp:dev] code generated');
   return { cooldownSeconds: OTP_COOLDOWN_MS / 1000 };
@@ -295,21 +295,21 @@ export async function verifyEmail(token: string) {
 
 const RESET_EMAIL = {
   uz: {
-    subject: 'Parolni tiklash — OCKEAN TOOLS',
+    subject: 'Parolni tiklash — OCKEAN',
     title: 'Parolni tiklash',
     intro: 'Hisobingiz uchun parolni tiklash so\'raldi. Yangi parol o\'rnatish uchun tugmani bosing. Havola 1 soat amal qiladi.',
     button: 'Yangi parol o\'rnatish',
     footer: 'Agar siz so\'rov yubormagan bo\'lsangiz, ushbu xatni e\'tiborsiz qoldiring.',
   },
   ru: {
-    subject: 'Восстановление пароля — OCKEAN TOOLS',
+    subject: 'Восстановление пароля — OCKEAN',
     title: 'Восстановление пароля',
     intro: 'Для вашего аккаунта запрошено восстановление пароля. Нажмите кнопку, чтобы задать новый пароль. Ссылка действует 1 час.',
     button: 'Задать новый пароль',
     footer: 'Если вы не отправляли запрос, просто проигнорируйте это письмо.',
   },
   en: {
-    subject: 'Reset your password — OCKEAN TOOLS',
+    subject: 'Reset your password — OCKEAN',
     title: 'Reset your password',
     intro: 'A password reset was requested for your account. Use the button below to set a new password. The link is valid for 1 hour.',
     button: 'Set a new password',
@@ -319,23 +319,23 @@ const RESET_EMAIL = {
 
 const VERIFY_EMAIL = {
   uz: {
-    subject: 'Emailni tasdiqlang — OCKEAN TOOLS',
+    subject: 'Emailni tasdiqlang — OCKEAN',
     title: 'Email manzilingizni tasdiqlang',
-    intro: 'OCKEAN TOOLS hisobingiz uchun ushbu email manzilini tasdiqlang.',
+    intro: 'OCKEAN hisobingiz uchun ushbu email manzilini tasdiqlang.',
     button: 'Emailni tasdiqlash',
     footer: 'Havola 24 soat amal qiladi.',
   },
   ru: {
-    subject: 'Подтвердите email — OCKEAN TOOLS',
+    subject: 'Подтвердите email — OCKEAN',
     title: 'Подтвердите ваш email',
-    intro: 'Подтвердите этот адрес электронной почты для аккаунта OCKEAN TOOLS.',
+    intro: 'Подтвердите этот адрес электронной почты для аккаунта OCKEAN.',
     button: 'Подтвердить email',
     footer: 'Ссылка действует 24 часа.',
   },
   en: {
-    subject: 'Confirm your email — OCKEAN TOOLS',
+    subject: 'Confirm your email — OCKEAN',
     title: 'Confirm your email address',
-    intro: 'Please confirm this email address for your OCKEAN TOOLS account.',
+    intro: 'Please confirm this email address for your OCKEAN account.',
     button: 'Confirm email',
     footer: 'The link is valid for 24 hours.',
   },

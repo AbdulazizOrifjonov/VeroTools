@@ -1,4 +1,4 @@
-# OCKEAN TOOLS — deployment and operations
+# OCKEAN — deployment and operations
 
 ## Qisqacha (o'zbekcha)
 
@@ -146,7 +146,7 @@ docker compose ps                                  # mongo, redis, api, web, adm
 curl -fsS http://127.0.0.1:4000/ready             # {"status":"ready","database":true,"redis":"ready"}
 curl -fsS http://127.0.0.1:3000/healthz           # {"status":"ok"}
 curl -fsS http://127.0.0.1:3001/healthz           # {"status":"ok"}
-docker compose logs api | tail                    # JSON logs, e.g. "OCKEAN TOOLS API listening", "transactions": true
+docker compose logs api | tail                    # JSON logs, e.g. "OCKEAN API listening", "transactions": true
 ```
 
 On the first start the `mongo` healthcheck initiates the replica set `rs0` (member `mongo:27017`); `api` waits
@@ -227,7 +227,7 @@ sudo mkdir -p /var/www/certbot
    the server has no IPv6, and the `api.ockean.uz` block if you do not use that host.
 
 ```nginx
-# /etc/nginx/conf.d/vero-tools.conf — OCKEAN TOOLS behind nginx.
+# /etc/nginx/conf.d/vero-tools.conf — OCKEAN behind nginx.
 # Docker Compose publishes web on 127.0.0.1:3000, admin on 127.0.0.1:3001 and the API on 127.0.0.1:4000.
 
 # Socket.IO WebSocket upgrade; an empty Connection header keeps upstream keep-alive for normal requests.

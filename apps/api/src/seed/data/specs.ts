@@ -1,7 +1,7 @@
 import type { SeedSpecDefinition } from './types';
 
 /**
- * Specification dictionary for the OCKEAN TOOLS catalogue.
+ * Specification dictionary for the OCKEAN catalogue.
  * Keys are snake_case; numeric keys carry a unit suffix.
  * Groups: main → power → performance → equipment → dimensions → general.
  */
