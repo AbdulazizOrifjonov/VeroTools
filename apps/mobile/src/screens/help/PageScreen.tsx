@@ -42,6 +42,7 @@ export function PageScreen() {
         action={
           <Button
             title={t('common:actions.goHome')}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             onPress={() => (navigation as any).navigate('Tabs', { screen: 'HomeTab' }, { pop: true })}
           />
         }

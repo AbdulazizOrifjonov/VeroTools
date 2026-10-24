@@ -1,4 +1,5 @@
 import * as Device from 'expo-device';
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Notifications: any = {};
 import { Platform } from 'react-native';
 import { EAS_PROJECT_ID } from '../config/env';
